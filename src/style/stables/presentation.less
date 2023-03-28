@@ -1,0 +1,547 @@
+body{
+    .banner{
+        min-width: 1000px;
+        background: url("../../media/stables/presentation/BannerFullSize.jpg") no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        .mainHeading{
+            width: 370px;
+            position: absolute;
+            margin-left: -185px;
+            margin-top: -50px;
+
+            p{
+                margin-top: 40px;
+            }
+
+            h1{
+                margin-top: -20px;
+            }
+        }
+    }
+
+    .presentation{
+        background: url(../../media/stables/presentation/BienvenueBackground.png) no-repeat;
+        background-size: cover;
+        background-position: bottom;
+        .presentationContent{
+            .bottom-line{
+                position: relative;
+                top: -20px;
+            }
+        }
+    }
+
+    .boxSection{
+        article{
+            .readMore{
+                display: none;
+            }
+        }  
+    }
+
+    .horseFood{
+        margin-top: 0;
+        img{
+            left:0;
+        }
+
+        article{
+            margin-top: -10px;
+            right: 0;
+            p{
+                max-height: 300px;
+            }
+        }
+    }
+
+    .linkToGallery{
+        position: relative;
+        background: url("../../media/stables/presentation/background.jpg") no-repeat;
+        background-size: cover;
+        background-position-x: right;
+        height: 600px;
+        .sectionParagraph{
+            position: absolute;
+            text-align: center;
+            h2{
+                color: black;
+                font-family: 'freight', Arial, Helvetica, sans-serif;
+                font-size: 24pt;
+                margin-bottom: 40px;
+            }
+            img{
+                width: 270px;
+            }
+            .orangeButton{
+                position: absolute;
+                left: 50%;
+                margin-left: -85px;
+                bottom: -70px;
+            }
+            .divider{
+                position: absolute;
+                left: 50%;
+                margin-left: -60px;
+                
+                width: 120px;
+                height: 1px;
+                border-top: solid grey 1px;
+            }
+
+            .divider1{
+                top: -10px;
+
+            }
+
+            .divider2{
+                bottom: -120px;
+            }
+        }
+
+    }
+
+    .horseInfrastructures{
+
+        margin-top: 0;
+        article{
+            margin-top: -10px;
+            text-align: left;
+            h2{
+                text-align: center;
+            }
+            ul{
+                li{
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .linkToServices{
+        height: 500px;
+        margin-top: 0;
+
+        background: url("../../media/stables/presentation/ServicesBanner.jpg") no-repeat;
+        background-size: cover;
+        aside{
+            width: 600px;
+            position: absolute;
+            right: 150px;
+
+            text-align: center;
+            color: white;
+
+            hr:nth-child(1){
+                margin-top: 60px;
+            }
+
+            hr{
+                width: 100px;
+                margin-top: 120px;
+            }
+
+            h2{
+                font-family: 'freight', Arial, Helvetica, sans-serif;
+                font-weight: 100;
+                font-size: 24pt;
+                letter-spacing: 0.05em;
+                margin-top: 40px;
+            }
+            .generalText{
+                font-family: 'futuraStd', Arial, Helvetica, sans-serif;
+            }
+            .orangeButton{
+                position: absolute;
+                bottom: 50px;
+                left: 215px;
+
+
+            }
+
+        }
+
+
+       
+        
+    }
+
+
+
+    
+}
+
+@media screen and (max-width: 1800px){
+    body{
+        section{
+            article{
+                top: 50px !important;
+                ul{
+                    li{
+                        margin-left: 50px !important;
+                    }
+
+                }
+                
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1620px){
+    body{
+        .banner{
+            .mainHeading{
+                width: 300px;
+                height: 180px;
+                margin-left: -150px;
+                margin-top: -30px;
+            }
+        }
+
+        .horseFood, .horseEnvironnement{
+            article{
+                top: 15% !important;
+            }
+        }
+
+        .boxSection{
+            article{
+                h2{
+                    font-size: 25pt !important;
+                }
+            }
+        }
+
+        .horseEnvironnement, .horseFood{
+            article{
+                .divider{
+                    top: 95px;
+                }
+            }
+
+        }
+
+        .horseInfrastructures{
+            article{
+                .divider{
+                    top: 110px;
+                }
+            }
+        }
+
+        .linkToGallery{
+            .sectionParagraph{
+                width: 500px;
+
+                    
+            }
+        }
+
+
+
+        .presentation{
+            .presentationContent{
+                width: 1000px;
+                margin-left: -500px;
+                h2{
+                    font-size: 30pt;
+                }
+                img{
+                    transform: scale(0.7);
+                }
+            }
+        }
+
+        section{
+            article{
+                top: 20px ;
+
+                p{
+
+                    margin-top: 30px !important;
+                }
+
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 1400px){
+    body{
+        section{
+            article{
+                ul{
+                    li{
+                        margin-left: 20px !important;
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1350px){
+    body{
+        .presentation{
+            .presentationContent{
+                margin-top: 70px !important;
+                width: 800px !important;
+                margin-left: -400px !important;
+                
+                hr{
+                    display: none !important;
+                }
+
+                
+
+            }
+        }
+        section{
+            article{
+                margin-top: -50px !important;
+                p{
+                    width: 480px !important;
+                    margin-left: -240px !important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1260px){
+    body{
+        .horseEnvironnement{
+            article{
+                .divider{
+                    margin-top: -20px;
+                }
+                p{
+                    margin-top: 0 !important;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1200px){
+    body{
+        .horseInfrastructures{
+            article{
+                ul{
+                    height: 263px;
+                    overflow-y: auto;
+                    li{
+                        width: 440px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+
+
+@media screen and (max-width: 1000px) and (min-height: 1100px){
+    body{
+        .banner{
+            background: url("../../media/stables/presentation/bannerMobile.jpg") no-repeat;
+            background-size: cover;
+            .mainHeading{
+                margin-top: -100px;
+                background: none !important;
+                p, h1{
+                    position: absolute;
+                    left: 50%;
+                    top: 50%;
+
+
+                }
+                h1{
+                    margin-left: -341/2px;
+                }
+                p{
+                    margin-left: -297/2px;
+                    margin-top: -100px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-device-width: 500px) and (orientation: portrait){
+    body{
+        .presentation{
+            height: 1800px;
+            z-index: 0;
+            .presentationContent{
+                img{
+                    position: absolute;
+                    bottom: -1000px;
+                    left: 50%;
+                    margin-left: -50px;
+                    transform: scale(1.7);
+                }
+
+                h2{
+                    margin-top: 100px;
+                }
+            }
+        }
+        
+
+        .horseEnvironnement, .horseFood, .horseInfrastructures{
+            img{
+                width: 100%;
+                height: 900px;
+            }
+
+            article{
+
+                width: 900px;
+                margin-top: 600px !important;
+                margin-left: 50px;
+                h2{
+                    font-size: 70pt !important;
+                }
+                .divider{
+                    top: 340px;
+                }
+                .generalText{
+                    width: 100% !important;
+                    left: 0;
+                    margin-left: 0 !important;
+                    height: 650px;
+                    overflow: visible !important;
+                    max-height: unset !important;
+                }
+                .readMore{
+                    position: absolute;
+                    display: block;
+                    width: 100%;
+                    top: 680px;
+                    color: #a54607;
+                    text-decoration: underline;
+                    height: 250px;
+
+                    background: linear-gradient(to bottom, rgba(250, 250, 250, 0), rgba(250, 250, 250, 1) 60%);
+                    .generalText{
+                        margin-top: 200px !important;
+                        font-size: 35pt;
+                        text-decoration: underline;
+                        
+                    }
+
+                    .readLessButton{
+                        display: none;
+                    }
+
+
+                }
+            }
+
+        }
+
+        .linkToGallery{
+            height: 1100px;
+            background: url("../../media/stables/presentation/backgroundMobile.jpg") no-repeat;
+            background-size: 100% 100%;
+            .sectionParagraph{
+                width: 900px;
+                margin-left: 50px;
+                .divider{
+                    display: none;
+                }
+                img{
+                    transform: scale(1.6);
+                    margin-top: 50px;
+                }
+
+
+                .orangeButton{
+                    margin-left: -150px;
+                    bottom: -170px;
+                }
+            }
+        }
+
+        .linkToServices{
+            background: url("../../media/stables/presentation/PortraitAnneWithOverlayMobile.jpg") no-repeat;
+            background-size: 100% 100%;
+            height: 1400px;
+
+            aside{
+                width: 900px;
+                right: 50px;
+                top: 200px;
+                hr{
+                    display: none;
+                }
+
+                .orangeButton{
+                    left: 50%;
+                    bottom: -150px;
+
+                }
+            }
+        }
+
+        .horseInfrastructures{
+            height: 2500px;
+            article{
+                margin-top: 900px !important;
+                
+                .generalText{
+                    li{
+                        width: 800px;
+                    }
+                }
+                .readMore{
+                    .generalText{
+                        text-align: center !important;
+                    }
+                }
+            }
+        }
+
+        .horseFood{
+            height: 2500px;
+            article{
+                right: unset;
+            }
+        }
+
+        .horseEnvironnement{
+            height: 2500px;
+            margin-top: -300px;
+
+
+            article{
+                h2{
+                    margin-top: 50px;
+                    
+                }
+
+
+
+            }
+        }
+    }
+
+}
+
+@media screen and (min-width: 1920px){
+    body{
+        .boxSection{
+            article{
+                top: 50%;
+                margin-top: -300px;
+
+
+            }
+        }
+    }
+}
+

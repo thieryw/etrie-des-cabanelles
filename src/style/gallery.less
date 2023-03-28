@@ -1,0 +1,285 @@
+body{
+    @keyframes lightBoxFadeIn{
+        0%{
+            opacity: 0;
+        }100%{
+            opacity: 100;
+        }
+        
+    }
+
+    #modal{
+        top: 0;
+        left: 0;
+        position: fixed;
+        display: none;
+        height: 100%;
+        width: 100%;
+        background: rgba(0, 0, 0, 0.85);
+        z-index: 100;
+        .close{
+            z-index: 200;
+            position: absolute;
+            top: 20px;
+            right: 30px;
+            width: 30px;
+            transition: transform 200ms;
+        }
+
+        .close:hover{
+            cursor: pointer;
+            transform: scale(1.1);
+        }
+        .left, .right{
+            z-index: 200;
+            position: absolute;
+            height: 50px;
+            top: 50%;
+            margin-top: -25px;
+            transition: transform 200ms;
+        }
+
+        .right{
+            right: 20px;
+        }
+        .left{
+            left: 20px;
+        }
+
+        .left:hover, .right:hover{
+            cursor: pointer;
+            transform: scale(1.1);
+
+        }
+        .imageContainer{
+            position: absolute;
+            overflow: hidden;
+            opacity: 0;
+            display: none;
+            top: 50%;
+            left: 50%;
+            margin-left: -800px;
+            margin-top: -350px;
+            width: 1600px;
+            height: 700px;
+            text-align: center;
+            a{
+                position: relative;
+                .lightBoxPicture{
+                    height: 100%;
+
+
+                }
+
+                
+            }
+
+        }
+            
+    }
+
+
+    .galleryBanner{
+        background: url("../media/gallery/Banner.jpg") no-repeat;
+        background-size: cover;
+        margin-bottom: 250px;
+        background-position-y: -100px;
+        height: 110vh;
+
+        .mainHeading{
+            width: 380px;
+            left: 50%;
+            margin-top: -150px;
+            margin-left: -380/2px;
+            transform: none;
+            h1{
+                margin-bottom: -30px;
+                margin-top: 40px;
+            }
+            p{
+                color: #fdd79e;
+            }
+        }
+
+        .signature{
+            position: absolute;
+            left: 50%;
+            margin-left: -200px;
+            top: 75%;
+            text-align: center;
+            height: 360px;
+            .smallDivider{
+                width: 150px;
+                border-top: solid rgb(209, 139, 10) 1px;
+                position: absolute;
+                left: 50%;
+                margin-left: -75px;
+            }
+
+            .divider2{
+                bottom: 0;
+            }
+
+
+            p{
+                font-family: 'futuraStd', Arial, Helvetica, sans-serif;
+                color: rgb(61, 60, 60);
+                font-size: 17pt;
+                margin-top: 80px;
+            }
+
+            a{
+                img{
+                    width: 400px;
+                }
+            }
+        }
+
+        #loading{
+            position: absolute;
+            width: 150px;
+            bottom: -230px;
+            left: 50%;
+            margin-left: -75px;
+        }
+
+    }
+    .galleryContainer{
+        position: relative;
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 200px;
+        margin-top: -200px;
+        .creditPhoto{
+            position: absolute;
+            bottom: -50px;
+            left: 64%;
+        }
+        #gallery{
+            left: 50%;
+            margin-left: -1400/2px;
+            width: 1400px;
+            img{
+                transition-duration: 300ms;
+                transition-property: transform;
+            }
+            
+            img:hover{
+                transform: scale(1.06);
+                cursor: pointer;
+            }
+        }
+
+    }
+
+    
+}
+
+
+
+@media screen and (max-width: 1660px){
+    body{
+        .galleryContainer{
+            #gallery{
+                width: 1400px;
+                margin-left: -700px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1620px){
+    body{
+        .galleryContainer{
+            .creditPhoto{
+                left: 73%;
+            }
+        }
+        .galleryBanner{
+            .mainHeading{
+                width: 320px;
+                height: 180px;
+                margin-left: -160px;
+                margin-top: -50px;
+            }
+
+            .signature{
+                transform: scale(0.8);
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1450px){
+    body{
+        .galleryContainer{
+            .creditPhoto{
+                left: 10%;
+            }
+            #gallery{
+                width: 1200px;
+                margin-left: -600px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1250px){
+    body{
+        .galleryContainer{
+            #gallery{
+                width: 1000px;
+                margin-left: -500px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-height: 1100px){
+    body{
+        .galleryBanner{
+            background: url("../media/gallery/GalerieBannerMobile.jpg") no-repeat;
+            background-size: cover;
+            height: 100vh;
+
+            .mainHeading{
+                background: none;
+                margin-top: -100px;
+                h1, p{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                }
+
+                h1{
+                    margin-left: -369/2px;
+                    margin-top: -100px;
+                }
+
+                p{
+                    margin-left: -539/2px;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-device-width: 500px) and (orientation: portrait){
+    body{
+        #modal{
+            .close, .left, .right{
+                transform: scale(2.5);
+            }
+
+            .close:hover, .left:hover, .right:hover{
+                transform: scale(2.7) !important;
+            }
+
+            .close{
+                margin-right: 30px;
+                margin-top: 30px;
+            }
+        }
+    }
+}

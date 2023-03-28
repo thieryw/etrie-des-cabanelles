@@ -1,0 +1,790 @@
+body{
+
+   .banner{
+
+        background: url("../../media/accommodation/banniere.jpg") no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+ 
+
+
+   } 
+
+    .localization{
+        position: relative;
+        height: 250px;
+        min-width: 1000px;
+        padding-bottom: 40px;
+        overflow-x: hidden;
+        
+        .text{
+            width: 950px;
+            margin-left: 50%;
+            transform: translate(-450px, 40px);
+
+
+            img{
+                position: absolute;
+                width: 80px;
+                height: 100px;
+                left: -100px;
+                top: 40px;
+            }   
+            h2{
+                font-family: 'freight', Arial, Helvetica, sans-serif;
+                color: #b56105;
+                font-weight: 100;
+                font-size: 22pt;
+                .mobileCariageReturn{
+                    display: none;
+                }
+            }
+            p{
+                font-family: 'futuraStd', Arial, Helvetica, sans-serif;
+            }
+        
+            
+        }
+    }
+
+
+        
+        
+
+        
+}
+
+@media screen and (max-width: 1620px){
+    .accommodationBanner{
+        .mainHeading{
+            width: 420px !important;
+            height: 180px !important;
+            margin-left: -210px !important;
+            margin-top: -45px;
+        }
+    }
+}
+
+@media screen and (max-width: 1680px){
+    body{
+        .pagePresentation{
+            height: 350px !important;
+            .pageItems{
+                position: absolute !important;
+                left: 50% !important;
+                margin-left: -510px !important;
+                width: 1020px !important;
+                height: 260px !important;
+                .item{
+                    width: 300px !important;
+                    height: 200px !important;
+                    margin-top: 30px !important;
+                    margin-left: 30px !important;
+                    a{
+                        p{
+                            font-size: 19pt !important;
+                            margin-top: 80px !important;
+                        }
+                        h1{
+                            font-size: 19pt !important;
+                            margin-left: 70px !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media screen and (max-width: 1100px){
+    body{
+        
+        .pagePresentation{
+            height: 1200px !important;
+            .pageItems{
+
+                flex-direction: column !important;
+                height: 1200px !important;
+                width: 510px !important;
+                margin-left: -245px !important;
+                .item{
+                    width: 450px !important;
+                    height: 300px !important;
+                    margin-top: 50px !important;
+                    a{
+                        p{
+                            margin-top: 120px !important;
+                            font-size: 25pt !important;
+                        }
+
+                        h1{
+                            font-size: 25pt !important;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1100px){
+    body{
+        .localization{
+            img{
+                display: none;
+            }
+
+
+        }
+        
+    }
+}
+
+@media screen and (max-width: 1000px) and (min-height: 1100px){
+    body{
+        .accommodationBanner{
+            background: url(../../media/accommodation/banniereMobile.jpg) no-repeat;
+            background-size: 100% 100%;
+            .mainHeading{
+                background: none !important;
+                margin-top: -100px !important;
+                h1{
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    margin-top: -228px !important;
+                    margin-left: -350px !important;
+                }
+
+                p{
+                    position: absolute;
+                    top: 50%;
+                    left: 277px;
+                    width: 400px;
+                }
+
+
+            }
+        }
+    }
+
+
+
+}
+
+
+@media screen and (max-device-width: 500px) and (orientation: portrait){
+
+    body, html{
+        overflow-x: hidden;
+        .localization{
+            height: 1000px;
+            overflow-x: unset;
+            img{
+                display: block;
+                margin-left: 250px;
+                margin-top: 20px;
+                transform: scale(1.6);
+            }
+            h2{
+                .mobileCariageReturn{
+                    display: inline !important;
+                }
+                margin-left: 300px;
+                span{
+                    font-size: 55pt;
+                    position: relative;
+                    top: -30px;
+                }
+            }
+            p{
+                position: relative;
+                left: -25px;
+                text-align: center;
+                margin: 0;
+            }
+        }
+
+        .pagePresentation{
+            display: none;
+
+        }
+
+        #activities::before{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 1400px;
+            left: 0;
+            top: 300px;
+            background: url("../../media/accommodation/activitesMobile.jpg") no-repeat;
+            background-size: 100% 100%;
+        }
+
+        #activities{
+            height: 300px;
+            position: relative;
+            margin-top: 0;
+            overflow: hidden;
+            .expandButton{
+                z-index: 5;
+            }
+
+            .extras{
+                background: none !important;
+                margin-top: -1350px;
+
+                img{
+                    display: none;
+                }
+
+                .extraHeading{
+                    font-size: 25pt !important;
+                    margin-left: 320px;
+                }
+
+                .list{
+                    border: unset;
+                    border-top: solid black 1px;
+                    width: 800px !important;
+                    margin-left: 100px !important;
+                    left: 0;
+                    margin-top: -150px;
+
+                    p{
+                        font-size: 30pt !important;
+                        margin-bottom: 100px;
+                    }
+
+                    .list1{
+                        p{
+                            text-align: left !important;
+                        }
+                    }
+
+                    .list2{
+                        margin-top: 75px;
+                        right: 370px;
+                    }
+
+
+                }
+            }
+
+            .activitiesDetails{
+                height: 5000px !important;
+
+                .neighborActivities{
+                    transform: none !important;
+                    position: relative;
+                    top: 2000px;
+                    left: 330px;
+
+                    .miniTitle{
+                        font-size: 25pt !important;
+                        width: 200px;
+                        margin-left: 700px;
+                        margin-bottom: 0;
+                    }
+
+                    .neighborItems{
+                        .item{
+                            .itemPicture{
+                                display: none !important;
+                            }
+
+                            .itemText{
+                                width: 900px;
+                                hr{
+                                    width: 800px;
+                                    margin-left: 30px;
+                                }
+                                h2{
+                                    font-size: 50pt !important;
+                                    margin-bottom: -10px !important;
+                                    margin-top: 30px;
+                                    margin-left: 40px;
+                                }
+                                p{
+                                    font-size: 35pt;
+                                    margin-left: 40px;
+                                }
+                            }
+                        }
+                    }
+                }
+                .localActivities{
+                    transform: none !important;
+                    height: 1100px;
+
+                    .localInfo{
+                        position: absolute;
+                        text-align: center;
+                        top: 1400px;
+                        width: 900px;
+                        margin-left: -50px !important;
+                        .generalText{
+                            width: 100%;
+                        }
+                        hr{
+                            display: none;
+                        }
+                        .miniTitle{
+                            display: none;
+                        }
+
+                        .mobileCariageReturn{
+                            display: inline;
+                        }
+                        h2{
+                            span{
+                                color: black;
+                                font-size: 50pt;
+                            }
+                        }
+                        .smallDivider{
+                            margin-left: 430px !important;
+                            display: block;
+                        }
+
+                        h3{
+                            display: none;
+                        }
+                    }
+
+                    img{
+                        position: relative;
+                        left: -95px;
+                        width: 900px;
+                        height: 1400px;
+                        margin-top: -100px;
+                    }
+                }
+            }
+            .sectionBanner{
+                background: none;
+                height: 2400px;
+                .sectionHeading{
+                    position: absolute;
+                    border: none;
+                    background: none;
+                    width: 900px !important;
+                    top: 1800px;
+                    text-align: center;
+                    transform: none;
+                    h1{
+                        color: black;
+                        font-size: 75pt !important;
+                    }
+
+                    h2{
+                        color: #b56105;
+                    }
+                    hr{
+                        display: none;
+                    }
+                }
+                
+            }
+
+        }
+
+        #nest::before{
+            content: "";
+            position: absolute;
+            width: 100%;
+            height: 1600px;
+            top: 300px;
+            left: 0;
+            background: url(../../media/accommodation/LeNid/BannerMobile.jpg);
+            background-size: 100% 100%;
+
+
+        }
+
+    
+        #nest, #villa{
+            overflow: hidden;
+            .expandButton{
+                z-index: 5;
+            }
+            .sectionBanner{
+                background: none !important;
+                .sectionHeading{
+                    width: 100%;
+                    transform: none;
+                    top: 1900px;
+                    h1, h2{
+                        text-align: center;
+                    }
+                    h1{
+                        color: black;
+                        font-size: 75pt !important;
+                    }
+                    h2{
+                        color: #b56105;
+                    }
+                    hr{
+                        display: none;
+                    }
+                }
+
+                aside{
+                    display: none;
+                }
+
+                .description{
+                    width: 900px !important;
+                    margin-left: 50px !important;
+                    text-align: center !important;
+                    margin-top: 2300px !important;
+                    color: black;
+                }
+            }
+
+            .sectionDetails{
+                .sectionParagraph{
+                    display: none;
+                }
+
+                .detailHeading{
+                    display: none;
+                }
+
+                .sliderWrapper{
+                    width: 900px;
+                    transform: none !important;
+                    margin-left: 50px !important;
+                }
+                .priceAndReservation{
+                    transform: none;
+                    width: 800px;
+                    margin-left: 100px;
+                    .normalPriceHeading{
+                        display: none;
+                    }
+
+                    .mobilePriceHeading{
+                        display: block;
+                        text-align: center !important;
+                        width: 100%;
+                    }
+                    hr{
+                        display: none;
+                    }
+
+                    .prices{
+                        font-size: 30pt;
+                        position: relative;
+                        span{
+                            display: none;
+                        }
+                        strong{
+
+                            position: absolute;
+                            right: 0;
+                        }
+                    }
+                    .taxesInfo{
+                        font-size: 25pt;
+                        text-align: justify;
+                        br{
+                            display: none;
+                        }
+                    }
+
+                    .communication{
+                        flex-direction: column;
+                        transform: scale(2.5);
+                        margin-top: 400px;
+                        .onlineReservation{
+                            border: none;
+                        }
+
+                        div{
+                            width: 100%;
+
+                        }
+                        .onlineReservation{
+                            img{
+                                margin-left: -30px;
+                            }
+                            p{
+                                margin-left: 0;
+                            }
+                        }
+
+                    }
+
+                }
+            }
+        }
+
+        #villa::before{
+            content: "";
+            position: absolute;
+            top: 300px;
+            width: 100%;
+            height: 1600px;
+            left: 0;
+            background: url("../../media/accommodation/laVillaMobile.jpg") no-repeat;
+            background-size: 100% 100%;
+
+
+        }
+
+        #villa{
+            height: 200px;
+            overflow: hidden;
+            position: relative;
+            margin-top: 0 !important;
+            .sectionBanner{
+                .sectionHeading{
+                    transform: none !important;
+                }
+
+                .description{
+                    top: 150px !important;
+                }
+
+                .comments{
+                    position: absolute;
+                    height: 1200px;
+                    top: 6600px;
+                    background: url("../../media/accommodation/LaVilla/AvisVilla.jpg") no-repeat;
+                    background-size: cover;
+                    margin-left: 0 !important;
+
+                    .quotation{
+                        display: block !important;
+                        width: 400px;
+                        height: 400px;
+                        top: 50px;
+                        left: -80px;
+                    }
+                    .slider{
+                        width: 800px !important;
+                        height: 1000px !important;
+                        margin-left: 100px !important;
+                        top: 0 !important;
+
+                        .slick-prev::before, .slick-next::before{
+                            display: none;
+                        }
+
+                        .post{
+                            height: 800px !important;
+                            p{
+                                font-size: 50pt;
+                                width: 750px !important;
+                            }
+
+                            span{
+                                font-size: 55pt;
+                                top: 100px;
+                            }
+                        }
+                    }
+
+                }
+
+            }
+
+
+            .sectionDetails{
+                top: 2800px;
+                position: absolute;
+                height: 7000px;
+                width: 100%;
+
+                .priceAndReservation{
+                    margin-top: 4450px !important;
+                }
+
+                .services{
+                    position: absolute;
+                    top: 600px;
+                    width: 100%;
+
+                    .serviceIcons{
+                        position: absolute;
+                        width: 150px;
+                        left: 50%;
+                        margin-left: -20px;
+                        img{
+
+                            width: 150px;
+                            height: 120px;
+                            margin-bottom: 300px;
+                            
+                        }
+
+                    }
+
+                    
+                    .serviceDescription{
+                        position: absolute;
+                        left: 50%;
+                        margin-left: -240px;
+                        border: none;
+                        p{
+                            text-align: center;
+                            margin-left: 0;
+                            margin-top: 200px;
+                            margin-bottom: 320px !important;
+                        }
+
+                        p:nth-child(2){
+                            margin-bottom: 390px;
+                        }
+
+                        p:nth-child(3), p:nth-child(4), p:nth-child(5), p:nth-child(6), p:nth-child(7), p:nth-child(8){
+                            margin-bottom: 370px !important;
+                        }
+
+                    }
+                }
+
+
+            }
+           
+        }
+
+        #nest{
+            position: relative;
+            overflow: hidden;
+            height: 300px;
+
+
+            .sectionBanner{
+                height: 3200px;
+                .comments{
+                    position: absolute;
+                    height: 1200px;
+                    top: 6500px;
+                    background: url("../../media/accommodation/LeNid/AvisNid.jpg") no-repeat;
+                    background-size: cover;
+
+                    .quotation{
+                        width: 400px;
+                        height: 400px;
+                        top: 50px;
+                        left: -80px;
+                    }
+                    .slider{
+                        width: 800px;
+                        height: 1000px;
+                        margin-right: 100px;
+
+                        .slick-prev::before, .slick-next::before{
+                            display: none;
+                        }
+
+                        .post{
+                            height: 800px;
+                            p{
+                                font-size: 50pt;
+                                width: 750px;
+                            }
+
+                            span{
+                                font-size: 55pt;
+                                top: 100px;
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            .sectionDetails{
+                height: 6300px;
+
+                .priceAndReservation{
+                    margin-bottom: -4500px;
+                }
+                
+
+
+
+                .services{
+                    position: absolute;
+                    top: 600px;
+                    width: 100%;
+
+                    .serviceIcons{
+                        position: absolute;
+                        width: 150px;
+                        left: 50%;
+                        margin-left: -20px;
+                        img{
+
+                            width: 150px;
+                            height: 120px;
+                            margin-bottom: 300px;
+                            
+                        }
+
+                    }
+
+                    
+                    .serviceDescription{
+                        position: absolute;
+                        left: 50%;
+                        margin-left: -190px;
+                        border: none;
+                        p{
+                            text-align: center;
+                            margin-left: 0;
+                            margin-top: 200px;
+                            margin-bottom: 300px;
+                        }
+
+                        p:nth-child(2){
+                            margin-bottom: 390px;
+                        }
+
+                        p:nth-child(3), p:nth-child(4), p:nth-child(5){
+                            margin-bottom: 350px;
+                        }
+                    }
+                }
+            }
+
+
+
+            
+
+        }
+    }
+
+}
+
+@media screen and (min-width: 1920px){
+    body{
+        .section{
+            .sectionDetails{
+                position: relative;
+                width: 1920px;
+                left: 50vw;
+                margin-left: -900px;
+            }
+
+            /*.activitiesDetails{
+                position: relative;
+                width: 1920px;
+                left: 50vw;
+                margin-left: -750px !important;
+            }*/
+
+        }
+
+
+    }
+}
+
+
+
+
+
+
