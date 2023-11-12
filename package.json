@@ -31,7 +31,7 @@
     "copyFiles": "cp -rf src/plugins build/plugins && cp -rf src/media build/media && cp -rf src/fonts build/fonts && mkdir build/templates && cp -rf src/templates/menuIcons build/templates/menuIcons && cp -rf src/templates/sliderIcons build/templates/sliderIcons && cp -f public/* build/"
   },
   "devDependencies": {
-    "less": "^4.2.0",
+    "less": "^3.11.1",
     "php": "^1.0.2"
   },
   "author": "William Thiery",
