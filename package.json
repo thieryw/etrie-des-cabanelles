@@ -28,7 +28,7 @@
     "phpstables2": "php src/stables2.php -> build/stables2.html",
     "phpcontact": "php src/contact.php -> build/contact.html",
     "phplegal": "php src/legal.php -> build/legal.html",
-    "copyFiles": "cp -rf src/plugins build/plugins && cp -rf src/media build/media && cp -rf src/fonts build/fonts && mkdir build/templates && cp -rf src/templates/menuIcons build/templates/menuIcons && cp -rf src/templates/sliderIcons build/templates/sliderIcons"
+    "copyFiles": "cp -rf src/plugins build/plugins && cp -rf src/media build/media && cp -rf src/fonts build/fonts && mkdir build/templates && cp -rf src/templates/menuIcons build/templates/menuIcons && cp -rf src/templates/sliderIcons build/templates/sliderIcons && cp -f public/* build/"
   },
   "devDependencies": {
     "less": "^4.2.0",
