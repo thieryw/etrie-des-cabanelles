@@ -259,7 +259,7 @@ body .presentation .presentationContent {
   width: 1350px;
   height: 350px;
   left: 50%;
-  margin-left: -1350/2px;
+  margin-left: -675px;
 }
 body .presentation .presentationContent hr {
   color: white;

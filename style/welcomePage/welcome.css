@@ -63,7 +63,7 @@ body section .sectionParagraph .smallDivider {
 body section .largeDivider {
   position: absolute;
   left: 50%;
-  top: 250/2px;
+  top: 125px;
   height: 450px;
   width: 1px;
   border-left: solid grey 1px;
@@ -279,7 +279,7 @@ body .placePresentation .sectionParagraph a {
 body .placePresentation iframe {
   position: absolute;
   left: 1000px;
-  top: 300/2px;
+  top: 150px;
   box-shadow: 0px 0px 30px #797272;
 }
 body .welcomeBanner .mainHeading {

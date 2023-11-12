@@ -78,7 +78,7 @@ body .galleryBanner .mainHeading {
   width: 380px;
   left: 50%;
   margin-top: -150px;
-  margin-left: -380/2px;
+  margin-left: -190px;
   transform: none;
 }
 body .galleryBanner .mainHeading h1 {
@@ -136,7 +136,7 @@ body .galleryContainer .creditPhoto {
 }
 body .galleryContainer #gallery {
   left: 50%;
-  margin-left: -1400/2px;
+  margin-left: -700px;
   width: 1400px;
 }
 body .galleryContainer #gallery img {
@@ -199,11 +199,11 @@ body .galleryContainer #gallery img:hover {
     left: 50%;
   }
   body .galleryBanner .mainHeading h1 {
-    margin-left: -369/2px;
+    margin-left: -184.5px;
     margin-top: -100px;
   }
   body .galleryBanner .mainHeading p {
-    margin-left: -539/2px;
+    margin-left: -269.5px;
   }
 }
 @media screen and (max-device-width: 500px) and (orientation: portrait) {
