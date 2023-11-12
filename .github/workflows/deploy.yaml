@@ -13,6 +13,7 @@ jobs:
       with:
         node-version: '16'
     - run: |
+        npm install --frozen-lockfile
         npm run build
     - run: git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${{github.repository}}.git
       env:

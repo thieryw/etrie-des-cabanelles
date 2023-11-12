@@ -30,6 +30,10 @@
     "phplegal": "php src/legal.php -> build/legal.html",
     "copyFiles": "cp -rf src/plugins build/plugins && cp -rf src/media build/media && cp -rf src/fonts build/fonts && mkdir build/templates && cp -rf src/templates/menuIcons build/templates/menuIcons && cp -rf src/templates/sliderIcons build/templates/sliderIcons"
   },
+  "devDependencies": {
+    "less": "^4.2.0",
+    "php": "^1.0.2"
+  },
   "author": "William Thiery",
   "license": "MIT"
 }
