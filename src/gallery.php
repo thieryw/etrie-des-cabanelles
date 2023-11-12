@@ -6,7 +6,7 @@
     <title>Galerie</title>
     <link rel="stylesheet" href="./style/main.css">
     <link rel="stylesheet" href="./style/gallery.css">
-    <link rel="stylesheet" href="./src/plugins/Justified-Gallery-master/dist/css/justifiedGallery.css">
+    <link rel="stylesheet" href="./plugins/Justified-Gallery-master/dist/css/justifiedGallery.css">
     
 </head>
     
