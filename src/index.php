@@ -31,9 +31,9 @@
     <title>l'Étrier des Cabanelles</title>
     <link rel="stylesheet" href="./style/main.css">
     <link rel="stylesheet" href="./style/welcomePage/welcome.css">
-    <link rel="stylesheet" href="./src/plugins/vegas/dist/vegas.css">
+    <link rel="stylesheet" href="./plugins/vegas/dist/vegas.css">
     <link rel="stylesheet" href="./style/carousel.css">
-    <link rel="stylesheet" href="./src/plugins/aos-master/dist/aos.css">
+    <link rel="stylesheet" href="./plugins/aos-master/dist/aos.css">
 </head>
 <body>
 
@@ -255,12 +255,12 @@
     
     <?php include(__DIR__."/templates/footer.php")?>
 
-    <script src="./src/plugins/jquery.min.js"></script>
-    <script src="./src/plugins/jsScripts/navMenu.js"></script>
-    <script src="./src/plugins/vegas/dist/vegas.min.js"></script>
-    <script src="./src/plugins/slick-1.8.1/slick/slick.min.js"></script>
-    <script src="./src/plugins/jsScripts/scripts.js"></script>
-    <script src="./src/plugins/aos-master/dist/aos.js"></script>
+    <script src="./plugins/jquery.min.js"></script>
+    <script src="./plugins/jsScripts/navMenu.js"></script>
+    <script src="./plugins/vegas/dist/vegas.min.js"></script>
+    <script src="./plugins/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="./plugins/jsScripts/scripts.js"></script>
+    <script src="./plugins/aos-master/dist/aos.js"></script>
     <script>
         AOS.init({
             startEvent: 'load',

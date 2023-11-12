@@ -341,10 +341,10 @@ $staffArray = [
 
     <?php include(__DIR__."/templates/footer.php")?>
 
-    <script src="./src/plugins/jquery.min.js"></script>
-    <script src="./src/plugins/jsScripts/navMenu.js"></script>
-    <script src="./src/plugins/jsScripts/serviceContentUnfolder.js"></script>
-    <script src="./src/plugins/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="./plugins/jquery.min.js"></script>
+    <script src="./plugins/jsScripts/navMenu.js"></script>
+    <script src="./plugins/jsScripts/serviceContentUnfolder.js"></script>
+    <script src="./plugins/slick-1.8.1/slick/slick.min.js"></script>
 
     <script>
         const textSection = getSectionWithHiddenText(3);

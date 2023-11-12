@@ -64,7 +64,7 @@ function createContactButton(){
     <title>Ecuries</title>
     <link rel="stylesheet" href="./style/main.css">
     <link rel="stylesheet" href="./style/stables/service.css">
-    <link rel="stylesheet" href="./src/plugins/aos-master/dist/aos.css">
+    <link rel="stylesheet" href="./plugins/aos-master/dist/aos.css">
 </head>
 <body>
 
@@ -522,10 +522,10 @@ function createContactButton(){
 
     <?php include(__DIR__."/templates/footer.php")?>
 
-    <script src="./src/plugins/jquery.min.js"></script>
-    <script src="./src/plugins/aos-master/dist/aos.js"></script>
-    <script src="./src/plugins/jsScripts/navMenu.js"></script>
-    <script src="./src/plugins/jsScripts/serviceContentUnfolder.js"></script>
+    <script src="./plugins/jquery.min.js"></script>
+    <script src="./plugins/aos-master/dist/aos.js"></script>
+    <script src="./plugins/jsScripts/navMenu.js"></script>
+    <script src="./plugins/jsScripts/serviceContentUnfolder.js"></script>
     <script>
         AOS.init({
             startEvent: 'load',

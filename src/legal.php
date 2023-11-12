@@ -157,7 +157,7 @@
     <?php include(__DIR__."/templates/footer.php") ?>
 
 
-    <script src="./src/plugins/jsScripts/navMenu.js"></script>
+    <script src="./plugins/jsScripts/navMenu.js"></script>
 </body>
 
 </html>
