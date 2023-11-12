@@ -1,0 +1,792 @@
+body .banner {
+  background: url("../../media/accommodation/banniere.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+body .localization {
+  position: relative;
+  height: 250px;
+  min-width: 1000px;
+  padding-bottom: 40px;
+  overflow-x: hidden;
+}
+body .localization .text {
+  width: 950px;
+  margin-left: 50%;
+  transform: translate(-450px, 40px);
+}
+body .localization .text img {
+  position: absolute;
+  width: 80px;
+  height: 100px;
+  left: -100px;
+  top: 40px;
+}
+body .localization .text h2 {
+  font-family: 'freight', Arial, Helvetica, sans-serif;
+  color: #b56105;
+  font-weight: 100;
+  font-size: 22pt;
+}
+body .localization .text h2 .mobileCariageReturn {
+  display: none;
+}
+body .localization .text p {
+  font-family: 'futuraStd', Arial, Helvetica, sans-serif;
+}
+@media screen and (max-width: 1620px) {
+  .accommodationBanner .mainHeading {
+    width: 420px !important;
+    height: 180px !important;
+    margin-left: -210px !important;
+    margin-top: -45px;
+  }
+}
+@media screen and (max-width: 1680px) {
+  body .pagePresentation {
+    height: 350px !important;
+  }
+  body .pagePresentation .pageItems {
+    position: absolute !important;
+    left: 50% !important;
+    margin-left: -510px !important;
+    width: 1020px !important;
+    height: 260px !important;
+  }
+  body .pagePresentation .pageItems .item {
+    width: 300px !important;
+    height: 200px !important;
+    margin-top: 30px !important;
+    margin-left: 30px !important;
+  }
+  body .pagePresentation .pageItems .item a p {
+    font-size: 19pt !important;
+    margin-top: 80px !important;
+  }
+  body .pagePresentation .pageItems .item a h1 {
+    font-size: 19pt !important;
+    margin-left: 70px !important;
+  }
+}
+@media screen and (max-width: 1100px) {
+  body .pagePresentation {
+    height: 1200px !important;
+  }
+  body .pagePresentation .pageItems {
+    flex-direction: column !important;
+    height: 1200px !important;
+    width: 510px !important;
+    margin-left: -245px !important;
+  }
+  body .pagePresentation .pageItems .item {
+    width: 450px !important;
+    height: 300px !important;
+    margin-top: 50px !important;
+  }
+  body .pagePresentation .pageItems .item a p {
+    margin-top: 120px !important;
+    font-size: 25pt !important;
+  }
+  body .pagePresentation .pageItems .item a h1 {
+    font-size: 25pt !important;
+  }
+}
+@media screen and (max-width: 1100px) {
+  body .localization img {
+    display: none;
+  }
+}
+@media screen and (max-width: 1000px) and (min-height: 1100px) {
+  body .accommodationBanner {
+    background: url(../../media/accommodation/banniereMobile.jpg) no-repeat;
+    background-size: 100% 100%;
+  }
+  body .accommodationBanner .mainHeading {
+    background: none !important;
+    margin-top: -100px !important;
+  }
+  body .accommodationBanner .mainHeading h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -228px !important;
+    margin-left: -350px !important;
+  }
+  body .accommodationBanner .mainHeading p {
+    position: absolute;
+    top: 50%;
+    left: 277px;
+    width: 400px;
+  }
+}
+@media screen and (max-device-width: 500px) and (orientation: portrait) {
+  body,
+  html {
+    overflow-x: hidden;
+  }
+  body .localization,
+  html .localization {
+    height: 1000px;
+    overflow-x: unset;
+  }
+  body .localization img,
+  html .localization img {
+    display: block;
+    margin-left: 250px;
+    margin-top: 20px;
+    transform: scale(1.6);
+  }
+  body .localization h2,
+  html .localization h2 {
+    margin-left: 300px;
+  }
+  body .localization h2 .mobileCariageReturn,
+  html .localization h2 .mobileCariageReturn {
+    display: inline !important;
+  }
+  body .localization h2 span,
+  html .localization h2 span {
+    font-size: 55pt;
+    position: relative;
+    top: -30px;
+  }
+  body .localization p,
+  html .localization p {
+    position: relative;
+    left: -25px;
+    text-align: center;
+    margin: 0;
+  }
+  body .pagePresentation,
+  html .pagePresentation {
+    display: none;
+  }
+  body #activities::before,
+  html #activities::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1400px;
+    left: 0;
+    top: 300px;
+    background: url("../../media/accommodation/activitesMobile.jpg") no-repeat;
+    background-size: 100% 100%;
+  }
+  body #activities,
+  html #activities {
+    height: 300px;
+    position: relative;
+    margin-top: 0;
+    overflow: hidden;
+  }
+  body #activities .expandButton,
+  html #activities .expandButton {
+    z-index: 5;
+  }
+  body #activities .extras,
+  html #activities .extras {
+    background: none !important;
+    margin-top: -1350px;
+  }
+  body #activities .extras img,
+  html #activities .extras img {
+    display: none;
+  }
+  body #activities .extras .extraHeading,
+  html #activities .extras .extraHeading {
+    font-size: 25pt !important;
+    margin-left: 320px;
+  }
+  body #activities .extras .list,
+  html #activities .extras .list {
+    border: unset;
+    border-top: solid black 1px;
+    width: 800px !important;
+    margin-left: 100px !important;
+    left: 0;
+    margin-top: -150px;
+  }
+  body #activities .extras .list p,
+  html #activities .extras .list p {
+    font-size: 30pt !important;
+    margin-bottom: 100px;
+  }
+  body #activities .extras .list .list1 p,
+  html #activities .extras .list .list1 p {
+    text-align: left !important;
+  }
+  body #activities .extras .list .list2,
+  html #activities .extras .list .list2 {
+    margin-top: 75px;
+    right: 370px;
+  }
+  body #activities .activitiesDetails,
+  html #activities .activitiesDetails {
+    height: 5000px !important;
+  }
+  body #activities .activitiesDetails .neighborActivities,
+  html #activities .activitiesDetails .neighborActivities {
+    transform: none !important;
+    position: relative;
+    top: 2000px;
+    left: 330px;
+  }
+  body #activities .activitiesDetails .neighborActivities .miniTitle,
+  html #activities .activitiesDetails .neighborActivities .miniTitle {
+    font-size: 25pt !important;
+    width: 200px;
+    margin-left: 700px;
+    margin-bottom: 0;
+  }
+  body #activities .activitiesDetails .neighborActivities .neighborItems .item .itemPicture,
+  html #activities .activitiesDetails .neighborActivities .neighborItems .item .itemPicture {
+    display: none !important;
+  }
+  body #activities .activitiesDetails .neighborActivities .neighborItems .item .itemText,
+  html #activities .activitiesDetails .neighborActivities .neighborItems .item .itemText {
+    width: 900px;
+  }
+  body #activities .activitiesDetails .neighborActivities .neighborItems .item .itemText hr,
+  html #activities .activitiesDetails .neighborActivities .neighborItems .item .itemText hr {
+    width: 800px;
+    margin-left: 30px;
+  }
+  body #activities .activitiesDetails .neighborActivities .neighborItems .item .itemText h2,
+  html #activities .activitiesDetails .neighborActivities .neighborItems .item .itemText h2 {
+    font-size: 50pt !important;
+    margin-bottom: -10px !important;
+    margin-top: 30px;
+    margin-left: 40px;
+  }
+  body #activities .activitiesDetails .neighborActivities .neighborItems .item .itemText p,
+  html #activities .activitiesDetails .neighborActivities .neighborItems .item .itemText p {
+    font-size: 35pt;
+    margin-left: 40px;
+  }
+  body #activities .activitiesDetails .localActivities,
+  html #activities .activitiesDetails .localActivities {
+    transform: none !important;
+    height: 1100px;
+  }
+  body #activities .activitiesDetails .localActivities .localInfo,
+  html #activities .activitiesDetails .localActivities .localInfo {
+    position: absolute;
+    text-align: center;
+    top: 1400px;
+    width: 900px;
+    margin-left: -50px !important;
+  }
+  body #activities .activitiesDetails .localActivities .localInfo .generalText,
+  html #activities .activitiesDetails .localActivities .localInfo .generalText {
+    width: 100%;
+  }
+  body #activities .activitiesDetails .localActivities .localInfo hr,
+  html #activities .activitiesDetails .localActivities .localInfo hr {
+    display: none;
+  }
+  body #activities .activitiesDetails .localActivities .localInfo .miniTitle,
+  html #activities .activitiesDetails .localActivities .localInfo .miniTitle {
+    display: none;
+  }
+  body #activities .activitiesDetails .localActivities .localInfo .mobileCariageReturn,
+  html #activities .activitiesDetails .localActivities .localInfo .mobileCariageReturn {
+    display: inline;
+  }
+  body #activities .activitiesDetails .localActivities .localInfo h2 span,
+  html #activities .activitiesDetails .localActivities .localInfo h2 span {
+    color: black;
+    font-size: 50pt;
+  }
+  body #activities .activitiesDetails .localActivities .localInfo .smallDivider,
+  html #activities .activitiesDetails .localActivities .localInfo .smallDivider {
+    margin-left: 430px !important;
+    display: block;
+  }
+  body #activities .activitiesDetails .localActivities .localInfo h3,
+  html #activities .activitiesDetails .localActivities .localInfo h3 {
+    display: none;
+  }
+  body #activities .activitiesDetails .localActivities img,
+  html #activities .activitiesDetails .localActivities img {
+    position: relative;
+    left: -95px;
+    width: 900px;
+    height: 1400px;
+    margin-top: -100px;
+  }
+  body #activities .sectionBanner,
+  html #activities .sectionBanner {
+    background: none;
+    height: 2400px;
+  }
+  body #activities .sectionBanner .sectionHeading,
+  html #activities .sectionBanner .sectionHeading {
+    position: absolute;
+    border: none;
+    background: none;
+    width: 900px !important;
+    top: 1800px;
+    text-align: center;
+    transform: none;
+  }
+  body #activities .sectionBanner .sectionHeading h1,
+  html #activities .sectionBanner .sectionHeading h1 {
+    color: black;
+    font-size: 75pt !important;
+  }
+  body #activities .sectionBanner .sectionHeading h2,
+  html #activities .sectionBanner .sectionHeading h2 {
+    color: #b56105;
+  }
+  body #activities .sectionBanner .sectionHeading hr,
+  html #activities .sectionBanner .sectionHeading hr {
+    display: none;
+  }
+  body #nest::before,
+  html #nest::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1600px;
+    top: 300px;
+    left: 0;
+    background: url(../../media/accommodation/LeNid/BannerMobile.jpg);
+    background-size: 100% 100%;
+  }
+  body #nest,
+  html #nest,
+  body #villa,
+  html #villa {
+    overflow: hidden;
+  }
+  body #nest .expandButton,
+  html #nest .expandButton,
+  body #villa .expandButton,
+  html #villa .expandButton {
+    z-index: 5;
+  }
+  body #nest .sectionBanner,
+  html #nest .sectionBanner,
+  body #villa .sectionBanner,
+  html #villa .sectionBanner {
+    background: none !important;
+  }
+  body #nest .sectionBanner .sectionHeading,
+  html #nest .sectionBanner .sectionHeading,
+  body #villa .sectionBanner .sectionHeading,
+  html #villa .sectionBanner .sectionHeading {
+    width: 100%;
+    transform: none;
+    top: 1900px;
+  }
+  body #nest .sectionBanner .sectionHeading h1,
+  html #nest .sectionBanner .sectionHeading h1,
+  body #villa .sectionBanner .sectionHeading h1,
+  html #villa .sectionBanner .sectionHeading h1,
+  body #nest .sectionBanner .sectionHeading h2,
+  html #nest .sectionBanner .sectionHeading h2,
+  body #villa .sectionBanner .sectionHeading h2,
+  html #villa .sectionBanner .sectionHeading h2 {
+    text-align: center;
+  }
+  body #nest .sectionBanner .sectionHeading h1,
+  html #nest .sectionBanner .sectionHeading h1,
+  body #villa .sectionBanner .sectionHeading h1,
+  html #villa .sectionBanner .sectionHeading h1 {
+    color: black;
+    font-size: 75pt !important;
+  }
+  body #nest .sectionBanner .sectionHeading h2,
+  html #nest .sectionBanner .sectionHeading h2,
+  body #villa .sectionBanner .sectionHeading h2,
+  html #villa .sectionBanner .sectionHeading h2 {
+    color: #b56105;
+  }
+  body #nest .sectionBanner .sectionHeading hr,
+  html #nest .sectionBanner .sectionHeading hr,
+  body #villa .sectionBanner .sectionHeading hr,
+  html #villa .sectionBanner .sectionHeading hr {
+    display: none;
+  }
+  body #nest .sectionBanner aside,
+  html #nest .sectionBanner aside,
+  body #villa .sectionBanner aside,
+  html #villa .sectionBanner aside {
+    display: none;
+  }
+  body #nest .sectionBanner .description,
+  html #nest .sectionBanner .description,
+  body #villa .sectionBanner .description,
+  html #villa .sectionBanner .description {
+    width: 900px !important;
+    margin-left: 50px !important;
+    text-align: center !important;
+    margin-top: 2300px !important;
+    color: black;
+  }
+  body #nest .sectionDetails .sectionParagraph,
+  html #nest .sectionDetails .sectionParagraph,
+  body #villa .sectionDetails .sectionParagraph,
+  html #villa .sectionDetails .sectionParagraph {
+    display: none;
+  }
+  body #nest .sectionDetails .detailHeading,
+  html #nest .sectionDetails .detailHeading,
+  body #villa .sectionDetails .detailHeading,
+  html #villa .sectionDetails .detailHeading {
+    display: none;
+  }
+  body #nest .sectionDetails .sliderWrapper,
+  html #nest .sectionDetails .sliderWrapper,
+  body #villa .sectionDetails .sliderWrapper,
+  html #villa .sectionDetails .sliderWrapper {
+    width: 900px;
+    transform: none !important;
+    margin-left: 50px !important;
+  }
+  body #nest .sectionDetails .priceAndReservation,
+  html #nest .sectionDetails .priceAndReservation,
+  body #villa .sectionDetails .priceAndReservation,
+  html #villa .sectionDetails .priceAndReservation {
+    transform: none;
+    width: 800px;
+    margin-left: 100px;
+  }
+  body #nest .sectionDetails .priceAndReservation .normalPriceHeading,
+  html #nest .sectionDetails .priceAndReservation .normalPriceHeading,
+  body #villa .sectionDetails .priceAndReservation .normalPriceHeading,
+  html #villa .sectionDetails .priceAndReservation .normalPriceHeading {
+    display: none;
+  }
+  body #nest .sectionDetails .priceAndReservation .mobilePriceHeading,
+  html #nest .sectionDetails .priceAndReservation .mobilePriceHeading,
+  body #villa .sectionDetails .priceAndReservation .mobilePriceHeading,
+  html #villa .sectionDetails .priceAndReservation .mobilePriceHeading {
+    display: block;
+    text-align: center !important;
+    width: 100%;
+  }
+  body #nest .sectionDetails .priceAndReservation hr,
+  html #nest .sectionDetails .priceAndReservation hr,
+  body #villa .sectionDetails .priceAndReservation hr,
+  html #villa .sectionDetails .priceAndReservation hr {
+    display: none;
+  }
+  body #nest .sectionDetails .priceAndReservation .prices,
+  html #nest .sectionDetails .priceAndReservation .prices,
+  body #villa .sectionDetails .priceAndReservation .prices,
+  html #villa .sectionDetails .priceAndReservation .prices {
+    font-size: 30pt;
+    position: relative;
+  }
+  body #nest .sectionDetails .priceAndReservation .prices span,
+  html #nest .sectionDetails .priceAndReservation .prices span,
+  body #villa .sectionDetails .priceAndReservation .prices span,
+  html #villa .sectionDetails .priceAndReservation .prices span {
+    display: none;
+  }
+  body #nest .sectionDetails .priceAndReservation .prices strong,
+  html #nest .sectionDetails .priceAndReservation .prices strong,
+  body #villa .sectionDetails .priceAndReservation .prices strong,
+  html #villa .sectionDetails .priceAndReservation .prices strong {
+    position: absolute;
+    right: 0;
+  }
+  body #nest .sectionDetails .priceAndReservation .taxesInfo,
+  html #nest .sectionDetails .priceAndReservation .taxesInfo,
+  body #villa .sectionDetails .priceAndReservation .taxesInfo,
+  html #villa .sectionDetails .priceAndReservation .taxesInfo {
+    font-size: 25pt;
+    text-align: justify;
+  }
+  body #nest .sectionDetails .priceAndReservation .taxesInfo br,
+  html #nest .sectionDetails .priceAndReservation .taxesInfo br,
+  body #villa .sectionDetails .priceAndReservation .taxesInfo br,
+  html #villa .sectionDetails .priceAndReservation .taxesInfo br {
+    display: none;
+  }
+  body #nest .sectionDetails .priceAndReservation .communication,
+  html #nest .sectionDetails .priceAndReservation .communication,
+  body #villa .sectionDetails .priceAndReservation .communication,
+  html #villa .sectionDetails .priceAndReservation .communication {
+    flex-direction: column;
+    transform: scale(2.5);
+    margin-top: 400px;
+  }
+  body #nest .sectionDetails .priceAndReservation .communication .onlineReservation,
+  html #nest .sectionDetails .priceAndReservation .communication .onlineReservation,
+  body #villa .sectionDetails .priceAndReservation .communication .onlineReservation,
+  html #villa .sectionDetails .priceAndReservation .communication .onlineReservation {
+    border: none;
+  }
+  body #nest .sectionDetails .priceAndReservation .communication div,
+  html #nest .sectionDetails .priceAndReservation .communication div,
+  body #villa .sectionDetails .priceAndReservation .communication div,
+  html #villa .sectionDetails .priceAndReservation .communication div {
+    width: 100%;
+  }
+  body #nest .sectionDetails .priceAndReservation .communication .onlineReservation img,
+  html #nest .sectionDetails .priceAndReservation .communication .onlineReservation img,
+  body #villa .sectionDetails .priceAndReservation .communication .onlineReservation img,
+  html #villa .sectionDetails .priceAndReservation .communication .onlineReservation img {
+    margin-left: -30px;
+  }
+  body #nest .sectionDetails .priceAndReservation .communication .onlineReservation p,
+  html #nest .sectionDetails .priceAndReservation .communication .onlineReservation p,
+  body #villa .sectionDetails .priceAndReservation .communication .onlineReservation p,
+  html #villa .sectionDetails .priceAndReservation .communication .onlineReservation p {
+    margin-left: 0;
+  }
+  body #villa::before,
+  html #villa::before {
+    content: "";
+    position: absolute;
+    top: 300px;
+    width: 100%;
+    height: 1600px;
+    left: 0;
+    background: url("../../media/accommodation/laVillaMobile.jpg") no-repeat;
+    background-size: 100% 100%;
+  }
+  body #villa,
+  html #villa {
+    height: 200px;
+    overflow: hidden;
+    position: relative;
+    margin-top: 0 !important;
+  }
+  body #villa .sectionBanner .sectionHeading,
+  html #villa .sectionBanner .sectionHeading {
+    transform: none !important;
+  }
+  body #villa .sectionBanner .description,
+  html #villa .sectionBanner .description {
+    top: 150px !important;
+  }
+  body #villa .sectionBanner .comments,
+  html #villa .sectionBanner .comments {
+    position: absolute;
+    height: 1200px;
+    top: 6600px;
+    background: url("../../media/accommodation/LaVilla/AvisVilla.jpg") no-repeat;
+    background-size: cover;
+    margin-left: 0 !important;
+  }
+  body #villa .sectionBanner .comments .quotation,
+  html #villa .sectionBanner .comments .quotation {
+    display: block !important;
+    width: 400px;
+    height: 400px;
+    top: 50px;
+    left: -80px;
+  }
+  body #villa .sectionBanner .comments .slider,
+  html #villa .sectionBanner .comments .slider {
+    width: 800px !important;
+    height: 1000px !important;
+    margin-left: 100px !important;
+    top: 0 !important;
+  }
+  body #villa .sectionBanner .comments .slider .slick-prev::before,
+  html #villa .sectionBanner .comments .slider .slick-prev::before,
+  body #villa .sectionBanner .comments .slider .slick-next::before,
+  html #villa .sectionBanner .comments .slider .slick-next::before {
+    display: none;
+  }
+  body #villa .sectionBanner .comments .slider .post,
+  html #villa .sectionBanner .comments .slider .post {
+    height: 800px !important;
+  }
+  body #villa .sectionBanner .comments .slider .post p,
+  html #villa .sectionBanner .comments .slider .post p {
+    font-size: 50pt;
+    width: 750px !important;
+  }
+  body #villa .sectionBanner .comments .slider .post span,
+  html #villa .sectionBanner .comments .slider .post span {
+    font-size: 55pt;
+    top: 100px;
+  }
+  body #villa .sectionDetails,
+  html #villa .sectionDetails {
+    top: 2800px;
+    position: absolute;
+    height: 7000px;
+    width: 100%;
+  }
+  body #villa .sectionDetails .priceAndReservation,
+  html #villa .sectionDetails .priceAndReservation {
+    margin-top: 4450px !important;
+  }
+  body #villa .sectionDetails .services,
+  html #villa .sectionDetails .services {
+    position: absolute;
+    top: 600px;
+    width: 100%;
+  }
+  body #villa .sectionDetails .services .serviceIcons,
+  html #villa .sectionDetails .services .serviceIcons {
+    position: absolute;
+    width: 150px;
+    left: 50%;
+    margin-left: -20px;
+  }
+  body #villa .sectionDetails .services .serviceIcons img,
+  html #villa .sectionDetails .services .serviceIcons img {
+    width: 150px;
+    height: 120px;
+    margin-bottom: 300px;
+  }
+  body #villa .sectionDetails .services .serviceDescription,
+  html #villa .sectionDetails .services .serviceDescription {
+    position: absolute;
+    left: 50%;
+    margin-left: -240px;
+    border: none;
+  }
+  body #villa .sectionDetails .services .serviceDescription p,
+  html #villa .sectionDetails .services .serviceDescription p {
+    text-align: center;
+    margin-left: 0;
+    margin-top: 200px;
+    margin-bottom: 320px !important;
+  }
+  body #villa .sectionDetails .services .serviceDescription p:nth-child(2),
+  html #villa .sectionDetails .services .serviceDescription p:nth-child(2) {
+    margin-bottom: 390px;
+  }
+  body #villa .sectionDetails .services .serviceDescription p:nth-child(3),
+  html #villa .sectionDetails .services .serviceDescription p:nth-child(3),
+  body #villa .sectionDetails .services .serviceDescription p:nth-child(4),
+  html #villa .sectionDetails .services .serviceDescription p:nth-child(4),
+  body #villa .sectionDetails .services .serviceDescription p:nth-child(5),
+  html #villa .sectionDetails .services .serviceDescription p:nth-child(5),
+  body #villa .sectionDetails .services .serviceDescription p:nth-child(6),
+  html #villa .sectionDetails .services .serviceDescription p:nth-child(6),
+  body #villa .sectionDetails .services .serviceDescription p:nth-child(7),
+  html #villa .sectionDetails .services .serviceDescription p:nth-child(7),
+  body #villa .sectionDetails .services .serviceDescription p:nth-child(8),
+  html #villa .sectionDetails .services .serviceDescription p:nth-child(8) {
+    margin-bottom: 370px !important;
+  }
+  body #nest,
+  html #nest {
+    position: relative;
+    overflow: hidden;
+    height: 300px;
+  }
+  body #nest .sectionBanner,
+  html #nest .sectionBanner {
+    height: 3200px;
+  }
+  body #nest .sectionBanner .comments,
+  html #nest .sectionBanner .comments {
+    position: absolute;
+    height: 1200px;
+    top: 6500px;
+    background: url("../../media/accommodation/LeNid/AvisNid.jpg") no-repeat;
+    background-size: cover;
+  }
+  body #nest .sectionBanner .comments .quotation,
+  html #nest .sectionBanner .comments .quotation {
+    width: 400px;
+    height: 400px;
+    top: 50px;
+    left: -80px;
+  }
+  body #nest .sectionBanner .comments .slider,
+  html #nest .sectionBanner .comments .slider {
+    width: 800px;
+    height: 1000px;
+    margin-right: 100px;
+  }
+  body #nest .sectionBanner .comments .slider .slick-prev::before,
+  html #nest .sectionBanner .comments .slider .slick-prev::before,
+  body #nest .sectionBanner .comments .slider .slick-next::before,
+  html #nest .sectionBanner .comments .slider .slick-next::before {
+    display: none;
+  }
+  body #nest .sectionBanner .comments .slider .post,
+  html #nest .sectionBanner .comments .slider .post {
+    height: 800px;
+  }
+  body #nest .sectionBanner .comments .slider .post p,
+  html #nest .sectionBanner .comments .slider .post p {
+    font-size: 50pt;
+    width: 750px;
+  }
+  body #nest .sectionBanner .comments .slider .post span,
+  html #nest .sectionBanner .comments .slider .post span {
+    font-size: 55pt;
+    top: 100px;
+  }
+  body #nest .sectionDetails,
+  html #nest .sectionDetails {
+    height: 6300px;
+  }
+  body #nest .sectionDetails .priceAndReservation,
+  html #nest .sectionDetails .priceAndReservation {
+    margin-bottom: -4500px;
+  }
+  body #nest .sectionDetails .services,
+  html #nest .sectionDetails .services {
+    position: absolute;
+    top: 600px;
+    width: 100%;
+  }
+  body #nest .sectionDetails .services .serviceIcons,
+  html #nest .sectionDetails .services .serviceIcons {
+    position: absolute;
+    width: 150px;
+    left: 50%;
+    margin-left: -20px;
+  }
+  body #nest .sectionDetails .services .serviceIcons img,
+  html #nest .sectionDetails .services .serviceIcons img {
+    width: 150px;
+    height: 120px;
+    margin-bottom: 300px;
+  }
+  body #nest .sectionDetails .services .serviceDescription,
+  html #nest .sectionDetails .services .serviceDescription {
+    position: absolute;
+    left: 50%;
+    margin-left: -190px;
+    border: none;
+  }
+  body #nest .sectionDetails .services .serviceDescription p,
+  html #nest .sectionDetails .services .serviceDescription p {
+    text-align: center;
+    margin-left: 0;
+    margin-top: 200px;
+    margin-bottom: 300px;
+  }
+  body #nest .sectionDetails .services .serviceDescription p:nth-child(2),
+  html #nest .sectionDetails .services .serviceDescription p:nth-child(2) {
+    margin-bottom: 390px;
+  }
+  body #nest .sectionDetails .services .serviceDescription p:nth-child(3),
+  html #nest .sectionDetails .services .serviceDescription p:nth-child(3),
+  body #nest .sectionDetails .services .serviceDescription p:nth-child(4),
+  html #nest .sectionDetails .services .serviceDescription p:nth-child(4),
+  body #nest .sectionDetails .services .serviceDescription p:nth-child(5),
+  html #nest .sectionDetails .services .serviceDescription p:nth-child(5) {
+    margin-bottom: 350px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  body .section {
+    /*.activitiesDetails{
+                position: relative;
+                width: 1920px;
+                left: 50vw;
+                margin-left: -750px !important;
+            }*/
+  }
+  body .section .sectionDetails {
+    position: relative;
+    width: 1920px;
+    left: 50vw;
+    margin-left: -900px;
+  }
+}

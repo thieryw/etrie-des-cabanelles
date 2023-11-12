@@ -1,0 +1,224 @@
+@keyframes lightBoxFadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 100;
+  }
+}
+body #modal {
+  top: 0;
+  left: 0;
+  position: fixed;
+  display: none;
+  height: 100%;
+  width: 100%;
+  background: rgba(0, 0, 0, 0.85);
+  z-index: 100;
+}
+body #modal .close {
+  z-index: 200;
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  width: 30px;
+  transition: transform 200ms;
+}
+body #modal .close:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+body #modal .left,
+body #modal .right {
+  z-index: 200;
+  position: absolute;
+  height: 50px;
+  top: 50%;
+  margin-top: -25px;
+  transition: transform 200ms;
+}
+body #modal .right {
+  right: 20px;
+}
+body #modal .left {
+  left: 20px;
+}
+body #modal .left:hover,
+body #modal .right:hover {
+  cursor: pointer;
+  transform: scale(1.1);
+}
+body #modal .imageContainer {
+  position: absolute;
+  overflow: hidden;
+  opacity: 0;
+  display: none;
+  top: 50%;
+  left: 50%;
+  margin-left: -800px;
+  margin-top: -350px;
+  width: 1600px;
+  height: 700px;
+  text-align: center;
+}
+body #modal .imageContainer a {
+  position: relative;
+}
+body #modal .imageContainer a .lightBoxPicture {
+  height: 100%;
+}
+body .galleryBanner {
+  background: url("../media/gallery/Banner.jpg") no-repeat;
+  background-size: cover;
+  margin-bottom: 250px;
+  background-position-y: -100px;
+  height: 110vh;
+}
+body .galleryBanner .mainHeading {
+  width: 380px;
+  left: 50%;
+  margin-top: -150px;
+  margin-left: -380/2px;
+  transform: none;
+}
+body .galleryBanner .mainHeading h1 {
+  margin-bottom: -30px;
+  margin-top: 40px;
+}
+body .galleryBanner .mainHeading p {
+  color: #fdd79e;
+}
+body .galleryBanner .signature {
+  position: absolute;
+  left: 50%;
+  margin-left: -200px;
+  top: 75%;
+  text-align: center;
+  height: 360px;
+}
+body .galleryBanner .signature .smallDivider {
+  width: 150px;
+  border-top: solid #d18b0a 1px;
+  position: absolute;
+  left: 50%;
+  margin-left: -75px;
+}
+body .galleryBanner .signature .divider2 {
+  bottom: 0;
+}
+body .galleryBanner .signature p {
+  font-family: 'futuraStd', Arial, Helvetica, sans-serif;
+  color: #3d3c3c;
+  font-size: 17pt;
+  margin-top: 80px;
+}
+body .galleryBanner .signature a img {
+  width: 400px;
+}
+body .galleryBanner #loading {
+  position: absolute;
+  width: 150px;
+  bottom: -230px;
+  left: 50%;
+  margin-left: -75px;
+}
+body .galleryContainer {
+  position: relative;
+  width: 100%;
+  justify-content: center;
+  margin-bottom: 200px;
+  margin-top: -200px;
+}
+body .galleryContainer .creditPhoto {
+  position: absolute;
+  bottom: -50px;
+  left: 64%;
+}
+body .galleryContainer #gallery {
+  left: 50%;
+  margin-left: -1400/2px;
+  width: 1400px;
+}
+body .galleryContainer #gallery img {
+  transition-duration: 300ms;
+  transition-property: transform;
+}
+body .galleryContainer #gallery img:hover {
+  transform: scale(1.06);
+  cursor: pointer;
+}
+@media screen and (max-width: 1660px) {
+  body .galleryContainer #gallery {
+    width: 1400px;
+    margin-left: -700px;
+  }
+}
+@media screen and (max-width: 1620px) {
+  body .galleryContainer .creditPhoto {
+    left: 73%;
+  }
+  body .galleryBanner .mainHeading {
+    width: 320px;
+    height: 180px;
+    margin-left: -160px;
+    margin-top: -50px;
+  }
+  body .galleryBanner .signature {
+    transform: scale(0.8);
+  }
+}
+@media screen and (max-width: 1450px) {
+  body .galleryContainer .creditPhoto {
+    left: 10%;
+  }
+  body .galleryContainer #gallery {
+    width: 1200px;
+    margin-left: -600px;
+  }
+}
+@media screen and (max-width: 1250px) {
+  body .galleryContainer #gallery {
+    width: 1000px;
+    margin-left: -500px;
+  }
+}
+@media screen and (max-width: 1000px) and (min-height: 1100px) {
+  body .galleryBanner {
+    background: url("../media/gallery/GalerieBannerMobile.jpg") no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+  body .galleryBanner .mainHeading {
+    background: none;
+    margin-top: -100px;
+  }
+  body .galleryBanner .mainHeading h1,
+  body .galleryBanner .mainHeading p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  body .galleryBanner .mainHeading h1 {
+    margin-left: -369/2px;
+    margin-top: -100px;
+  }
+  body .galleryBanner .mainHeading p {
+    margin-left: -539/2px;
+  }
+}
+@media screen and (max-device-width: 500px) and (orientation: portrait) {
+  body #modal .close,
+  body #modal .left,
+  body #modal .right {
+    transform: scale(2.5);
+  }
+  body #modal .close:hover,
+  body #modal .left:hover,
+  body #modal .right:hover {
+    transform: scale(2.7) !important;
+  }
+  body #modal .close {
+    margin-right: 30px;
+    margin-top: 30px;
+  }
+}

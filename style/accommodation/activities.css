@@ -1,0 +1,229 @@
+#activities {
+  margin-top: 100px;
+}
+#activities .extras {
+  position: relative;
+  margin-top: 50px;
+  height: 600px;
+  background-color: #f7f3f7;
+}
+#activities .extras .extraHeading {
+  font-family: 'freight', Arial, Helvetica, sans-serif;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  top: 70px;
+  font-size: 15pt;
+  letter-spacing: 0.05em;
+}
+#activities .extras .list {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-top: -180px;
+  margin-left: -300px;
+  width: 600px;
+  height: 400px;
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border: solid grey 1px;
+}
+#activities .extras .list p {
+  font-family: 'freight', Arial, Helvetica, sans-serif;
+  color: #b56105;
+  font-size: 17pt;
+  margin-top: 42px;
+  letter-spacing: 0.1em;
+}
+#activities .extras .list .list1 {
+  position: absolute;
+  left: 50px;
+}
+#activities .extras .list .list1 p {
+  text-align: right;
+}
+#activities .extras .list .list2 {
+  position: absolute;
+  right: 50px;
+}
+#activities .extras img {
+  position: absolute;
+  top: 0;
+  right: 10%;
+}
+#activities .sectionBanner {
+  position: relative;
+  background: url("../../media/accommodation/ACTIVITES/Baner.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 600px;
+  min-height: 600px;
+}
+#activities .sectionBanner .sectionHeading {
+  border: solid white 1px;
+  width: 600px;
+  background-color: rgba(12, 12, 12, 0.12);
+  position: relative;
+  top: 250px;
+  height: 250px;
+}
+#activities .sectionBanner .sectionHeading h1,
+#activities .sectionBanner .sectionHeading h2,
+#activities .sectionBanner .sectionHeading hr {
+  margin-left: 80px;
+}
+#activities .activitiesDetails {
+  position: relative;
+  margin-top: 50px;
+  overflow: hidden;
+  height: 700px;
+}
+#activities .activitiesDetails .localActivities,
+#activities .activitiesDetails .neighborActivities {
+  position: absolute;
+  left: 50%;
+}
+#activities .activitiesDetails .localActivities {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  margin-left: -810px;
+}
+#activities .activitiesDetails .localActivities img {
+  width: 400px;
+  height: 600px;
+  position: relative;
+  margin-top: 20px;
+  margin-left: 50px;
+}
+#activities .activitiesDetails .localActivities .localInfo {
+  width: 350px;
+  height: 600px;
+  margin-left: 70px;
+}
+#activities .activitiesDetails .localActivities .localInfo p,
+#activities .activitiesDetails .localActivities .localInfo h2 {
+  font-family: 'freight', Arial, Helvetica, sans-serif;
+}
+#activities .activitiesDetails .localActivities .localInfo p {
+  font-size: 14pt;
+}
+#activities .activitiesDetails .localActivities .localInfo h2 {
+  color: #b56105;
+  font-weight: 100;
+  font-size: 25pt;
+}
+#activities .activitiesDetails .localActivities .localInfo .smallDivider {
+  display: none;
+}
+#activities .activitiesDetails .localActivities .localInfo .mobileCariageReturn {
+  display: none;
+}
+#activities .activitiesDetails .localActivities .localInfo h3 {
+  position: relative;
+  top: -20px;
+  font-family: 'futuraStd', Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 17pt;
+}
+#activities .activitiesDetails .localActivities .localInfo hr {
+  margin-top: 30px;
+}
+#activities .activitiesDetails .localActivities .localInfo .description {
+  font-family: 'futuraStd', Arial, Helvetica, sans-serif;
+  width: 350px;
+  margin-top: 60px;
+}
+#activities .activitiesDetails .localActivities .localInfo .orangeButton {
+  position: absolute;
+  margin-top: 37px;
+}
+#activities .activitiesDetails .neighborActivities {
+  margin-top: 10px;
+  margin-left: 150px;
+  width: 600px;
+}
+#activities .activitiesDetails .neighborActivities p {
+  font-family: 'freight', Arial, Helvetica, sans-serif;
+  font-size: 14pt;
+}
+#activities .activitiesDetails .neighborActivities .neighborItems {
+  display: flex;
+  flex-direction: column;
+}
+#activities .activitiesDetails .neighborActivities .neighborItems .item {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 30px;
+}
+#activities .activitiesDetails .neighborActivities .neighborItems .item .itemPicture {
+  position: relative;
+  width: 240px;
+  height: 167px;
+}
+#activities .activitiesDetails .neighborActivities .neighborItems .item .itemPicture img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+#activities .activitiesDetails .neighborActivities .neighborItems .item .itemPicture a {
+  position: absolute;
+  pointer-events: none;
+  cursor: default;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+#activities .activitiesDetails .neighborActivities .neighborItems .item .itemText {
+  width: 300px;
+  margin-left: 40px;
+  margin-top: 30px;
+}
+#activities .activitiesDetails .neighborActivities .neighborItems .item .itemText h2 {
+  font-family: 'freight', Arial, Helvetica, sans-serif;
+  color: #b56105;
+  font-weight: 100;
+}
+#activities .activitiesDetails .neighborActivities .neighborItems .item .itemText p {
+  font-family: 'futuraStd', Arial, Helvetica, sans-serif;
+  position: relative;
+  top: -20px;
+}
+@media screen and (max-width: 1620px) {
+  body #activities .activitiesDetails .localActivities {
+    transform: scale(0.8);
+    margin-left: -720px;
+  }
+  body #activities .activitiesDetails .neighborActivities {
+    transform: scale(0.8);
+    margin-left: 60px;
+  }
+  body #activities .activitiesDetails .neighborActivities .item {
+    padding-bottom: 20px !important;
+  }
+  body .extras .extraHeading {
+    font-size: 12pt !important;
+  }
+  body .extras .list {
+    width: 500px !important;
+    margin-left: -250px !important;
+  }
+  body .extras .list .list1 p,
+  body .extras .list .list2 p {
+    font-size: 13pt !important;
+  }
+}
+@media screen and (max-width: 1250px) {
+  body #activities .activitiesDetails {
+    height: 1200px;
+  }
+  body #activities .activitiesDetails .localActivities {
+    margin-left: -405px;
+  }
+  body #activities .activitiesDetails .neighborActivities {
+    margin-left: -300px;
+    margin-top: 600px;
+  }
+}

@@ -1,0 +1,177 @@
+.variousContentSlider {
+  position: absolute;
+  top: 150px;
+  height: 800px;
+  width: 1100px;
+  left: 50%;
+  margin-left: -550px;
+}
+.variousContentSlider .slick-prev::before,
+.variousContentSlider .slick-next::after {
+  position: absolute;
+  z-index: 4;
+  transform: scale(0.3);
+  cursor: pointer;
+  bottom: -20px;
+}
+.variousContentSlider .slick-prev::before {
+  content: url("../templates/sliderIcons/CarrousselLeft.png");
+  left: 28%;
+}
+.variousContentSlider .slick-next::after {
+  content: url("../templates/sliderIcons/CarrousselRight.png");
+  right: 28%;
+}
+.variousContentSlider .slide {
+  position: relative;
+  text-align: center;
+  height: 540px;
+  display: inline-block;
+  background-color: #fafaf1;
+  top: 100px;
+}
+.variousContentSlider .slide img {
+  width: 100% !important;
+}
+.variousContentSlider .slide h2 {
+  font-family: 'freight', Arial, Helvetica, sans-serif;
+  color: #b96a02;
+  font-weight: 100;
+  font-size: 24pt;
+  letter-spacing: 0.05em;
+}
+.variousContentSlider .slide .generalText {
+  position: absolute;
+  font-family: 'futuraStd', Arial, Helvetica, sans-serif;
+  width: 300px;
+  font-size: 13pt;
+  margin-left: 30px;
+}
+.variousContentSlider .slide .orangeButton {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  margin-left: -90px;
+}
+.variousContentSlider .slick-dots {
+  position: absolute;
+  bottom: 0;
+}
+.sliderWrapper {
+  position: absolute;
+  top: -70px;
+  left: 0;
+  width: 900px;
+  height: 600px;
+  margin-top: 100px;
+  margin-left: 600px;
+  overflow: hidden;
+  padding-top: 70px;
+}
+@media screen and (max-device-width: 500px) and (orientation: portrait) {
+  .sliderWrapper .slick-dots {
+    transform: scale(1.3);
+  }
+}
+.sliderWrapper .imageSlider {
+  width: 450px;
+  margin: 0px auto;
+  text-align: center;
+}
+.sliderWrapper .imageSlider .image {
+  display: relative;
+  display: inline-block;
+  margin-left: 0;
+  margin-right: 0;
+  height: 290px;
+}
+.sliderWrapper .imageSlider .image .sliderImage {
+  width: 100% !important;
+  height: 100% !important;
+}
+.sliderWrapper .imageSlider .slick-prev::before,
+.sliderWrapper .imageSlider .slick-next::after {
+  position: absolute;
+  z-index: 4;
+  transform: scale(0.3);
+  cursor: pointer;
+  bottom: 95px;
+}
+@media screen and (max-device-width: 500px) and (orientation: portrait) {
+  .sliderWrapper .imageSlider .slick-prev::before,
+  .sliderWrapper .imageSlider .slick-next::after {
+    transform: scale(0.45);
+  }
+}
+.sliderWrapper .imageSlider .slick-prev::before {
+  content: url("../templates/sliderIcons/CarrousselLeft.png");
+  left: 28%;
+}
+.sliderWrapper .imageSlider .slick-next::after {
+  content: url("../templates/sliderIcons/CarrousselRight.png");
+  right: 28%;
+}
+.slick-slide {
+  outline: none;
+}
+.slick-dots {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  margin-top: 40px;
+  left: 50%;
+  list-style-type: none;
+}
+.slick-dots button {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  padding: 0;
+  margin: 10px;
+  border: none;
+  border-radius: 100%;
+  background-color: grey;
+  text-indent: -9999px;
+}
+.slick-active button {
+  background-color: black;
+}
+.imageSlider .slick-slide.slick-current {
+  transform: scale(1.5);
+  position: relative;
+  z-index: 1;
+}
+.imageSlider .slick-track {
+  padding-top: 53px;
+  padding-bottom: 53px;
+}
+.imageSlider .slick-slide {
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+.imageSlider .slick-slide:not(.slick-current) {
+  filter: brightness(0.5);
+}
+.variousContentSlider .slick-slide.slick-current {
+  box-shadow: 0 0 30px;
+}
+.variousContentSlider .slick-slide {
+  text-align: center;
+  transition: transform 0.3s ease-in-out;
+}
+.variousContentSlider .slick-slide.slick-current {
+  transform: scale(1.2);
+  position: relative;
+  z-index: 1;
+}
+.variousContentSlider .slick-slide.slick-slide:not(.slick-current) {
+  filter: opacity(0.5);
+  pointer-events: none;
+  user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  -moz-user-select: none;
+  /*.orangeButton, iframe, img, .generalText, h2{
+    pointer-events: none;
+  }*/
+}

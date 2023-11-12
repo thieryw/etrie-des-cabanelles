@@ -1,0 +1,349 @@
+body .contactBanner {
+  position: relative;
+  width: 100%;
+  min-width: 1000px;
+  height: 700px;
+  min-height: 700px;
+  background: url("../../media/contact/BannerParallax.jpg") no-repeat;
+  background-size: cover;
+}
+body .contactBanner .mainHeading {
+  width: 380px;
+  margin-left: -190px;
+  background: none;
+}
+body .contactBanner .mainHeading p {
+  margin-top: 40px;
+  margin-bottom: -40px;
+  color: #fdd79e;
+}
+body .centeredText {
+  text-align: center;
+  font-family: 'freight', Arial, Helvetica, sans-serif;
+  letter-spacing: 0.05em;
+  font-size: 17pt;
+}
+body #map {
+  width: 100%;
+  height: 500px;
+}
+body .facebook {
+  position: relative;
+  height: 200px;
+  width: 100%;
+}
+body .facebook p .mobileCR {
+  display: none;
+}
+body .facebook a {
+  position: absolute;
+  left: 50%;
+  top: 70px;
+}
+body .facebook a img {
+  height: 50px;
+}
+body .facebook .fb {
+  margin-left: -70px;
+}
+body .facebook .inst {
+  margin-left: 25px;
+}
+body .emailAddress {
+  text-decoration: none;
+  color: black;
+}
+body .emailAddress:hover {
+  text-decoration: underline;
+}
+body .gform {
+  width: 900px;
+  display: grid;
+  grid-template-areas: "      name your-text" "     email your-text" "     phone your-text" "submit-btn submit-btn" "   confirm confirm";
+  position: relative;
+  left: 50%;
+  margin-left: -450px;
+  margin-top: 80px;
+  margin-bottom: 100px;
+  grid-gap: 25px;
+}
+body .gform #name,
+body .gform #phoneNumber,
+body .gform #email,
+body .gform #message,
+body .gform .btn,
+body .gform .thankyou_message {
+  font-family: 'freight', Arial, Helvetica, sans-serif;
+  font-size: 13pt;
+  border: none;
+}
+body .gform #name,
+body .gform #phoneNumber,
+body .gform #email {
+  height: 70px !important;
+  padding-left: 10px;
+  background-color: #f5f5f5;
+}
+body .gform .thankyou_message {
+  grid-area: confirm;
+  text-align: center;
+}
+body .gform #name {
+  grid-area: name;
+}
+body .gform #phoneNumber {
+  grid-area: phone;
+}
+body .gform #email {
+  grid-area: email;
+}
+body .gform #message {
+  resize: none;
+  grid-area: your-text;
+  padding-left: 10px;
+  padding-top: 10px;
+  background-color: #f5f5f5;
+}
+body .gform .btn {
+  grid-area: submit-btn;
+  background-color: #bd6035;
+  width: 140px;
+  height: 40px;
+  color: white;
+  border-radius: 2px;
+  position: relative;
+  left: 50%;
+  margin-left: -70px;
+}
+body section {
+  position: relative;
+}
+body .contactReference {
+  height: 500px;
+}
+body .contactReference .references {
+  position: absolute;
+  top: 100px;
+  width: 1000px;
+  left: 50%;
+  margin-left: -500px;
+}
+body .contactReference .references .divider {
+  position: absolute;
+  height: 300px;
+  width: 1px;
+  border-left: solid grey 1px;
+  top: -40px;
+  left: 320px;
+}
+body .contactReference .references .divider:nth-child(2) {
+  left: 680px;
+}
+body .contactReference .references .serviceIcons {
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+body .contactReference .references .serviceIcons img {
+  height: 50px;
+  margin-right: 230px;
+  margin-left: 100px;
+}
+body .contactReference .references .serviceDescription {
+  display: flex;
+  flex-direction: row;
+}
+body .contactReference .references .serviceDescription p {
+  position: relative;
+  margin-top: 60px;
+  text-align: center;
+  left: 20px;
+  font-family: 'futuraStd', Arial, Helvetica, sans-serif;
+  font-size: 15pt;
+  letter-spacing: 0.05em;
+}
+body .contactReference .references .serviceDescription p span {
+  position: relative;
+  color: #a56d07;
+  font-size: 22pt;
+  top: -40px;
+}
+body .contactReference .references .serviceDescription p:nth-child(2) {
+  left: 205px;
+}
+body .contactReference .references .serviceDescription p:nth-child(3) {
+  left: 385px;
+}
+@media screen and (max-width: 1620px) {
+  body .contactBanner .mainHeading {
+    width: 320px;
+    height: 170px;
+    margin-left: -160px;
+    margin-top: -35px;
+  }
+  body .contactReference .references {
+    transform: scale(0.8);
+  }
+  body .centeredText {
+    font-size: 15pt;
+  }
+}
+/*@media screen and (max-width: 1580px){
+    body{
+        .contactBanner{
+            background-position-y: -300px;
+        }
+    }
+
+}
+
+@media screen and (max-width: 1280px){
+    body{
+        .contactBanner{
+            background-position-y: -200px;
+        }
+    }
+
+}*/
+@media screen and (max-width: 1000px) {
+  body .contactBanner {
+    background-position: center;
+  }
+}
+@media screen and (max-width: 1000px) and (min-height: 1100px) {
+  body .contactBanner {
+    height: 100vh;
+    background: url("../../media/contact/bannerMobile.jpg") no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+  body .contactBanner .mainHeading {
+    margin-top: -100px;
+    background: none !important;
+  }
+  body .contactBanner .mainHeading h1,
+  body .contactBanner .mainHeading p {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+  }
+  body .contactBanner .mainHeading h1 {
+    margin-left: -476/2px;
+    margin-top: -40px;
+  }
+  body .contactBanner .mainHeading p {
+    margin-left: -134/2px;
+    margin-top: -120px;
+  }
+}
+@media screen and (max-device-width: 500px) and (orientation: portrait) {
+  body .centeredText {
+    font-size: 33pt;
+  }
+  body .centeredText span {
+    font-size: 45pt;
+    margin-left: -70px;
+  }
+  body .gform {
+    width: 600px;
+    margin-left: -300px;
+    grid-template-areas: "name" "email" "phone" "your-text" "submit-btn" "confirm";
+  }
+  body .gform #name,
+  body .gform #phoneNumber,
+  body .gform #email,
+  body .gform #message,
+  body .gform .btn {
+    font-size: 22pt;
+  }
+  body .gform #name,
+  body .gform #phoneNumber,
+  body .gform #email {
+    height: 90px !important;
+    padding-left: 10px;
+    background-color: #f5f5f5;
+  }
+  body .gform #message {
+    height: 300px;
+  }
+  body .gform .btn {
+    height: 50px;
+    width: 200px;
+    margin-left: -100px;
+  }
+  body .facebook {
+    height: 400px;
+  }
+  body .facebook p span {
+    margin: 0;
+  }
+  body .facebook p .mobileCR {
+    display: inline;
+  }
+  body .facebook a {
+    top: 180px;
+  }
+  body .facebook a img {
+    width: 100px;
+    height: 100px;
+  }
+  body .facebook .fb {
+    margin-left: -120px !important;
+  }
+  body #map {
+    height: 1000px;
+  }
+  body .contactReference {
+    height: 1650px;
+  }
+  body .contactReference .references {
+    transform: none;
+  }
+  body .contactReference .references .divider {
+    display: none;
+  }
+  body .contactReference .references .serviceDescription {
+    flex-direction: column;
+  }
+  body .contactReference .references .serviceDescription p:nth-child(2),
+  body .contactReference .references .serviceDescription p:nth-child(1),
+  body .contactReference .references .serviceDescription p:nth-child(3) {
+    left: 0;
+  }
+  body .contactReference .references .serviceDescription p:nth-child(2) span,
+  body .contactReference .references .serviceDescription p:nth-child(1) span,
+  body .contactReference .references .serviceDescription p:nth-child(3) span {
+    font-size: 50pt;
+  }
+  body .contactReference .references .serviceDescription p:nth-child(1) {
+    margin-top: 200px;
+  }
+  body .contactReference .references .serviceDescription p {
+    margin-bottom: 300px;
+  }
+  body .contactReference .references .serviceIcons {
+    flex-direction: column;
+    position: absolute;
+    width: 100%;
+    left: 0;
+  }
+  body .contactReference .references .serviceIcons img {
+    margin-left: 450px;
+    margin-right: 0;
+    margin-bottom: 420px;
+  }
+  body .contactReference .references .serviceIcons img:nth-child(1) {
+    width: 100px;
+    height: 100px;
+  }
+  body .contactReference .references .serviceIcons img:nth-child(3) {
+    width: 100px;
+    height: 80px;
+  }
+  body .contactReference .references .serviceIcons img:nth-child(2) {
+    height: 100px;
+    width: 80px;
+    margin-bottom: 440px;
+    margin-left: 465px !important;
+  }
+}

@@ -1,0 +1,800 @@
+body .placeBanner {
+  background: url("../../media/place/Banner.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+body .presentation {
+  background: url("../../media/stables/presentation/BienvenueBackground.png") no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+body .ethics img {
+  left: 0;
+}
+body .ethics article {
+  right: 0;
+  margin-top: -80px;
+}
+body .ethics article a {
+  color: #d38f12;
+}
+body .photovolta article {
+  top: 50px;
+}
+body .boxSection {
+  background-color: white;
+}
+body .boxSection .readMore .readLessButton {
+  display: none;
+}
+body .nature article {
+  margin-top: -60px;
+}
+body .infrastructure {
+  overflow: hidden;
+}
+body .mobileTitle,
+body .readMore,
+body #showLess,
+body #showMore {
+  display: none;
+}
+body .staffPresentation {
+  position: relative;
+  background-color: white;
+  text-align: center;
+}
+body .staffPresentation h2 {
+  font-family: 'freight', Arial, Helvetica, sans-serif;
+  font-size: 26pt;
+  font-weight: 100;
+  letter-spacing: 0.05em;
+  margin-top: 0;
+}
+body .staffPresentation h2 span {
+  text-transform: uppercase;
+}
+body .staffPresentation .row {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  width: 1190px;
+  left: 50%;
+  margin-left: -1190/2px;
+  margin-top: 100px;
+}
+body .staffPresentation .row .staffMember {
+  text-align: center;
+  margin-right: 70px;
+  min-width: 325px;
+}
+body .staffPresentation .row .staffMember img {
+  width: 350px;
+  box-shadow: 0px 0px 30px #9c9c9c;
+}
+body .staffPresentation .row .staffMember h3 {
+  font-family: 'futuraStd', Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 23pt;
+  letter-spacing: 0.05em;
+  margin-bottom: -10px;
+}
+body .staffPresentation .row .staffMember .subtext {
+  color: #3b3b3b;
+}
+body .staffPresentation .row .staffMember:nth-child(3) {
+  margin-right: 0;
+}
+body .staffPresentation .row2 {
+  margin-top: 650px;
+}
+body .staffPresentation .row3 {
+  margin-top: 1200px;
+}
+body .clapNature {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  height: 650px;
+  background-color: white;
+}
+body .clapNature .mobileText {
+  display: none;
+}
+body .clapNature iframe {
+  margin-top: 100px;
+  margin-left: 150px;
+  box-shadow: 0 0 30px;
+  box-shadow: 0px 0px 30px #797272;
+}
+body .clapNature .sectionParagraph {
+  position: relative;
+  text-align: justify;
+  width: 770px;
+  margin-top: 150px;
+  margin-left: 150px;
+}
+body .clapNature .sectionParagraph img {
+  position: absolute;
+  width: 150px;
+  top: -10px;
+  left: -20px;
+}
+body .clapNature .sectionParagraph h2 {
+  font-family: 'freight', Arial, Helvetica, sans-serif;
+  font-size: 24pt;
+}
+body .clapNature .sectionParagraph .generalText {
+  width: 500px;
+  margin-left: 270/2px;
+}
+body .divider {
+  position: absolute;
+  width: 150px;
+  height: 1px;
+  border-top: solid #e99931 1px;
+  left: 50%;
+  margin-left: -75px;
+}
+body .sectionWithSlider {
+  height: 1150px;
+  margin-top: -50px;
+  position: relative;
+  text-align: center;
+  background-color: #fafafa;
+}
+body .sectionWithSlider .slideWrapp {
+  position: absolute;
+  height: 800px;
+  width: 1100px;
+  left: 50%;
+  margin-left: -550px;
+  overflow: hidden;
+  margin-top: 150px;
+}
+body .sectionWithSlider .slideWrapp .variousContentSlider {
+  position: absolute;
+  top: 0 !important;
+  overflow: visible;
+}
+body .sectionWithSlider .slideWrapp .variousContentSlider .slick-dots {
+  margin-left: -115px;
+}
+body .sectionWithSlider .slideWrapp .variousContentSlider .slide:nth-child(4) .generalText {
+  margin-top: -20px;
+}
+body .sectionWithSlider .divider {
+  position: relative;
+  top: 100px;
+}
+body .sectionWithSlider .sliderHeading {
+  font-family: 'freight', Arial, Helvetica, sans-serif;
+  letter-spacing: 0.05em;
+  font-size: 34pt;
+  font-weight: 100;
+  position: relative;
+  top: 100px;
+}
+body .sectionWithSlider .sliderBackground {
+  user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 700px;
+  height: 680px;
+}
+body .infrastructure {
+  position: relative;
+  height: 35vw !important;
+}
+body .infrastructure img {
+  left: 0;
+}
+body .infrastructure .withoutArrow {
+  display: none;
+}
+body .infrastructure article {
+  left: 60%;
+  margin-top: -50px;
+  text-align: left;
+  height: 580px;
+  width: 550px;
+}
+body .infrastructure article .divider {
+  left: 0;
+  margin-left: 0;
+}
+body .infrastructure article ul li {
+  margin-bottom: 5px;
+  margin-left: 0;
+}
+body .infrastructure article ul li:nth-child(5) {
+  width: 450px;
+}
+body .infrastructure article ul .underline a {
+  color: #d38f12;
+}
+body .infrastructure article .subtext {
+  left: 0;
+  margin-left: 0;
+  margin-top: 20px;
+}
+body .infrastructure article .orangeButton {
+  position: absolute;
+  bottom: 70px;
+  color: white !important;
+}
+body .infrastructure article .orangeButton p {
+  margin-top: 18px;
+}
+@media screen and (max-width: 1830px) {
+  body .boxSection .articleParagraph {
+    margin-left: -400px;
+    padding-left: 20px;
+    padding-right: 20px;
+    width: 800px;
+    padding: 0;
+  }
+  body .infrastructure article {
+    margin-top: -80px;
+  }
+  body .clapNature iframe {
+    margin-left: 100px;
+  }
+  body .clapNature .sectionParagraph {
+    margin-left: 50px;
+  }
+}
+@media screen and (max-width: 1650px) {
+  body .clapNature iframe {
+    margin-left: 50px;
+  }
+  body .clapNature .sectionParagraph {
+    margin-left: 50px;
+  }
+  body .photovolta article {
+    margin-top: -50px;
+  }
+}
+@media screen and (max-width: 1620px) {
+  body .placeBanner .mainHeading {
+    width: 400px;
+    height: 180px;
+    margin-left: -200px;
+    margin-top: -30px;
+  }
+  body .clapNature {
+    height: 600px;
+  }
+  body .clapNature .sectionParagraph h2 {
+    font-size: 22pt;
+  }
+  body .clapNature .sectionParagraph .normalText {
+    margin-left: 100px;
+  }
+  body .clapNature iframe {
+    width: 550px;
+    height: 300px;
+    margin-top: 120px;
+  }
+  body .presentation .presentationContent {
+    width: 1000px;
+    margin-left: -500px;
+    margin-top: 20px;
+  }
+  body .presentation .presentationContent img {
+    transform: scale(0.7);
+  }
+  body .presentation .presentationContent h2 {
+    font-size: 30pt;
+  }
+  body .staffPresentation {
+    margin-top: -80px;
+  }
+  body .staffPresentation .row {
+    margin-left: -985/2px;
+    width: 985px;
+  }
+  body .staffPresentation .row .staffMember {
+    margin-right: 5px;
+  }
+  body .staffPresentation .row .staffMember img {
+    width: 300px !important;
+  }
+  body .staffPresentation .row .staffMember h3 {
+    font-size: 18pt;
+  }
+  body .staffPresentation .row .staffMember:nth-child(3) {
+    margin-right: 0;
+  }
+  body .staffPresentation .row2 {
+    margin-top: 550px;
+  }
+  body .staffPresentation .row3 {
+    margin-top: 1000px;
+  }
+  body .infrastructure .normalTitle {
+    font-size: 25pt;
+    margin-top: 40px;
+  }
+  body .infrastructure article {
+    left: 55%;
+  }
+  body .infrastructure article .orangeButton {
+    margin-bottom: 50px;
+  }
+  body .sectionWithSlider .normalTitle {
+    font-size: 25pt;
+  }
+  body .sectionWithSlider .slideWrapp {
+    transform: scale(0.9);
+  }
+  body .nature h2,
+  body .ethics h2,
+  body .photovolta h2 {
+    font-size: 25pt !important;
+  }
+  body .nature .divider,
+  body .ethics .divider,
+  body .photovolta .divider {
+    top: 105px !important;
+  }
+  body .nature .articleParagraph,
+  body .ethics .articleParagraph,
+  body .photovolta .articleParagraph {
+    width: 600px;
+    margin-left: -300px;
+    font-size: 12pt;
+  }
+}
+@media screen and (max-width: 1520px) {
+  body .infrastructure article {
+    /*margin-left: 50px;
+                margin-top: -100px;*/
+  }
+  body .infrastructure article ul {
+    margin-top: 60px;
+  }
+  body .infrastructure article .subtext {
+    margin-top: 0;
+  }
+  body .infrastructure article .divider {
+    margin-top: -10px;
+  }
+  body .infrastructure article .orangeButton {
+    bottom: 120px;
+  }
+}
+/*@media screen and (max-width: 1450px){
+    body{
+        .photovolta{
+            article{
+                .generalText{
+                    height: 195px;
+                    overflow: auto;
+                }
+            }
+
+        }
+    }
+}*/
+@media screen and (max-width: 1385px) {
+  body .nature h2,
+  body .ethics h2 {
+    margin-top: 0px;
+  }
+  body .nature .divider,
+  body .ethics .divider {
+    top: 60px !important;
+  }
+  body .nature .articleParagraph,
+  body .ethics .articleParagraph {
+    margin-top: 20px !important;
+  }
+  body .photovolta .divider {
+    top: 85px !important;
+  }
+  body .photovolta .articleParagraph {
+    margin-top: 20px !important;
+  }
+  body .presentation .presentationContent {
+    width: 1200px;
+    margin-left: -600px;
+  }
+  body .clapNature {
+    height: 1000px;
+  }
+  body .clapNature iframe,
+  body .clapNature .sectionParagraph {
+    position: absolute;
+    left: 50%;
+  }
+  body .clapNature iframe {
+    margin-left: -550/2px;
+  }
+  body .clapNature .sectionParagraph {
+    margin-left: -770/2+40px;
+    top: 450px;
+  }
+}
+@media screen and (max-width: 1330px) {
+  body .infrastructure h2 {
+    font-size: 20pt !important;
+  }
+  body .infrastructure .generalText li {
+    font-size: 12pt;
+  }
+  body .infrastructure article {
+    margin-top: -100px;
+  }
+  body .infrastructure .subtext {
+    font-size: 12pt !important;
+    width: 400px;
+  }
+  body .infrastructure .orangeButton {
+    margin-bottom: 70px !important;
+  }
+  body .nature article .divider,
+  body .ethics article .divider {
+    top: 50px !important;
+  }
+  body .nature article .generalText,
+  body .ethics article .generalText {
+    position: relative;
+    top: -10px;
+  }
+}
+@media screen and (max-width: 1270px) {
+  body .photovolta article .generalText {
+    height: 195px;
+  }
+}
+@media screen and (max-width: 1217px) {
+  body {
+    /*.photovolta{
+            article{
+                margin-top: -100px;
+                .articleParagraph{
+                    margin-top: 15px;
+                    height: 200px;
+                }
+
+                .divider{
+                    margin-top: -20px;
+                }
+            }
+        }*/
+  }
+  body .presentation .presentationContent {
+    width: 980px;
+    margin-left: -490px;
+  }
+  body .photovolta .generalText {
+    width: 500px;
+    overflow: auto;
+    margin-left: -250px;
+  }
+  body .nature .generalText,
+  body .ethics .generalText {
+    height: 220px;
+    width: 500px;
+    overflow: auto;
+    margin-left: -250px;
+  }
+  body .infrastructure article .divider {
+    margin-top: 20px;
+  }
+  body .infrastructure .divider {
+    top: 80px !important;
+  }
+}
+@media screen and (max-width: 1105px) {
+  body .slideWrapp {
+    width: 980px !important;
+    margin-left: -490px !important;
+  }
+}
+@media screen and (min-width: 1620px) {
+  body .staffPresentation {
+    height: 1850px !important;
+  }
+}
+@media screen and (min-device-width: 400px) {
+  body .staffPresentation {
+    height: 1600px;
+    min-height: 1600px;
+    max-height: 1850px;
+  }
+  body .staffPresentation #showLess,
+  body .staffPresentation #showMore {
+    display: none !important;
+  }
+}
+@media screen and (max-device-width: 500px) and (orientation: portrait) {
+  body .mobileTitle {
+    display: block;
+  }
+  body .normalTitle {
+    display: none;
+  }
+  body .photovolta article .divider {
+    margin-top: 80px;
+  }
+  body .staffPresentation {
+    height: 11300px;
+    overflow: hidden;
+  }
+  body .staffPresentation .divider {
+    margin-top: 90px;
+  }
+  body .staffPresentation #showLess,
+  body .staffPresentation #showMore {
+    position: absolute;
+    font-family: 'futuraStd', Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    color: #a54607;
+    left: 50%;
+    width: 110px;
+    margin-left: -55px;
+  }
+  body .staffPresentation #showLess {
+    display: block;
+  }
+  body .staffPresentation #showMore {
+    display: none;
+  }
+  body .staffPresentation .row .staffMember {
+    position: absolute;
+    width: 800px;
+    left: 50%;
+    margin-left: -400px;
+  }
+  body .staffPresentation .row .staffMember img {
+    width: 100% !important;
+  }
+  body .staffPresentation .row .staffMember:nth-child(1) {
+    top: 100px;
+  }
+  body .staffPresentation .row .staffMember:nth-child(2) {
+    top: 1300px;
+  }
+  body .staffPresentation .row .staffMember:nth-child(3) {
+    margin-top: 2500px;
+  }
+  body .staffPresentation .row2 {
+    margin-top: 3700px;
+  }
+  body .staffPresentation .row3 {
+    margin-top: 7300px;
+  }
+  body .clapNature {
+    height: 1400px;
+  }
+  body .clapNature iframe {
+    top: 600px;
+    width: 800px;
+    height: 500px;
+    margin-left: -400px;
+  }
+  body .clapNature .sectionParagraph {
+    top: 0;
+  }
+  body .clapNature .sectionParagraph h2 {
+    font-size: 40pt !important;
+    text-align: center;
+    margin-bottom: 100px;
+  }
+  body .clapNature .sectionParagraph .normalText {
+    display: none;
+  }
+  body .clapNature .sectionParagraph .mobileText {
+    display: block;
+    width: 800px;
+    text-align: center;
+    margin-left: -30px;
+  }
+  body .infrastructure {
+    overflow: hidden;
+    height: 1950px !important;
+  }
+  body .infrastructure .withArrow {
+    display: none;
+  }
+  body .infrastructure .withoutArrow {
+    display: block;
+  }
+  body .infrastructure article {
+    left: 50px;
+  }
+  body .infrastructure article h2 {
+    margin-left: 80px;
+  }
+  body .infrastructure article .divider {
+    margin-top: 100px;
+    left: 350px;
+  }
+  body .infrastructure article ul {
+    margin-left: 150px;
+    margin-top: 130px;
+  }
+  body .infrastructure article ul li {
+    font-size: 35pt !important;
+  }
+  body .infrastructure article ul li span {
+    font-size: 150pt;
+    margin-top: -35px;
+    margin-left: -70px;
+  }
+  body .infrastructure article ul li:nth-child(5) {
+    width: 600px;
+  }
+  body .infrastructure article .subtext {
+    font-size: 29pt !important;
+    width: 800px;
+    text-align: center;
+    margin-top: 100px;
+    margin-left: 50px;
+  }
+  body .infrastructure article .orangeButton {
+    position: absolute;
+    bottom: -550px !important;
+    left: 450px !important;
+  }
+  body .presentation {
+    background-position: left;
+    z-index: 0;
+    height: 1900px;
+  }
+  body .presentation .presentationContent {
+    height: 1100px;
+    margin-top: 100px;
+  }
+  body .presentation .presentationContent img {
+    position: absolute;
+    bottom: -250px !important;
+    left: 50%;
+    margin-left: -50px;
+    transform: scale(2);
+  }
+  body .presentation .presentationContent hr {
+    display: none;
+  }
+  body .presentation .presentationContent h2 {
+    margin-top: 50px;
+  }
+  body .presentation .presentationContent .generalText {
+    font-size: 35pt !important;
+    margin-top: 130px;
+  }
+  body .nature {
+    margin-top: -300px;
+  }
+  body .nature .readLessButton {
+    margin-top: 520px !important;
+  }
+  body .ethics .readLessButton {
+    margin-top: 400px !important;
+  }
+  body .photovolta .readLessButton {
+    margin-top: 750px !important;
+  }
+  body .sectionWithSlider {
+    height: 1900px;
+    overflow: hidden;
+  }
+  body .sectionWithSlider .mobileTitle {
+    font-size: 70pt !important;
+  }
+  body .sectionWithSlider .divider {
+    margin-top: 50px;
+  }
+  body .sectionWithSlider .slideWrapp {
+    top: 550px;
+    width: 660px !important;
+    transform: scale(1.7);
+    margin-left: -330px !important;
+  }
+  body .boxSection {
+    height: 2000px;
+  }
+  body .boxSection img {
+    width: 100%;
+    height: auto;
+  }
+  body .boxSection article {
+    width: 100%;
+    position: absolute;
+    top: 850px !important;
+  }
+  body .boxSection article .divider {
+    top: 150px !important;
+  }
+  body .boxSection article h2 {
+    font-size: 70pt !important;
+  }
+  body .boxSection article .normalTitle {
+    display: none;
+  }
+  body .boxSection article .mobileTitle {
+    display: block;
+  }
+  body .boxSection article .articleParagraph {
+    width: 950px;
+    margin-left: -475px;
+    height: 630px;
+    max-height: none;
+    overflow: hidden;
+    font-size: 35pt !important;
+  }
+  body .boxSection article .readMore {
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 680px;
+    color: #a54607;
+    text-decoration: underline;
+    height: 250px;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), #ffffff 60%);
+  }
+  body .boxSection article .readMore .generalText {
+    margin-top: 200px;
+    font-size: 35pt;
+    text-decoration: underline;
+  }
+}
+@media screen and (max-width: 1000px) and (min-height: 1100px) {
+  body .placeBanner {
+    background: url("../../media/place/EcoLieuBAnner.jpg") no-repeat;
+    background-size: cover;
+  }
+  body .placeBanner .mainHeading {
+    top: 70px !important;
+    background: none;
+  }
+  body .placeBanner .mainHeading h1 {
+    position: absolute;
+    width: 400px;
+    height: 130px;
+    top: 50%;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: -250px;
+  }
+  body .placeBanner .mainHeading p {
+    position: absolute;
+    width: 400px;
+    left: 50%;
+    margin-left: -200px;
+    margin-top: 150px;
+    top: 50%;
+  }
+  body .placeBanner .mainHeading .headingDivider1 {
+    top: 700px;
+  }
+  body .placeBanner .mainHeading .headingDivider2 {
+    bottom: 700px;
+  }
+  body .placeBanner .mainHeading .logoIcon {
+    top: 400px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  body .clapNature {
+    background: none;
+    position: relative;
+    left: 50vw;
+    width: 1920px;
+    margin-left: -900px;
+  }
+  body .infrastructure article {
+    margin-top: -300px !important;
+  }
+  body .boxSection article {
+    top: 50%;
+    margin-top: -350px;
+  }
+}

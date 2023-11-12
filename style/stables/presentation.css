@@ -1,0 +1,383 @@
+body .banner {
+  min-width: 1000px;
+  background: url("../../media/stables/presentation/BannerFullSize.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+body .banner .mainHeading {
+  width: 370px;
+  position: absolute;
+  margin-left: -185px;
+  margin-top: -50px;
+}
+body .banner .mainHeading p {
+  margin-top: 40px;
+}
+body .banner .mainHeading h1 {
+  margin-top: -20px;
+}
+body .presentation {
+  background: url(../../media/stables/presentation/BienvenueBackground.png) no-repeat;
+  background-size: cover;
+  background-position: bottom;
+}
+body .presentation .presentationContent .bottom-line {
+  position: relative;
+  top: -20px;
+}
+body .boxSection article .readMore {
+  display: none;
+}
+body .horseFood {
+  margin-top: 0;
+}
+body .horseFood img {
+  left: 0;
+}
+body .horseFood article {
+  margin-top: -10px;
+  right: 0;
+}
+body .horseFood article p {
+  max-height: 300px;
+}
+body .linkToGallery {
+  position: relative;
+  background: url("../../media/stables/presentation/background.jpg") no-repeat;
+  background-size: cover;
+  background-position-x: right;
+  height: 600px;
+}
+body .linkToGallery .sectionParagraph {
+  position: absolute;
+  text-align: center;
+}
+body .linkToGallery .sectionParagraph h2 {
+  color: black;
+  font-family: 'freight', Arial, Helvetica, sans-serif;
+  font-size: 24pt;
+  margin-bottom: 40px;
+}
+body .linkToGallery .sectionParagraph img {
+  width: 270px;
+}
+body .linkToGallery .sectionParagraph .orangeButton {
+  position: absolute;
+  left: 50%;
+  margin-left: -85px;
+  bottom: -70px;
+}
+body .linkToGallery .sectionParagraph .divider {
+  position: absolute;
+  left: 50%;
+  margin-left: -60px;
+  width: 120px;
+  height: 1px;
+  border-top: solid grey 1px;
+}
+body .linkToGallery .sectionParagraph .divider1 {
+  top: -10px;
+}
+body .linkToGallery .sectionParagraph .divider2 {
+  bottom: -120px;
+}
+body .horseInfrastructures {
+  margin-top: 0;
+}
+body .horseInfrastructures article {
+  margin-top: -10px;
+  text-align: left;
+}
+body .horseInfrastructures article h2 {
+  text-align: center;
+}
+body .horseInfrastructures article ul li {
+  width: 100%;
+}
+body .linkToServices {
+  height: 500px;
+  margin-top: 0;
+  background: url("../../media/stables/presentation/ServicesBanner.jpg") no-repeat;
+  background-size: cover;
+}
+body .linkToServices aside {
+  width: 600px;
+  position: absolute;
+  right: 150px;
+  text-align: center;
+  color: white;
+}
+body .linkToServices aside hr:nth-child(1) {
+  margin-top: 60px;
+}
+body .linkToServices aside hr {
+  width: 100px;
+  margin-top: 120px;
+}
+body .linkToServices aside h2 {
+  font-family: 'freight', Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 24pt;
+  letter-spacing: 0.05em;
+  margin-top: 40px;
+}
+body .linkToServices aside .generalText {
+  font-family: 'futuraStd', Arial, Helvetica, sans-serif;
+}
+body .linkToServices aside .orangeButton {
+  position: absolute;
+  bottom: 50px;
+  left: 215px;
+}
+@media screen and (max-width: 1800px) {
+  body section article {
+    top: 50px !important;
+  }
+  body section article ul li {
+    margin-left: 50px !important;
+  }
+}
+@media screen and (max-width: 1620px) {
+  body .banner .mainHeading {
+    width: 300px;
+    height: 180px;
+    margin-left: -150px;
+    margin-top: -30px;
+  }
+  body .horseFood article,
+  body .horseEnvironnement article {
+    top: 15% !important;
+  }
+  body .boxSection article h2 {
+    font-size: 25pt !important;
+  }
+  body .horseEnvironnement article .divider,
+  body .horseFood article .divider {
+    top: 95px;
+  }
+  body .horseInfrastructures article .divider {
+    top: 110px;
+  }
+  body .linkToGallery .sectionParagraph {
+    width: 500px;
+  }
+  body .presentation .presentationContent {
+    width: 1000px;
+    margin-left: -500px;
+  }
+  body .presentation .presentationContent h2 {
+    font-size: 30pt;
+  }
+  body .presentation .presentationContent img {
+    transform: scale(0.7);
+  }
+  body section article {
+    top: 20px ;
+  }
+  body section article p {
+    margin-top: 30px !important;
+  }
+}
+@media screen and (max-width: 1400px) {
+  body section article ul li {
+    margin-left: 20px !important;
+  }
+}
+@media screen and (max-width: 1350px) {
+  body .presentation .presentationContent {
+    margin-top: 70px !important;
+    width: 800px !important;
+    margin-left: -400px !important;
+  }
+  body .presentation .presentationContent hr {
+    display: none !important;
+  }
+  body section article {
+    margin-top: -50px !important;
+  }
+  body section article p {
+    width: 480px !important;
+    margin-left: -240px !important;
+  }
+}
+@media screen and (max-width: 1260px) {
+  body .horseEnvironnement article .divider {
+    margin-top: -20px;
+  }
+  body .horseEnvironnement article p {
+    margin-top: 0 !important;
+  }
+}
+@media screen and (max-width: 1200px) {
+  body .horseInfrastructures article ul {
+    height: 263px;
+    overflow-y: auto;
+  }
+  body .horseInfrastructures article ul li {
+    width: 440px;
+  }
+}
+@media screen and (max-width: 1000px) and (min-height: 1100px) {
+  body .banner {
+    background: url("../../media/stables/presentation/bannerMobile.jpg") no-repeat;
+    background-size: cover;
+  }
+  body .banner .mainHeading {
+    margin-top: -100px;
+    background: none !important;
+  }
+  body .banner .mainHeading p,
+  body .banner .mainHeading h1 {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+  }
+  body .banner .mainHeading h1 {
+    margin-left: -341/2px;
+  }
+  body .banner .mainHeading p {
+    margin-left: -297/2px;
+    margin-top: -100px;
+  }
+}
+@media screen and (max-device-width: 500px) and (orientation: portrait) {
+  body .presentation {
+    height: 1800px;
+    z-index: 0;
+  }
+  body .presentation .presentationContent img {
+    position: absolute;
+    bottom: -1000px;
+    left: 50%;
+    margin-left: -50px;
+    transform: scale(1.7);
+  }
+  body .presentation .presentationContent h2 {
+    margin-top: 100px;
+  }
+  body .horseEnvironnement img,
+  body .horseFood img,
+  body .horseInfrastructures img {
+    width: 100%;
+    height: 900px;
+  }
+  body .horseEnvironnement article,
+  body .horseFood article,
+  body .horseInfrastructures article {
+    width: 900px;
+    margin-top: 600px !important;
+    margin-left: 50px;
+  }
+  body .horseEnvironnement article h2,
+  body .horseFood article h2,
+  body .horseInfrastructures article h2 {
+    font-size: 70pt !important;
+  }
+  body .horseEnvironnement article .divider,
+  body .horseFood article .divider,
+  body .horseInfrastructures article .divider {
+    top: 340px;
+  }
+  body .horseEnvironnement article .generalText,
+  body .horseFood article .generalText,
+  body .horseInfrastructures article .generalText {
+    width: 100% !important;
+    left: 0;
+    margin-left: 0 !important;
+    height: 650px;
+    overflow: visible !important;
+    max-height: unset !important;
+  }
+  body .horseEnvironnement article .readMore,
+  body .horseFood article .readMore,
+  body .horseInfrastructures article .readMore {
+    position: absolute;
+    display: block;
+    width: 100%;
+    top: 680px;
+    color: #a54607;
+    text-decoration: underline;
+    height: 250px;
+    background: linear-gradient(to bottom, rgba(250, 250, 250, 0), #fafafa 60%);
+  }
+  body .horseEnvironnement article .readMore .generalText,
+  body .horseFood article .readMore .generalText,
+  body .horseInfrastructures article .readMore .generalText {
+    margin-top: 200px !important;
+    font-size: 35pt;
+    text-decoration: underline;
+  }
+  body .horseEnvironnement article .readMore .readLessButton,
+  body .horseFood article .readMore .readLessButton,
+  body .horseInfrastructures article .readMore .readLessButton {
+    display: none;
+  }
+  body .linkToGallery {
+    height: 1100px;
+    background: url("../../media/stables/presentation/backgroundMobile.jpg") no-repeat;
+    background-size: 100% 100%;
+  }
+  body .linkToGallery .sectionParagraph {
+    width: 900px;
+    margin-left: 50px;
+  }
+  body .linkToGallery .sectionParagraph .divider {
+    display: none;
+  }
+  body .linkToGallery .sectionParagraph img {
+    transform: scale(1.6);
+    margin-top: 50px;
+  }
+  body .linkToGallery .sectionParagraph .orangeButton {
+    margin-left: -150px;
+    bottom: -170px;
+  }
+  body .linkToServices {
+    background: url("../../media/stables/presentation/PortraitAnneWithOverlayMobile.jpg") no-repeat;
+    background-size: 100% 100%;
+    height: 1400px;
+  }
+  body .linkToServices aside {
+    width: 900px;
+    right: 50px;
+    top: 200px;
+  }
+  body .linkToServices aside hr {
+    display: none;
+  }
+  body .linkToServices aside .orangeButton {
+    left: 50%;
+    bottom: -150px;
+  }
+  body .horseInfrastructures {
+    height: 2500px;
+  }
+  body .horseInfrastructures article {
+    margin-top: 900px !important;
+  }
+  body .horseInfrastructures article .generalText li {
+    width: 800px;
+  }
+  body .horseInfrastructures article .readMore .generalText {
+    text-align: center !important;
+  }
+  body .horseFood {
+    height: 2500px;
+  }
+  body .horseFood article {
+    right: unset;
+  }
+  body .horseEnvironnement {
+    height: 2500px;
+    margin-top: -300px;
+  }
+  body .horseEnvironnement article h2 {
+    margin-top: 50px;
+  }
+}
+@media screen and (min-width: 1920px) {
+  body .boxSection article {
+    top: 50%;
+    margin-top: -300px;
+  }
+}

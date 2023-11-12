@@ -1,0 +1,1417 @@
+body .personalDevelopment {
+  overflow: hidden;
+}
+body .pricing {
+  position: relative;
+  height: 780px;
+}
+body .pricing img {
+  position: absolute;
+  bottom: 0;
+  height: 1000px;
+  right: 0;
+}
+body .pricing .sectionParagraph {
+  margin-left: 250px;
+}
+body .pricing .sectionParagraph .mobileText {
+  display: none;
+}
+body .pricing .sectionParagraph h2 {
+  color: black;
+  margin-bottom: 5px !important;
+  font-size: 27pt;
+}
+body .pricing .sectionParagraph .underline {
+  width: 40px;
+  height: 1px;
+  border-top: solid black 2px;
+  margin-left: 2px;
+  margin-bottom: 40px;
+}
+body .pricing .sectionParagraph .generalText {
+  margin-bottom: -20px;
+}
+body .pricing .sectionParagraph .agePrice {
+  margin-top: 40px;
+}
+body .pricing .sectionParagraph .agePrice .generalText {
+  position: relative;
+  width: 350px;
+}
+body .pricing .sectionParagraph .agePrice .generalText strong {
+  position: absolute;
+  right: 0;
+}
+body .pricing .sectionParagraph .lessonPrices .generalText {
+  position: relative;
+}
+body .pricing .sectionParagraph .lessonPrices .generalText strong {
+  font-family: 'futuraStd', Arial, Helvetica, sans-serif;
+}
+body .pricing .sectionParagraph .lessonPrices .generalText span {
+  font-family: 'freight', Arial, Helvetica, sans-serif;
+}
+body .pricing .sectionParagraph .lessonPrices .generalText .curly-brasses {
+  font-size: 3em;
+  font-family: 'futuraStd', Arial, Helvetica, sans-serif;
+  position: absolute;
+  left: -40px;
+}
+body .pricing .sectionParagraph .lessonPrices .generalText:nth-child(2) {
+  width: 490px;
+}
+body .pricing .sectionParagraph .lessonPrices .generalText:nth-child(2) .prices {
+  position: absolute;
+  right: -150px;
+  font-family: 'futuraStd', Arial, Helvetica, sans-serif;
+}
+body .pricing .sectionParagraph .lessonPrices .generalText:nth-child(3) {
+  margin-bottom: 30px;
+}
+body .pricing .sectionParagraph .lessonPrices .generalText:nth-child(4) {
+  width: 480px;
+  /*strong{
+                        position: absolute;
+                        right: 0;
+                    }*/
+}
+body .pricing .sectionParagraph .lessonPrices .generalText:nth-child(4) span {
+  margin-left: 130px;
+}
+body .pricing .sectionParagraph .lessonPrices .generalText:nth-child(5) {
+  width: 610px;
+}
+body .pricing .sectionParagraph .lessonPrices .generalText:nth-child(5) .prices {
+  position: absolute;
+  right: 0;
+}
+body .pricing .sectionParagraph .lessonPrices .generalText:nth-child(5) .prices span {
+  font-family: 'futuraStd', Arial, Helvetica, sans-serif;
+}
+body .pricing .sectionParagraph .lessonPrices .lastPrice {
+  width: 650px;
+}
+body .pricing .sectionParagraph .lessonPrices .lastPrice .prices {
+  position: absolute;
+  right: 0;
+}
+body .pricing .sectionParagraph .lessonPrices .lastPrice .prices span {
+  font-family: 'futuraStd', Arial, Helvetica, sans-serif;
+}
+body .pricing .sectionParagraph .subtext {
+  margin-bottom: 40px;
+  width: 700px;
+}
+body .pricing .sectionParagraph .sessionCardPrice {
+  position: relative;
+  margin-bottom: 40px;
+  width: 510px;
+}
+body .pricing .sectionParagraph .sessionCardPrice span {
+  position: absolute;
+  right: 0;
+  font-family: 'freight', Arial, Helvetica, sans-serif;
+}
+body .pricing .sectionParagraph .sessionCardPrice .cardLineBreak {
+  display: none;
+}
+body .technicalDetails {
+  position: relative;
+  height: 800px;
+  background: url("../../media/stables/services/school/ServicesParallax.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+body .technicalDetails .sectionParagraph {
+  text-shadow: black 2px 2px;
+  position: absolute;
+  bottom: 60px;
+  left: 50%;
+  margin-left: -550px;
+  width: 1100px;
+  text-align: center;
+  color: white;
+}
+body .technicalDetails .listedDetails {
+  text-shadow: black 2px 2px;
+  position: absolute;
+  left: 50%;
+  margin-left: -600px;
+  top: 80px;
+  width: 1200px;
+  height: 300px;
+  border-bottom: solid white 1px;
+}
+body .technicalDetails .listedDetails .serviceIcons {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  left: 50%;
+  margin-left: -500px;
+  width: 1000px;
+}
+body .technicalDetails .listedDetails .serviceIcons img {
+  margin-right: 190px;
+  margin-left: 30px;
+  height: 70px;
+}
+body .technicalDetails .listedDetails .serviceIcons img:nth-child(3) {
+  margin-left: 20px;
+}
+body .technicalDetails .listedDetails .serviceDescription {
+  display: flex;
+  flex-direction: row;
+  margin-top: 100px;
+  width: 1200px;
+}
+body .technicalDetails .listedDetails .serviceDescription p {
+  font-family: 'futuraStd', Arial, Helvetica, sans-serif;
+  text-align: center;
+  color: white;
+  margin-left: 20px;
+  line-height: 1.5em;
+  letter-spacing: 0.05em;
+  width: 270px;
+}
+body #school {
+  position: relative;
+  min-height: 480px;
+  background: url("../../media/stables/services/Background.png") no-repeat;
+  background-size: cover;
+  height: 48.5vw;
+}
+body #school img {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+}
+body #school .schoolJpg {
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+body #school .backgroundArrow {
+  top: 0;
+  right: 2.35%;
+  z-index: 2;
+  overflow: hidden;
+}
+body #school .sectionParagraph {
+  position: absolute;
+  right: 25%;
+  margin-right: -325px;
+  z-index: 3;
+}
+body #school .sectionParagraph .orangeButton {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  margin-left: -85px;
+}
+body #horseCompany {
+  position: relative;
+  min-height: 480px;
+  margin-top: -80px;
+  background: url("../../media/stables/services/Background.png") no-repeat;
+  background-size: cover;
+  height: 48.5vw;
+}
+body #horseCompany .sectionParagraph {
+  position: absolute;
+  left: 25%;
+  margin-left: -325px;
+}
+body #horseCompany .sectionParagraph .orangeButton {
+  position: absolute;
+  bottom: -50px;
+  left: 50%;
+  margin-left: -85px;
+}
+body #horseCompany .sectionParagraph .mobileDeviceTitle1,
+body #horseCompany .sectionParagraph .mobileDeviceTitle2 {
+  display: none;
+}
+body #horseCompany .sectionParagraph .lineSkip2 {
+  display: none;
+}
+body #horseCompany img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 50%;
+  height: 100%;
+}
+body .personalDevelopment .sectionParagraph {
+  width: 650px;
+  margin-top: 30px;
+  text-align: center;
+}
+body .personalDevelopment .sectionParagraph h2 {
+  margin-bottom: -50px;
+}
+body .personalDevelopment .sectionParagraph .subtext {
+  width: 480px;
+  margin-bottom: 40px;
+  margin-left: 90px;
+}
+body .personalDevelopment .sectionParagraph .generalText {
+  margin-top: 40px;
+  width: 550px;
+  margin-left: 50px;
+}
+body #health {
+  overflow-x: hidden;
+  position: relative;
+  background: url("../../media/stables/services/EssentialOilBackground.jpg") no-repeat;
+  background-size: cover;
+  height: 900px;
+  min-height: 900px;
+  margin-bottom: 80px;
+}
+body #health .sectionParagraph {
+  position: absolute;
+  top: -80px;
+  right: 150px;
+  text-align: center;
+}
+body #health .sectionParagraph h2 {
+  margin-bottom: -45px;
+}
+body #health .bottomParagraph {
+  top: 600px !important;
+}
+body #health .bottomParagraph .subtext {
+  font-size: 15pt;
+  width: 700px;
+}
+body #health .bottomParagraph .orangeButton {
+  position: absolute;
+  left: 50%;
+  margin-left: -55px;
+  top: 100px;
+}
+body #health ul {
+  position: absolute;
+  right: 180px;
+  top: 300px;
+  list-style: none;
+  width: 400px;
+}
+body #health ul li {
+  margin-bottom: -15px;
+  color: #d48712;
+  font-family: 'futuraStd', Arial, Helvetica, sans-serif;
+}
+body #health ul li .specification {
+  font-family: 'freight', Arial, Helvetica, sans-serif;
+  color: black;
+}
+body #health ul li .dots {
+  position: relative;
+  top: -4px;
+  left: -20px;
+  font-size: 60pt;
+}
+body #cathEducation {
+  position: relative;
+  top: -7px;
+  height: 975px;
+  background: url("../../media/stables/services/BackgroundWithPic.jpg") no-repeat;
+  background-size: cover;
+  padding-bottom: 0;
+}
+body #cathEducation img {
+  position: absolute;
+  top: -48px;
+  right: 0;
+  width: 750px;
+  height: 1020px;
+}
+body #cathEducation .sectionParagraph {
+  position: absolute;
+  right: 720px;
+  width: 620px;
+  text-align: center;
+  top: -70px;
+}
+body #cathEducation .sectionParagraph .subtext {
+  margin-bottom: 50px;
+}
+body #cathEducation .sectionParagraph h2 {
+  margin-bottom: -50px;
+}
+body #cathEducation .sectionParagraph .orangeButton {
+  position: absolute;
+  left: 50%;
+  margin-left: -85px;
+  bottom: -60px;
+}
+body #cathEducation .secondPara {
+  margin-top: -50px;
+}
+body #birthControl {
+  position: relative;
+  top: -30px;
+  height: 910px;
+}
+body #birthControl .background {
+  position: absolute;
+  top: 0;
+  left: 598px;
+  z-index: -1;
+}
+body #birthControl .serviceHeading {
+  font-family: 'freight', Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  font-size: 26pt;
+  letter-spacing: 0.05em;
+  width: 220px !important;
+  position: relative;
+  top: 80px;
+  left: 150px;
+  margin-right: 0;
+}
+body #birthControl .divider {
+  margin-left: 80px;
+  margin-top: 20px;
+  width: 50px;
+  height: 1px;
+  border-top: solid black 2px;
+}
+body #birthControl .birthControlServices {
+  width: 500px;
+  margin-top: 120px;
+}
+body #birthControl .birthControlServices .serviceIcons img {
+  margin-bottom: 65px;
+  width: 50px;
+  height: 50px;
+}
+body #birthControl .birthControlServices p {
+  letter-spacing: 0.05em;
+  font-size: 12pt;
+  line-height: 1.2em;
+}
+body #birthControl .sectionParagraph {
+  text-align: center;
+  position: absolute;
+  right: 50px;
+  width: 450px;
+  top: 0;
+}
+body #birthControl .sectionParagraph h2 {
+  margin-bottom: -50px;
+}
+body #birthControl .sectionParagraph .generalText {
+  width: 400px;
+  margin-left: 25px;
+}
+body #birthControl .sectionParagraph .orangeButton {
+  position: absolute;
+  left: 150px;
+  margin-top: 20px;
+}
+body #ownerStable {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  background: url("../../media/stables/services/Background.png") repeat;
+  background-size: cover;
+}
+body #ownerStable .sectionImages {
+  width: 598px;
+  height: 998px;
+  background: url("../../media/stables/services/ecurieDeProprio1.jpg") no-repeat;
+  background-size: 100% 100%;
+}
+body #ownerStable .sectionParagraph {
+  margin-left: 100px;
+}
+body #ownerStable .sectionParagraph h1 {
+  margin-bottom: 80px;
+}
+body #ownerStable .sectionParagraph h2 {
+  margin-bottom: -40px;
+}
+body #ownerStable .price {
+  position: relative;
+  width: 280px;
+  margin-top: 400px;
+  margin-left: 100px;
+  height: 400px;
+}
+body #ownerStable .price h2,
+body #ownerStable .price .generalText {
+  font-family: 'futuraStd', Arial, Helvetica, sans-serif;
+}
+body #ownerStable .price .generalText {
+  margin-bottom: 30px;
+  margin-top: 50px;
+  text-align: justify;
+}
+body #ownerStable .price .subtext {
+  text-align: justify;
+}
+body #ownerStable .price h2 {
+  font-weight: 200;
+  font-size: 23pt;
+  margin-bottom: 0px;
+  letter-spacing: 0.05em;
+}
+body #ownerStable .price .divider {
+  position: absolute;
+  top: 75px;
+  left: 0;
+  width: 40px;
+  height: 1px;
+  border-top: solid black 2px;
+}
+body #ownerStable .price .orangeButton {
+  position: absolute;
+  margin-top: 30px;
+}
+body .stableServiceBanner {
+  position: relative;
+  min-width: 1000px;
+  height: 750px;
+  min-height: 550px;
+  background: url("../../media/stables/services/banniereParallax.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position-y: -200px;
+}
+body .stableServiceBanner .mainHeading {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 360px;
+  height: 190px;
+  margin-left: -180px;
+  margin-top: -40px;
+  background: none;
+}
+body .stableServiceBanner .mainHeading p {
+  color: #fdd79e;
+}
+body .stableServiceBanner .mainHeading h1 {
+  margin-top: -30px;
+}
+body .servicePresentation {
+  height: 1040px;
+  position: relative;
+  overflow: hidden;
+}
+body .servicePresentation .Items {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  margin-left: -585px;
+  height: 850px;
+  width: 1150px;
+}
+body .servicePresentation .Items .pageItems {
+  width: 1150px;
+  height: 390px;
+}
+body .servicePresentation .Items .pageItems .item {
+  height: 410px;
+  width: 360px;
+  margin-right: -30px;
+  margin-top: 0;
+}
+body .servicePresentation .Items .pageItems .item a p {
+  font-size: 22pt;
+  margin-top: 150px;
+}
+body .servicePresentation .Items .pageItems .item a h1 {
+  font-size: 24pt;
+  letter-spacing: 0.05em;
+}
+body .servicePresentation .Items .firstRow {
+  position: absolute;
+  top: 50px;
+  left: 170px;
+  margin-left: -190px;
+}
+body .servicePresentation .Items .secondRow {
+  position: absolute;
+  left: 170px;
+  margin-left: -190px;
+  top: 480px;
+}
+body .servicePresentation .Items .secondRow .item:nth-child(2) a p {
+  margin-left: 5px;
+}
+body .servicePresentation .Items .secondRow .item:nth-child(2) a h1 {
+  text-align: right;
+  margin-right: 40px;
+}
+body .servicePresentation .Items .secondRow .item:nth-child(3) a p {
+  width: 80px;
+  margin-left: 60px;
+}
+@media screen and (max-width: 1730px) {
+  body #cathEducation .sectionParagraph {
+    right: 600px;
+  }
+  body #birthControl {
+    /* .sectionParagraph{
+                left: 1000px;
+
+            }*/
+  }
+  body #birthControl .background {
+    left: 499px;
+  }
+  body #birthControl .serviceHeading {
+    top: 40px;
+  }
+  body #ownerStable .sectionImages {
+    width: 498px;
+    height: 880px;
+  }
+  body #ownerStable .sectionParagraph {
+    margin-left: 50px;
+  }
+  body #ownerStable .price {
+    margin-left: 30px;
+    margin-top: 300px;
+  }
+}
+@media screen and (max-width: 1620px) {
+  body section .sectionParagraph h2 {
+    margin-bottom: -30px !important;
+  }
+  body .stableServiceBanner {
+    height: 600px;
+  }
+  body .stableServiceBanner .mainHeading {
+    width: 300px;
+    height: 150px;
+    margin-left: -150px;
+    margin-top: -30px;
+  }
+  body #horseCompany .sectionParagraph,
+  body #school .sectionParagraph {
+    top: 8%;
+  }
+  body .pricing {
+    height: 650px;
+  }
+  body .pricing img {
+    height: 830px;
+  }
+  body .pricing .sectionParagraph .sessionCardPrice {
+    width: 475px;
+  }
+  body .pricing .sectionParagraph .lessonPrices .generalText:nth-child(2) {
+    width: 455px;
+  }
+  body .pricing .sectionParagraph .lessonPrices .generalText:nth-child(4) span {
+    margin-left: 180px;
+  }
+  body .pricing .sectionParagraph .lessonPrices .generalText:nth-child(5) {
+    width: 556px;
+  }
+  body .pricing .sectionParagraph .lessonPrices .lastPrice {
+    width: 585px;
+  }
+  body .technicalDetails {
+    height: 700px;
+  }
+  body .technicalDetails .listedDetails {
+    height: 260px;
+  }
+  body #health {
+    height: 700px;
+  }
+  body #health ul {
+    top: 300px;
+  }
+  body #health .bottomParagraph {
+    margin-top: 40px;
+  }
+  body #health .mainParagraph {
+    margin-top: 150px;
+  }
+  body #cathEducation {
+    height: 800px;
+  }
+  body #cathEducation img {
+    height: 850px;
+    width: 650px;
+  }
+  body #cathEducation .sectionParagraph {
+    right: 500px;
+  }
+  body #birthControl {
+    height: 775px;
+  }
+  body #birthControl .background {
+    height: 800px;
+  }
+  body #birthControl .birthControlServices {
+    margin-left: -50px;
+    margin-top: 50px;
+  }
+  body #ownerStable {
+    height: 800px;
+    position: relative;
+  }
+  body #ownerStable .sectionImages {
+    height: 100%;
+  }
+  body #ownerStable .sectionParagraph {
+    width: 520px;
+  }
+  body #ownerStable .price {
+    margin-left: 50px;
+    margin-top: 350px;
+  }
+  body .pagePresentation {
+    height: 950px;
+  }
+  body .pagePresentation .pageItems {
+    position: absolute !important;
+    left: 50% !important;
+    margin-left: -510px !important;
+    width: 1020px !important;
+    height: 260px !important;
+  }
+  body .pagePresentation .pageItems .item {
+    width: 300px !important;
+    height: 340px !important;
+    margin-top: 30px !important;
+    margin-left: 50px !important;
+    overflow: hidden;
+  }
+  body .pagePresentation .pageItems .item a p {
+    font-size: 19pt !important;
+    margin-top: 110px !important;
+  }
+  body .pagePresentation .pageItems .item a h1 {
+    font-size: 19pt !important;
+    margin-left: 70px !important;
+  }
+  body .pagePresentation .secondRow {
+    top: 413px !important;
+  }
+}
+@media screen and (max-width: 1530px) {
+  body #ownerStable .sectionParagraph {
+    width: 500px;
+  }
+}
+@media screen and (max-width: 1425px) {
+  body #birthControl {
+    height: 900px;
+  }
+  body #birthControl .background {
+    display: none;
+  }
+  body #birthControl .sectionParagraph {
+    position: absolute;
+    left: 50%;
+    margin-left: 50px;
+  }
+  body #birthControl .serviceHeading {
+    position: absolute;
+    left: 50%;
+    margin-left: -400px;
+  }
+  body #birthControl .birthControlServices {
+    position: absolute;
+    left: 50%;
+    margin-left: -570px;
+    top: 100px;
+  }
+  body .pricing img {
+    display: none;
+  }
+  body #ownerStable {
+    height: 800px;
+  }
+  body #ownerStable .sectionImages {
+    display: none;
+  }
+  body #ownerStable .sectionParagraph {
+    position: absolute;
+    left: 50%;
+    margin-left: -400px;
+  }
+  body #ownerStable .price {
+    position: absolute;
+    left: 50%;
+    margin-left: 140px;
+  }
+}
+@media screen and (max-width: 1500px) {
+  body #birthControl .sectionParagraph {
+    right: 10px;
+  }
+}
+@media screen and (max-width: 1370px) {
+  body .personalDevelopment .sectionParagraph {
+    margin-top: -20px;
+    width: 500px;
+  }
+  body .personalDevelopment .sectionParagraph .generalText {
+    width: 500px;
+    margin-left: 0;
+  }
+  body .personalDevelopment .sectionParagraph .subtext {
+    margin-left: 0;
+  }
+  body section .sectionParagraph h1,
+  body section .sectionParagraph h2 {
+    font-size: 27pt;
+  }
+  body #health {
+    background-position-x: -300px;
+  }
+  body .technicalDetails .listedDetails {
+    width: 1000px;
+    margin-left: -500px;
+  }
+  body .technicalDetails .listedDetails .serviceIcons img:nth-child(1) {
+    margin-left: 80px;
+  }
+  body .technicalDetails .listedDetails .serviceIcons img:nth-child(2) {
+    margin-right: 100px;
+    margin-left: 0px;
+  }
+  body .technicalDetails .listedDetails .serviceIcons img:nth-child(3) {
+    margin-left: 80px;
+  }
+  body .technicalDetails .listedDetails .serviceIcons img:nth-child(4) {
+    margin-left: 0;
+  }
+  body .technicalDetails .listedDetails .serviceDescription {
+    width: 1000px;
+  }
+  body .technicalDetails .listedDetails .serviceDescription p {
+    width: 200px;
+    margin-right: 50px;
+  }
+  body .technicalDetails .sectionParagraph {
+    width: 950px;
+    margin-left: -475px;
+  }
+  body #cathEducation img {
+    display: none;
+  }
+  body #cathEducation .sectionParagraph {
+    position: absolute;
+    left: 50%;
+    margin-left: -240px;
+  }
+  body #horseCompany .sectionParagraph {
+    margin-left: -250px;
+  }
+  body #school .sectionParagraph {
+    margin-right: -250px;
+  }
+}
+@media screen and (max-width: 1265px) {
+  body .personalDevelopment .sectionParagraph {
+    margin-top: -50px;
+  }
+  body .personalDevelopment .sectionParagraph .orangeButton {
+    margin-bottom: 30px;
+  }
+}
+@media screen and (max-width: 1110px) {
+  body .personalDevelopment .sectionParagraph {
+    margin-top: -60px;
+  }
+  body .personalDevelopment .sectionParagraph .generalText {
+    margin-top: -30px;
+  }
+  body .personalDevelopment .sectionParagraph .orangeButton {
+    margin-bottom: 40px;
+  }
+  body #horseCompany .sectionParagraph .subtext {
+    margin-top: -30px;
+  }
+}
+@media screen and (max-width: 1000px) and (min-height: 1100px) {
+  body .stableServiceBanner {
+    height: 100vh;
+    min-height: 1400px;
+    background: url("../../media/stables/services/bannerMobile.jpg") no-repeat;
+    background-size: cover;
+  }
+  body .stableServiceBanner .mainHeading {
+    margin-top: -100px;
+    background: none;
+  }
+  body .stableServiceBanner .mainHeading h1,
+  body .stableServiceBanner .mainHeading p {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  body .stableServiceBanner .mainHeading h1 {
+    margin-left: -205px;
+  }
+  body .stableServiceBanner .mainHeading p {
+    margin-left: -52px;
+    margin-top: -130px;
+  }
+}
+@media screen and (max-device-width: 500px) and (orientation: portrait) {
+  body .servicePresentation {
+    display: none;
+  }
+  body .expandButton {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 300px;
+    font-family: 'futuraStd', Arial, Helvetica, sans-serif;
+    background: #ba6c26;
+    background: linear-gradient(180deg, #ba6c26 0%, #b3611d 49%, #a26b2e 100%);
+  }
+  body .expandButton h2 {
+    color: white;
+    font-size: 50pt !important;
+    text-shadow: 3px 2px 11px #000000;
+  }
+  body .expandButton .buttonHeading {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    letter-spacing: 0.05em;
+    margin-left: -430px;
+    margin-top: -40px;
+  }
+  body .expandButton .more,
+  body .expandButton .less {
+    position: absolute;
+    top: 50%;
+    font-size: 80pt !important;
+  }
+  body .expandButton .more {
+    margin-top: -70px;
+    right: 50px;
+  }
+  body .expandButton .less {
+    display: none;
+    margin-top: -50px;
+    right: 70px;
+  }
+  body .schoolMobile {
+    position: relative;
+    height: 300px;
+    background: url("../../media/stables/services/Background.png") no-repeat;
+    background-size: cover;
+    overflow: hidden;
+  }
+  body .schoolMobile #school::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 1500px;
+    background: url("../../media/stables/services/EcolePicMobile.jpg") no-repeat;
+    background-size: 100% 100%;
+  }
+  body .schoolMobile #school {
+    top: 300px;
+    height: 3500px;
+    overflow: visible;
+  }
+  body .schoolMobile #school .orangeButton {
+    margin-left: -150px;
+    margin-bottom: -4350px;
+  }
+  body .schoolMobile #school img {
+    display: none;
+  }
+  body .schoolMobile #school .sectionParagraph {
+    width: 900px;
+    left: 50px;
+    top: 1500px;
+    margin: 0;
+  }
+  body .schoolMobile #school .sectionParagraph h1 {
+    font-size: 75pt;
+    margin-top: 40px;
+  }
+  body .schoolMobile #school .sectionParagraph .generalText {
+    width: 100%;
+  }
+  body .schoolMobile .technicalDetails::before {
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 1px;
+    border-top: #d48712 solid 2px;
+    top: -100px;
+    left: 300px;
+  }
+  body .schoolMobile .technicalDetails {
+    height: 2200px;
+    background: none;
+  }
+  body .schoolMobile .technicalDetails .generalText {
+    color: black !important;
+    text-shadow: none;
+  }
+  body .schoolMobile .technicalDetails .detailParagraph {
+    display: none;
+  }
+  body .schoolMobile .technicalDetails .listedDetails .serviceIcons {
+    flex-direction: column;
+    width: 150px;
+    height: 1300px;
+    margin-left: -75px;
+  }
+  body .schoolMobile .technicalDetails .listedDetails .serviceIcons img {
+    margin: 0;
+    height: 150px;
+    margin-bottom: 350px;
+  }
+  body .schoolMobile .technicalDetails .listedDetails .serviceDescription {
+    flex-direction: column;
+    width: 100%;
+  }
+  body .schoolMobile .technicalDetails .listedDetails .serviceDescription p {
+    width: 500px;
+    margin-left: 250px;
+  }
+  body .schoolMobile .technicalDetails .listedDetails .serviceDescription p:nth-child(1) {
+    margin-top: 150px;
+    margin-bottom: 300px;
+  }
+  body .schoolMobile .technicalDetails .listedDetails .serviceDescription p:nth-child(2) {
+    margin-bottom: 300px;
+  }
+  body .schoolMobile .technicalDetails .listedDetails .serviceDescription p:nth-child(3) {
+    margin-bottom: 300px;
+  }
+  body .schoolMobile .pricing::before {
+    content: "";
+    position: absolute;
+    width: 400px;
+    height: 1px;
+    top: -150px;
+    border-top: solid #d48712 2px;
+    left: 300px;
+  }
+  body .schoolMobile .pricing {
+    position: relative;
+    height: 2000px;
+  }
+  body .schoolMobile .pricing h2 {
+    text-align: center;
+  }
+  body .schoolMobile .pricing .underline {
+    display: none;
+  }
+  body .schoolMobile .pricing img {
+    display: none;
+  }
+  body .schoolMobile .pricing .sectionParagraph {
+    width: 720px;
+    margin-left: 140px;
+    height: 2000px;
+  }
+  body .schoolMobile .pricing .agePrice {
+    margin-top: 100px;
+  }
+  body .schoolMobile .pricing .agePrice .generalText {
+    width: 98%;
+    margin-top: 15px;
+  }
+  body .schoolMobile .pricing .subtext {
+    text-align: justify;
+  }
+  body .schoolMobile .pricing .sessionCardPrice {
+    margin-bottom: 120px;
+    margin-top: 100px;
+  }
+  body .schoolMobile .pricing .sessionCardPrice .cardLineBreak {
+    display: inline;
+  }
+  body .schoolMobile .pricing .sessionCardPrice span {
+    right: unset;
+  }
+  body .schoolMobile .pricing .lessonPrices::before {
+    content: "}";
+    position: absolute;
+    right: 150px;
+    top: -20px;
+    font-family: 'futuraStd', Arial, Helvetica, sans-serif;
+    font-size: 150pt;
+    color: #524e4e;
+  }
+  body .schoolMobile .pricing .lessonPrices::after {
+    content: "25€";
+    position: absolute;
+    top: 80px;
+    right: 0;
+    font-family: 'futuraStd', Arial, Helvetica, sans-serif;
+    font-size: 32pt;
+  }
+  body .schoolMobile .pricing .lessonPrices {
+    position: relative;
+  }
+  body .schoolMobile .pricing .lessonPrices .exeption {
+    display: none;
+  }
+  body .schoolMobile .pricing .lessonPrices p:nth-child(4) {
+    width: 100% !important;
+  }
+  body .schoolMobile .pricing .lessonPrices p:nth-child(4) span {
+    margin-left: 30px !important;
+  }
+  body .schoolMobile .pricing .lessonPrices p:nth-child(5) {
+    margin-bottom: -40px;
+  }
+  body .schoolMobile .pricing .lessonPrices p:nth-child(8) {
+    margin-top: 100px;
+    margin-bottom: -40px;
+  }
+  body .schoolMobile .pricing .lessonPrices .mobileText {
+    position: relative;
+    width: 100%;
+    margin-bottom: -40px;
+    display: block;
+  }
+  body .schoolMobile .pricing .lessonPrices .mobileText .prices {
+    font-family: 'futuraStd', Arial, Helvetica, sans-serif;
+    position: absolute;
+    right: 0;
+  }
+  body #horseCompany::before {
+    content: "";
+    position: absolute;
+    top: 300px;
+    width: 100%;
+    height: 1400px;
+    background: url("../../media/stables/services/AnnePicMobile.jpg") no-repeat;
+    background-size: 100% 100%;
+  }
+  body #horseCompany {
+    height: 300px;
+    min-height: 300px;
+    overflow: hidden;
+  }
+  body #horseCompany .schoolJpg {
+    display: none;
+  }
+  body #horseCompany .sectionParagraph {
+    top: 1800px;
+    width: 900px;
+    left: 50px;
+    margin: 0;
+  }
+  body #horseCompany .sectionParagraph .generalText {
+    width: 100%;
+  }
+  body #horseCompany .sectionParagraph .subtext {
+    width: 700px;
+    margin-left: 100px;
+    margin-bottom: 100px;
+  }
+  body #horseCompany .sectionParagraph .largeDeviceTitle1,
+  body #horseCompany .sectionParagraph .largeDeviceTitle2 {
+    display: none;
+  }
+  body #horseCompany .sectionParagraph .mobileDeviceTitle1,
+  body #horseCompany .sectionParagraph .mobileDeviceTitle2 {
+    display: block;
+  }
+  body #horseCompany .sectionParagraph .mobileDeviceTitle1 {
+    font-size: 75pt;
+    margin-top: 40px;
+  }
+  body #horseCompany .sectionParagraph .generalText .lineSkip {
+    display: none;
+  }
+  body #horseCompany .sectionParagraph .generalText .lineSkip2 {
+    display: inline;
+  }
+  body #horseCompany .sectionParagraph .orangeButton {
+    margin-left: -150px;
+    margin-bottom: -100px;
+  }
+  body #health::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1200px;
+    left: 0;
+    top: 500px;
+    background: url(../../media/stables/services/EssentialOilBackgroundMobile.jpg) no-repeat;
+    background-size: 100% 100%;
+  }
+  body #health {
+    height: 300px;
+    min-height: 300px;
+    background: none;
+    overflow: hidden;
+    margin-top: -10px;
+  }
+  body #health .sectionParagraph {
+    top: 350px;
+    width: 940px;
+    left: 30px;
+    margin: 0;
+  }
+  body #health .sectionParagraph h1 {
+    font-size: 75pt;
+    margin-top: 30px;
+  }
+  body #health .sectionParagraph .generalText {
+    margin-top: 900px;
+  }
+  body #health .bottomParagraph {
+    top: 2720px !important;
+  }
+  body #health .bottomParagraph .subtext {
+    width: 800px;
+    margin-left: 70px;
+  }
+  body #health .bottomParagraph .orangeButton {
+    margin-left: -150px;
+    margin-top: 150px;
+  }
+  body #health ul {
+    position: absolute;
+    width: 800px;
+    left: 100px;
+    top: 1820px;
+  }
+  body #health ul .dots {
+    font-size: 120pt !important;
+  }
+  body #cathEducation::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1500px;
+    top: 300px;
+    left: 0;
+    background: url("../../media/stables/services/poulainDetoureMobile.jpg") no-repeat;
+    background-size: 100% 100%;
+  }
+  body #cathEducation {
+    height: 300px;
+    background-image: none;
+    margin-top: -30px;
+    overflow: hidden;
+  }
+  body #cathEducation .sectionParagraph {
+    position: absolute;
+    width: 900px;
+    left: 50px;
+    margin: 0;
+    top: 1850px;
+  }
+  body #cathEducation .sectionParagraph h1 {
+    font-size: 75pt;
+    margin-top: 30px;
+  }
+  body #cathEducation .sectionParagraph .secondPara {
+    margin-top: 0;
+  }
+  body #cathEducation .sectionParagraph .orangeButton {
+    margin-left: -150px;
+    bottom: -100px;
+  }
+  body #birthControl::before {
+    content: "";
+    background: url("../../media/stables/services/birthControl/BackgroundWithPic.jpg") no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 300px;
+    left: 0;
+    width: 100%;
+    height: 1600px;
+  }
+  body #birthControl {
+    overflow: hidden;
+    height: 300px;
+  }
+  body #birthControl .sectionParagraph {
+    position: absolute;
+    width: 900px;
+    left: 50px;
+    margin: 0;
+    top: 1950px;
+  }
+  body #birthControl .sectionParagraph h1 {
+    font-size: 75pt !important;
+    margin-top: 40px;
+  }
+  body #birthControl .sectionParagraph .generalText {
+    width: 100%;
+    margin: 0;
+  }
+  body #birthControl .sectionParagraph .orangeButton {
+    left: 50%;
+    bottom: -2700px;
+  }
+  body #birthControl .serviceHeading {
+    width: 800px !important;
+    top: 3150px;
+    text-align: center;
+  }
+  body #birthControl .serviceHeading .divider {
+    margin-left: 370px;
+    margin-top: 70px;
+  }
+  body #birthControl .birthControlServices {
+    position: absolute;
+    top: 3700px;
+    left: 0;
+    margin: 0;
+    width: 100%;
+  }
+  body #birthControl .birthControlServices .serviceIcons {
+    position: absolute;
+    left: 50%;
+    margin-left: -60px;
+    top: -150px;
+  }
+  body #birthControl .birthControlServices .serviceIcons img {
+    width: 120px;
+    height: 100px;
+    margin-bottom: 260px;
+  }
+  body #birthControl .birthControlServices .serviceIcons img:nth-child(2) {
+    margin-bottom: 280px;
+  }
+  body #birthControl .birthControlServices .serviceIcons img:nth-child(4) {
+    margin-bottom: 280px;
+  }
+  body #birthControl .birthControlServices .serviceDescription {
+    border-left: none;
+    position: absolute;
+    left: 50%;
+    margin-left: -503px;
+  }
+  body #birthControl .birthControlServices .serviceDescription p {
+    text-align: center;
+    margin-bottom: 250px;
+    margin-left: 0;
+  }
+  body #birthControl .birthControlServices .serviceDescription p:nth-child(6) {
+    padding-left: 150px;
+    padding-right: 150px;
+  }
+  body #ownerStable::before {
+    content: "";
+    background: url("../../media/stables/services/ecurieDeProprio1.jpg") no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    top: 300px;
+    left: 0;
+    width: 100%;
+    height: 1600px;
+  }
+  body #ownerStable {
+    height: 300px;
+    overflow: hidden;
+    /*img{
+                position: absolute;
+                top: 300px;
+                display: block;
+                width: 100%;
+                height: 1700px;
+            }*/
+  }
+  body #ownerStable .sectionParagraph {
+    position: absolute;
+    width: 900px;
+    top: 1900px;
+    left: 50%;
+    margin-left: -450px;
+    text-align: center;
+  }
+  body #ownerStable .sectionParagraph h1 {
+    font-size: 60pt;
+  }
+  body #ownerStable .mobileDivider {
+    width: 400px;
+    height: 1px;
+    border: solid #d48712 1px;
+    position: absolute;
+    left: 50%;
+    margin-left: -200px;
+    bottom: -50px;
+  }
+  body #ownerStable .price {
+    position: absolute;
+    left: 50%;
+    margin-left: -400px;
+    width: 800px;
+    top: 3500px;
+  }
+  body #ownerStable .price h2 {
+    text-align: center;
+  }
+  body #ownerStable .price .divider {
+    display: none;
+  }
+  body #ownerStable .price .orangeButton {
+    left: 50%;
+  }
+}
+@media screen and (min-width: 2100px) {
+  body #ownerStable .sectionParagraph,
+  body #ownerStable .price {
+    position: absolute;
+    left: 50%;
+  }
+  body #ownerStable .sectionParagraph {
+    margin-left: -400px;
+  }
+  body #ownerStable .price {
+    margin-left: 400px;
+  }
+}
+@media screen and (min-width: 2300px) {
+  body .pricing .sectionParagraph {
+    position: absolute;
+    top: -40px;
+    left: 50%;
+    margin-left: -300px;
+  }
+}
+@media screen and (min-width: 1900px) {
+  body #birthControl {
+    position: relative;
+    width: 1920px;
+    left: 50vw;
+    margin-left: -900px;
+  }
+  body #birthControl .sectionParagraph {
+    right: 200px;
+  }
+  body #cathEducation .sectionParagraph {
+    left: 50%;
+    margin-left: -280px;
+  }
+  body #health .sectionParagraph,
+  body #health ul {
+    left: 50%;
+  }
+  body #health .sectionParagraph {
+    margin-left: -350px;
+  }
+  body #health ul {
+    margin-left: -200px;
+  }
+  body #horseCompany .sectionParagraph,
+  body #school .sectionParagraph {
+    top: 50%;
+    margin-top: -400px;
+  }
+}

@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Les chevaux sont nourris au foin de 
+        prairie naturelle, sans semis ni engrais chimique. Ce foin 
+        provient de différents lieux de production, il bénéficie 
+        donc d'une grande diversité botanique et géographique."
+    >
+    <title>Ecuries</title>
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/stables/presentation.css">
+</head>
+<body>
+
+    
+
+
+<img id="dropdownIcon" src="./templates/menuIcons/dropdown_icon.png" alt="dropdown" onclick="openMenu()">
+
+<div id="smallMenuId" class="navMenu smallDeviceMenu">
+    <img id="quitMenu" src="./templates/menuIcons/Cross.png" alt="quit" onclick="closeMenu()">
+    <ul class="smallDeviceMenuList">
+         
+            <li class="menuItems li0">
+               
+
+                <a class="page0" href="./index.html">
+                accueil</a>
+            </li>
+
+            <div class="menuDivider"></div>
+
+             
+            <li class="menuItems li1">
+               
+
+                <a class="page1" href="./place.html">
+                éco&#8209lieu</a>
+            </li>
+
+            <div class="menuDivider"></div>
+
+             
+                <li class="collapsable li2" >
+                    <a class="stableHover"
+
+                                                onclick="unfoldSubMenu()"
+                                                > 
+                    écuries
+                    
+
+                    </a>
+                    <p id="unfoldButton" class="icon unfold" onclick="unfoldSubMenu()">+</p>
+                    <p id="foldButton" class="icon fold" onclick="foldSubMenu()">-</p>
+                    
+                    <div id="stables" >
+                        <div class="menuDivider"></div>
+                        <ul>
+                                        <li>
+                <a class="subLink1" href="./stables1.html">
+                    Présentation                </a>
+            </li>
+                        <li>
+                <a class="subLink2" href="./stables2.html">
+                    Services                </a>
+            </li>
+                                    </ul>
+                    </div>
+
+                </li>
+
+                <div class="menuDivider"></div>
+                
+                 
+            <li class="menuItems li3">
+               
+
+                <a class="page3" href="./accommodation.html">
+                hébergement</a>
+            </li>
+
+            <div class="menuDivider"></div>
+
+             
+            <li class="menuItems li4">
+               
+
+                <a class="page4" href="./gallery.html">
+                galerie</a>
+            </li>
+
+            <div class="menuDivider"></div>
+
+             
+            <li class="menuItems li5">
+               
+
+                <a class="page5" href="./contact.html">
+                contact</a>
+            </li>
+
+            <div class="menuDivider"></div>
+
+                </ul>
+
+    <a class="facebookNav" href="#">
+        <img src="./media/footer/FbIcon2.png" alt="facebook">
+    </a>
+
+    <a href="#" class="instaNav">
+        <img src="./media/instagram.png" alt="instagram">
+    </a>
+
+
+
+</div>
+
+
+<div class="navMenu largeDeviceMenu">
+
+    <a class="logo" href="./index.html"><img src="./media/LogoIcon.png" alt="logoPng"></a> 
+    <ul class="menuList">
+         
+            <li class="menuItems li0">
+               
+
+                <a class="page0" href="./index.html">
+                accueil</a>
+            </li>
+
+            <div class="menuDivider"></div>
+
+             
+            <li class="menuItems li1">
+               
+
+                <a class="page1" href="./place.html">
+                éco&#8209lieu</a>
+            </li>
+
+            <div class="menuDivider"></div>
+
+             
+                <li class="collapsable li2"  
+                    id="unfoldable"
+                >
+                    <a class="stableHover"
+
+                                        > 
+                    écuries<span class="arrow">&#812</span>
+                    
+
+                    </a>
+                    <p id="unfoldButton" class="icon unfold" onclick="unfoldSubMenu()">+</p>
+                    <p id="foldButton" class="icon fold" onclick="foldSubMenu()">-</p>
+                    
+                    <div id="stables"  class="stablesBig" >
+                        <div class="menuDivider"></div>
+                        <ul>
+                                        <li>
+                <a class="subLink1" href="./stables1.html">
+                    Présentation                </a>
+            </li>
+                        <li>
+                <a class="subLink2" href="./stables2.html">
+                    Services                </a>
+            </li>
+                                    </ul>
+                    </div>
+
+                </li>
+
+                <div class="menuDivider"></div>
+                
+                 
+            <li class="menuItems li3">
+               
+
+                <a class="page3" href="./accommodation.html">
+                hébergement</a>
+            </li>
+
+            <div class="menuDivider"></div>
+
+             
+            <li class="menuItems li4">
+               
+
+                <a class="page4" href="./gallery.html">
+                galerie</a>
+            </li>
+
+            <div class="menuDivider"></div>
+
+             
+            <li class="menuItems li5">
+               
+
+                <a class="page5" href="./contact.html">
+                contact</a>
+            </li>
+
+            <div class="menuDivider"></div>
+
+                    
+    </ul>
+
+    
+
+</div>
+
+
+
+
+
+    
+
+
+
+    <div class="banner">
+        <div class="mainHeading">
+
+            <img src="./media/LogoIcon.png" alt="logo" class="logoIcon">
+            <p style="color: #fdd79e; ">Du côté des</p>
+            <h1 class="mainTitle"><span style="text-transform: uppercase; ">é</span>curies</h1>
+        </div>
+    </div>
+
+    <div class="presentation mobileSection">
+        <div class="presentationContent">
+            <hr size="1px">
+            <img src="./media/stables/presentation/HorseIcon.png" alt="HorseIconPng">
+            <h2 data-aos="fade-down">Présentation</h2>
+            <p class="generalText">
+                Soyez les bienvenus chez nous, à Valflaunès, entre 
+                Montpellier et Nîmes, dans le département de l'Hérault. 
+                Notre équipe vous propose une pension de qualitéau sein de 
+                laquelle, depuis 1997, nous mettons nos compétences et notre 
+                savoir-faire au service de l'accompagnement du binôme 
+                «cheval & gardien». Par le prisme d'une approche éthique, 
+                naturelle, et surtout holistique, nous guiderons ceux qui 
+                le souhaitent dans la compréhension du langage du cheval, 
+                afin de permettre une meilleure communication et de créer 
+                ainsi une relation plusdense  et durable. 
+            </p>
+            <hr class="bottom-line" size="1px">
+
+        </div>
+    </div>
+
+    <section class="horseEnvironnement boxSection mobileSection">
+        <article>
+            <h2>Un Espace de Vie Adapté</h2>
+            <div class="divider"></div>
+            <p class="generalText hiddenText">
+                Les chevaux sont nourris au foin de prairie naturelle, 
+                sans engrais chimique. Ce foin provient de différents 
+                lieux de production, il bénéficie donc d'une diversité 
+                botanique. La distribution du foin est faite en slow-feeding. 
+                L'orge estquant à elle produite localement par Laurent, un 
+                agriculteur travaillant dans le respect des sols, sans aucun 
+                intrant chimique. Les boxes ont une litière en copeaux de bois 
+                douglas issue d'une scierie locale. Les chevaux peuvent bénéficier 
+                d'une douche à l'eau chaude solaire. Depuis plus de quinze ans, 
+                nous nous impliquons dans l'adaptation et la gestion des 
+                chevaux sans fers, pour les propriétaires qui sont sensibles 
+                à cette approche. 
+ 
+            </p>
+            <!--<div class="readMore">
+                <p class="generalText readMoreButton">
+                    Lire Plus
+                </p>
+                <p class="generalText readLessButton">
+                    Lire Moins
+                </p>
+            </div>-->
+        </article>
+        <img src="./media/stables/presentation/Pic1.jpg" alt="horseImg">
+    </section>
+
+     
+    <section class="horseFood boxSection mobileSection">
+        <article>
+            <h2>Alimentation et Mode de Vie</h2>
+            <div class="divider"></div>
+            <p class="generalText hiddenText">
+                Les chevaux sont nourris au foin de prairie naturelle, sans semis ni engrais chimique. 
+                Ce foin provient de différents lieux de production, 
+                il bénéficie donc d'une grande diversité botanique et géographique. 
+                La distribution du foin est faite en slow-feeding la moitié de l'année. 
+                L'orge est quant à elle produite localement par Laurent, un agriculteur 
+                travaillant dans le respect des sols, sans aucun intrant chimique. 
+                L'hygiène des chevaux étant aussi une priorité, ils bénéficient 
+                de litières hygiéniques en pellets et sont douchés à l'eau chaude solaire. 
+                Depuis plus de quinze ans, nous ne ferrons plus aucun cheval, et ne leur 
+                apposons pas de mors.
+            </p>
+            <!--<div class="readMore">
+                <p class="generalText readMoreButton">
+                    Lire Plus
+                </p>
+                <p class="generalText readLessButton">
+                    Lire Moins
+                </p>
+            </div>-->
+        </article>
+        <img src="./media/stables/presentation/Pic2.jpg" alt="horseImg">
+    </section>       
+
+    <section class="horseInfrastructures boxSection mobileSection">
+        <article>
+            <h2>Nos Infrastructures Équestres</h2>
+            <div class="divider"></div>
+            <ul class="generalText hiddenText">
+                <li><span>.</span> Manège 20x60 avec tribune</li>
+                <li><span>.</span>Carrière 35x60</li>
+                <li><span>.</span>Espace de travail à pied : 2 ronds de longe</li>
+                <li><span>.</span>Parcours ludique pour les chevaux sur un espace d'1 hectare et demi</li>
+                <li><span>.</span>Piste de 400 mètres de long</li>
+                <li><span>.</span>3 écuries comprenant en tout 35 boxes</li>
+                <li><span>.</span>30 paddocks ombragés avec abreuvoirs automatiques et abris à foin</li>
+                <li><span>.</span>Vestiaires avec douche</li>
+                <li><span>.</span>3 douches pour les chevaux dont une solaire</li>
+                <li><span>.</span>3 selleries</li>
+                <li><span>.</span>Club-house de 100m² avec terrasse (salle commune à toutes les <br> 
+                activités avec coin bar/cuisine)</li>
+            </ul>
+             <!--<div class="readMore">
+                <p class="generalText readMoreButton">
+                    Lire Plus
+                </p>
+                <p class="generalText readLessButton">
+                    Lire Moins
+                </p>
+            </div>-->
+        </article>
+        <img src="./media/stables/presentation/Pic3.jpg" alt="horseImg">
+    </section>
+
+    <section class="linkToServices boxSection mobileSection">
+        <aside>
+            <hr size="1px">
+            <h2>Ce que nous proposons</h2>
+            <p class="generalText">
+                L’étrier des Cabanelles, ce sont aussi de nombreux services et accompagnements 
+                sur-mesure. De l’écurie de propriétaires à l’accompagnement des naissances, 
+                en passant par les cours d’équitation, nous pourrons vous guider dans les 
+                meilleures conditions vers la réalisation de votre projet !
+
+            </p>
+
+            <a href="./stables2.html" class="orangeButton">
+                <p>
+                    Nos Services
+                </p>
+            </a>
+
+            <hr size="1px">
+
+
+
+        </aside>
+        
+
+
+    </section>
+
+    <section class="linkToGallery mobileSection">
+        <div class="sectionParagraph">
+            <div class="divider divider1"></div>
+            <h2>L'<span>é</span>trier en images</h2>
+            <p class="generalText">
+                Pour découvrir nos écuries en images et vous 
+                représenter un peu mieux notre éco-lieu, 
+                parcourez notre galerie photo, dont les 
+                magnifiques clichés ont été réalisés 
+                par le photographe
+            </p>
+            <img src="./media/gallery/TheoSignature.png" alt="signature">
+            <a href="./gallery.html" class="orangeButton">
+                <p>Découvrir</p>
+            </a>
+
+            <div class="divider divider2"></div>
+        </div>
+
+    </section>
+
+    <footer>
+    <img class="logo" src="./media/LogoIcon.png" alt="logoPng">
+
+    <div class="partenarLink">
+        <a href="./partenar.html" class="partenarLink">Partenaires</a>
+    </div>
+
+    <ul>
+        <li><a href="./index.html">Accueil</a></li>
+        <li><a href="./place.html"><span>é</span>co-Lieu</a></li>
+        <li><a href="./stables1.html"><span>é</span>curies</a></li>
+        <li><a href="./accommodation.html">Hébergements</a></li>
+        <li><a href="./gallery.html">Galerie</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+    </ul>
+
+    <a class="facebook2" href="https://www.facebook.com/etrierdescabanelles"><img src="./media/footer/FbIcon2.png" alt="facebookPng"></a>
+    <a class="instagram" href="https://www.instagram.com/etrierdescabanelles"><img src="./media/instagram.png" alt="instaPng"></a>
+
+    <div class="legal">
+        <div class="mobileDivider"></div>
+        <a href="./legal.html">Mentions légales</a>
+        <div class="footerDivider footerDivider1"></div>
+        <p class="etrie"><strong>L'<span>é</span>trier des Cabanelles</strong> © 2020</p>
+        <div class="footerDivider footerDivider2"></div>
+        <p class="starker">Designed by <strong>STARKER</strong><span>design</span></p>
+    </div>
+</footer>
+    <script src="./plugins/jquery.min.js"></script>
+    <script src="./plugins/jsScripts/navMenu.js"></script>
+    <script src="./plugins/aos-master/dist/aos.js"></script>
+    <script src="./plugins/jsScripts/serviceContentUnfolder.js"></script>
+    <script>
+        AOS.init();
+    </script>
+
+    <script>
+        const textSection = getSectionWithHiddenText(3);
+
+        /*showMoreLessText(textSection[0], 1050, 2500, 1080);
+        showMoreLessText(textSection[1], 1050, 2300, 900);
+        showMoreLessText(textSection[2], 1250, 2400, 1100);*/
+
+
+        resizeTextSectionOnWindowResize(textSection[0]);
+        resizeTextSectionOnWindowResize(textSection[1]);
+        resizeTextSectionOnWindowResize(textSection[2]);
+        
+        giveColorToMenuElements(2);
+    </script>
+</body>
+</html>

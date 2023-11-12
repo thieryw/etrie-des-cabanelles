@@ -1,0 +1,836 @@
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="L’étrier des Cabanelles, 
+        ce sont aussi de nombreux services et accompagnements sur-mesure. 
+        De l’écurie de propriétaires à l’accompagnement des naissances, 
+        en passant par les cours d’équitation, nous pourrons vous 
+        guider dans les meilleures conditions vers la 
+        réalisation de votre projet !"
+    >
+    <title>Ecuries</title>
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/stables/service.css">
+    <link rel="stylesheet" href="./plugins/aos-master/dist/aos.css">
+</head>
+<body>
+
+    
+
+
+<img id="dropdownIcon" src="./templates/menuIcons/dropdown_icon.png" alt="dropdown" onclick="openMenu()">
+
+<div id="smallMenuId" class="navMenu smallDeviceMenu">
+    <img id="quitMenu" src="./templates/menuIcons/Cross.png" alt="quit" onclick="closeMenu()">
+    <ul class="smallDeviceMenuList">
+         
+            <li class="menuItems li0">
+               
+
+                <a class="page0" href="./index.html">
+                accueil</a>
+            </li>
+
+            <div class="menuDivider"></div>
+
+             
+            <li class="menuItems li1">
+               
+
+                <a class="page1" href="./place.html">
+                éco&#8209lieu</a>
+            </li>
+
+            <div class="menuDivider"></div>
+
+             
+                <li class="collapsable li2" >
+                    <a class="stableHover"
+
+                                                onclick="unfoldSubMenu()"
+                                                > 
+                    écuries
+                    
+
+                    </a>
+                    <p id="unfoldButton" class="icon unfold" onclick="unfoldSubMenu()">+</p>
+                    <p id="foldButton" class="icon fold" onclick="foldSubMenu()">-</p>
+                    
+                    <div id="stables" >
+                        <div class="menuDivider"></div>
+                        <ul>
+                                        <li>
+                <a class="subLink1" href="./stables1.html">
+                    Présentation                </a>
+            </li>
+                        <li>
+                <a class="subLink2" href="./stables2.html">
+                    Services                </a>
+            </li>
+                                    </ul>
+                    </div>
+
+                </li>
+
+                <div class="menuDivider"></div>
+                
+                 
+            <li class="menuItems li3">
+               
+
+                <a class="page3" href="./accommodation.html">
+                hébergement</a>
+            </li>
+
+            <div class="menuDivider"></div>
+
+             
+            <li class="menuItems li4">
+               
+
+                <a class="page4" href="./gallery.html">
+                galerie</a>
+            </li>
+
+            <div class="menuDivider"></div>
+
+             
+            <li class="menuItems li5">
+               
+
+                <a class="page5" href="./contact.html">
+                contact</a>
+            </li>
+
+            <div class="menuDivider"></div>
+
+                </ul>
+
+    <a class="facebookNav" href="#">
+        <img src="./media/footer/FbIcon2.png" alt="facebook">
+    </a>
+
+    <a href="#" class="instaNav">
+        <img src="./media/instagram.png" alt="instagram">
+    </a>
+
+
+
+</div>
+
+
+<div class="navMenu largeDeviceMenu">
+
+    <a class="logo" href="./index.html"><img src="./media/LogoIcon.png" alt="logoPng"></a> 
+    <ul class="menuList">
+         
+            <li class="menuItems li0">
+               
+
+                <a class="page0" href="./index.html">
+                accueil</a>
+            </li>
+
+            <div class="menuDivider"></div>
+
+             
+            <li class="menuItems li1">
+               
+
+                <a class="page1" href="./place.html">
+                éco&#8209lieu</a>
+            </li>
+
+            <div class="menuDivider"></div>
+
+             
+                <li class="collapsable li2"  
+                    id="unfoldable"
+                >
+                    <a class="stableHover"
+
+                                        > 
+                    écuries<span class="arrow">&#812</span>
+                    
+
+                    </a>
+                    <p id="unfoldButton" class="icon unfold" onclick="unfoldSubMenu()">+</p>
+                    <p id="foldButton" class="icon fold" onclick="foldSubMenu()">-</p>
+                    
+                    <div id="stables"  class="stablesBig" >
+                        <div class="menuDivider"></div>
+                        <ul>
+                                        <li>
+                <a class="subLink1" href="./stables1.html">
+                    Présentation                </a>
+            </li>
+                        <li>
+                <a class="subLink2" href="./stables2.html">
+                    Services                </a>
+            </li>
+                                    </ul>
+                    </div>
+
+                </li>
+
+                <div class="menuDivider"></div>
+                
+                 
+            <li class="menuItems li3">
+               
+
+                <a class="page3" href="./accommodation.html">
+                hébergement</a>
+            </li>
+
+            <div class="menuDivider"></div>
+
+             
+            <li class="menuItems li4">
+               
+
+                <a class="page4" href="./gallery.html">
+                galerie</a>
+            </li>
+
+            <div class="menuDivider"></div>
+
+             
+            <li class="menuItems li5">
+               
+
+                <a class="page5" href="./contact.html">
+                contact</a>
+            </li>
+
+            <div class="menuDivider"></div>
+
+                    
+    </ul>
+
+    
+
+</div>
+
+
+
+
+
+    
+
+
+
+    <div class="banner stableServiceBanner">
+        <div class="mainHeading">
+
+            <img src="./media/LogoIcon.png" alt="logo" class="logoIcon">
+            <p>Nos</p>
+            <h1 class="mainTitle">Services</h1>
+
+        </div>
+    </div>
+
+    <div class="pagePresentation servicePresentation">
+
+        <img class="leafShadow" src="./media/accommodation/LeafShadow.png" alt="leafShadow">
+        <div class="Items">
+            <div class="pageItems firstRow" data-aos="fade-down">
+                 
+            <div class="item" >
+                <a href="#ownerStable">
+                    <p>Écurie de</p>
+                    <h1>PROPRIÉTAIRES</h1>
+                    
+                </a>
+
+                <img src="./media/stables/services/presentation/menuEcurieDeProprio.jpg" alt="PROPRIÉTAIRES Image">
+            </div>
+             
+            <div class="item" >
+                <a href="#birthControl">
+                    <p>Accompagnement</p>
+                    <h1>NAISSANCES</h1>
+                    
+                </a>
+
+                <img src="./media/stables/services/presentation/MenuNaissances.jpg" alt="NAISSANCES Image">
+            </div>
+             
+            <div class="item" >
+                <a href="#cathEducation">
+                    <p>Éducation</p>
+                    <h1>POULAINS</h1>
+                    
+                </a>
+
+                <img src="./media/stables/services/presentation/MenuEducation.jpg" alt="POULAINS Image">
+            </div>
+                        </div>
+            <div class="pageItems secondRow" data-aos="fade-up">
+                 
+            <div class="item" >
+                <a href="#health">
+                    <p>Soins</p>
+                    <h1>SANTÉ</h1>
+                    
+                </a>
+
+                <img src="./media/stables/services/presentation/MenuSoins.jpg" alt="SANTÉ Image">
+            </div>
+             
+            <div class="item" >
+                <a href="#horseCompany">
+                    <p>"Être" avec les chevaux</p>
+                    <h1>DÉVELOPPEMENT<br> PERSONNEL</h1>
+                    
+                </a>
+
+                <img src="./media/stables/services/presentation/MenuDeveloppementPerso.jpg" alt="DÉVELOPPEMENT<br> PERSONNEL Image">
+            </div>
+             
+            <div class="item" >
+                <a href="#school">
+                    <p>École</p>
+                    <h1>D'ÉQUITATION</h1>
+                    
+                </a>
+
+                <img src="./media/stables/services/presentation/MenuEcole.jpg" alt="D'ÉQUITATION Image">
+            </div>
+                        </div>
+
+
+        </div>
+        
+    </div>
+
+    <section id="ownerStable" class="mobileSection">
+        
+                    <div class="expandButton">
+                <h2 class="buttonHeading">Écurie de Propriétaires</h2>
+                <h2 class="more">+</h2>
+                <h2 class="less">-</h2>
+            </div>
+    
+        
+
+        <div class="sectionImages">
+
+        </div>
+
+
+        <div class="sectionParagraph">
+            <h2 data-aos="fade-down"><span style="text-transform: uppercase; ">é</span>curie de</h2>
+            <h1 data-aos="fade-up">propriétaires</h1>
+
+            <p class="generalText">
+                <strong style="font-size: 1.2em;">D</strong>e par notre approche holistique, nos infrastructures 
+                éthiques et nos 23 ans d'expérience, nous mettons tout 
+                en œuvre pour que votre cheval ait un mode de vie qui 
+                respecte sa propre physiologie, qui soit adapté à son 
+                âge, à sa santé, ainsi qu'aux différentes saisons. 
+                À l'écoute de votre projet de vie particulier avec votre 
+                équidé, nous vous proposons un accompagnement durable et 
+                personnalisé, basé sur la (ré)harmonisation de la relation 
+                "gardien & cheval".</p>
+            <p class="generalText">
+                Dans le cas d'une situation problématique, 
+                il s'agira de renouer le dialogue parles dimensions 
+                corporelles et énergétiques. Pour cela, nous fournissons 
+                un diagnostic et proposons des solutions qui prennent en 
+                compte les transformations à apporter pour le cheval, 
+                ainsi que pour la cavalière ou le cavalier 
+                (titulaire du Brevet Fédéral d'Encadrement d'Équitation Éthologique - BFEEE 1 & 2). 
+            </p>
+
+            <p class="subtext">
+                Convient aux chevaux de tous âges, du poulain au cheval retraité.
+            </p>
+        
+            <div class="mobileDivider"></div>
+        </div>
+
+
+        <div class="price">
+            <h2>Tarifs</h2>
+            <div class="divider"></div>
+            <p class="generalText">
+                Tarifs "pension" ou "accompagnement et travail"<br><br>
+               <strong style="font-size: 1.1em; ">240€</strong> à <strong style="font-size: 1.1em; ">360€</strong> par mois en fonction de la formule choisie
+            </p>
+
+            <p class="subtext">
+                Chaque formule étant sur-mesure, 
+                elle donne lieu à une tarification différente.
+            </p>
+
+                  <a href="./contact.html" class="orangeButton">
+            <p>
+                Contact
+            </p>
+      </a>
+
+    
+
+ 
+        
+        
+        </div>
+
+        
+    
+    
+    
+    
+    </section>
+
+    <section id="birthControl" class="mobileSection">
+
+                    <div class="expandButton">
+                <h2 class="buttonHeading">Naissances</h2>
+                <h2 class="more">+</h2>
+                <h2 class="less">-</h2>
+            </div>
+    
+                <img src="./media/stables/services/birthControl/BackgroundWithPic.jpg" alt="background" class="background">
+        <h2 class="serviceHeading">Nous Proposons
+
+        </h2>
+        <div class="services birthControlServices">
+             <div class="serviceIcons">             <img src="./media/stables/services/birthControl/HorseIcon.png" alt="icons" class="icons">
+                        <img src="./media/stables/services/birthControl/CameraIcon.png" alt="icons" class="icons">
+                        <img src="./media/stables/services/birthControl/PacifierIcon.png" alt="icons" class="icons">
+                        <img src="./media/stables/services/birthControl/PregnancyIcon.png" alt="icons" class="icons">
+                        <img src="./media/stables/services/birthControl/HorseRelationIcon.png" alt="icons" class="icons">
+                        <img src="./media/stables/services/birthControl/baby-bottle1.png" alt="icons" class="icons">
+             </div>  <div class="serviceDescription">             <p class="generalText">Aide au choix de l'étalon adapté<br> à la jument</p>
+                        <p class="generalText">Suivi de gestation :<br> vidéosurveillance (nous<br> habitons sur place)</p>
+                        <p class="generalText">Naissance (surveillance<br> rapprochée)</p>
+                        <p class="generalText">Suivi de la relation entre la<br> jument et son gardien durant<br> ces étapes de transformation</p>
+                        <p class="generalText">Gestion des premières étapes<br> de la relation à l'humain</p>
+                        <p class="generalText">Accompagnement pour un sevrage progressif en douceur (en respect du 
+    lien poulinière et poulain) des besoins des deux</p>
+             </div>         </div>
+
+        <div class="sectionParagraph">
+            <h2 data-aos="fade-down">Accompagnement</h2>
+            <h1 data-aos="fade-up">NAISSANCES</h1>
+            <p class="generalText" data-aos="fade-zoom-in" data-aos-dellay="300">
+                <strong style="font-size: 1.2em;">L</strong>es 
+                étapes de la vie des chevaux demandent expérience et 
+                <strong>surveillance 
+                rapprochée</strong>
+                . Après un accompagnement complet allant  de la conception 
+                jusqu’à la naissance, les poulains évolueront dans un espace de vie adapté. Un 
+                <strong>grand paddock sécurisé</strong>
+                 est à disposition. Les boxes spécifiques et spacieux de
+                6x3m leurs garantiront le confort et la place nécessaires. Nous leur réservons une
+                <strong>alimentation étudiée</strong>
+                 qui leur assurera une croissance et un développement 
+                sains. Enfin, la nature environnante sera des plus propices pour que les poulains 
+                découvrent le monde dans les meilleures conditions.
+            </p>
+                  <a href="./contact.html" class="orangeButton">
+            <p>
+                Contact
+            </p>
+      </a>
+
+    
+        
+ 
+        </div>
+    </section>
+
+    <section id="cathEducation" class="mobileSection">
+
+                    <div class="expandButton">
+                <h2 class="buttonHeading">Éducation Poulains</h2>
+                <h2 class="more">+</h2>
+                <h2 class="less">-</h2>
+            </div>
+    
+        
+
+        <div class="sectionParagraph" data-aos="fade">
+            <h2><span style="text-transform: uppercase; ">é</span>ducation</h2>  
+            <h1>poulains<br>&<br>jeunes chevaux</h1>
+            <p class="subtext">
+                Convient aux poulains de 1 à 3 ans.
+            </p>
+
+            <p class="generalText">
+                <strong style="font-size: 1.2em;">T</strong>ous les 
+                gens de chevaux connaissent l'importance des premières phases de 
+                relation à l'humain et d'éducation des poulains. 
+                Notre approche, à la fois globale 
+                et progressive, s'inscrit dans le respect de 
+                leur développement physique et 
+                psychologique. 
+                L'objectif est d'intégrer l'éducation dans le 
+                quotidien des poulains tout en 
+                préservant 
+                <strong>leur sensibilité</strong>
+                 et leur 
+                <strong>envie de communiquer</strong>
+                 de manière 
+                durable. Le but est aussi de développer un 
+                <strong>lien harmonieux</strong>
+                 entre le/la 
+                gardien(ne) et le poulain. 
+            </p>
+
+            <p class="generalText secondPara">
+                Un 
+                <strong>diagnostic comportemental</strong>
+                 initial aboutit à un 
+                programme personnalisé. On obtiendra ainsi des bases 
+                solides pour votre projet 
+                de vie avec votre équidé ! À partir de 3 ans, 
+                la continuité de cette approche à 
+                pied conduit naturellement le poulain 
+                vers "l'approche montée", en confiance et 
+                avec sérénité. 
+            </p>
+
+                  <a href="./contact.html" class="orangeButton">
+            <p>
+                Contact
+            </p>
+      </a>
+
+            </div>
+
+        <img src="./media/stables/services/poulainDetoure.png" alt="backgroundJpg">
+
+    </section>
+
+    <section id="health" class="mobileSection">
+
+                <div class="expandButton">
+                <h2 class="buttonHeading">Soins Santé</h2>
+                <h2 class="more">+</h2>
+                <h2 class="less">-</h2>
+            </div>
+    
+        
+        <div class="sectionParagraph mainParagraph" data-aos="fade-left">
+            <h2>Soins</h2>
+            <h1>santé</h1>
+            <p class="generalText">
+                <strong style="font-size: 1.2em;">N</strong>ous 
+                proposons des soins naturels visant à garder en 
+                bonne santé vos chevaux
+                ainsi que leur biomécanique et leur bien être en général. 
+                Outre des soins 
+                préventifs, nous proposons :
+                
+            </p>
+                
+        </div>
+        <ul data-aos="fade-right">
+            <li class="generalText"><span class="dots">.</span>Ostéopathie</li>
+            <li class="generalText"><span class="dots">.</span>Micronutrition cellulaire</li>
+            <li class="generalText"><span class="dots">.</span>Soins dentistes</li>
+            <li class="generalText"><span class="dots">.</span>Communication animale</li>
+            <li class="generalText"><span class="dots">.</span>Traitement homéopathique</li>
+            <li class="generalText"><span class="dots">.</span>Vermifugation naturelle</li>
+            <li class="generalText"><span class="dots">.</span>Gemmothérapie : <span class="specification">macérât de bourgeons</span></li>
+            <li class="generalText"><span class="dots">.</span>Podologie : <span class="specification">parage pour pieds nus</span></li>
+            <li class="generalText"><span class="dots">.</span>Aromathérapie : <span class="specification">huiles esentielles</span></li>
+            <li class="generalText"><span class="dots">.</span>Shiatsu : <span class="specification">acupression sur les méridiens</span></li>
+
+        </ul>
+
+        <div class="sectionParagraph bottomParagraph" data-aos="fade-left">
+            <p class="subtext">
+                En fonction de vos demandes et de la problématique rencontrée
+                : soins sur-
+                mesure proposés.
+              
+            </p>
+                  <a href="./contact.html" class="orangeButton">
+            <p>
+                Contact
+            </p>
+      </a>
+
+    
+        </div>
+    </section>
+
+    <section id="horseCompany" class="personalDevelopment mobileSection">
+                    <div class="expandButton">
+                <h2 class="buttonHeading">"Être" avec les chevaux</h2>
+                <h2 class="more">+</h2>
+                <h2 class="less">-</h2>
+            </div>
+    
+                <div class="sectionParagraph" data-aos="fade">
+            <h2 class="largeDeviceTitle2">"<span style="text-transform: uppercase;">ê</span>tre"</h2>
+            <h1 class="largeDeviceTitle1">avec les chevaux</h1>
+
+            <h2 class="mobileDeviceTitle2">"<span style="text-transform: uppercase;">ê</span>tre" avec les</h2>
+            <h1 class="mobileDeviceTitle1">chevaux</h1>
+
+            <p class="subtext">
+                Comment se reconnecter à nous-mêmes, 
+                à nos propres problématiques, comment changer ?
+            </p>
+
+            <p class="generalText">
+               <strong style="font-size: 1.2em; ">N</strong>ous vous proposons 
+                <strong>un atelier personnalisé</strong>
+                 axé sur l'exploration des 
+                problématiques de vie rencontrées par chacun. 
+                Il s'agit d'un cheminement vers 
+                soi, d'une 
+                <strong>introspection</strong>
+                , guidée par  les chevaux.
+                Cet atelier s'adresse à toute personne qui se sent «
+                appelée
+                » par les chevaux, 
+                aux personnes ayant eu des 
+                <strong>expériences traumatisantes</strong>
+                 avec les chevaux 
+                (peur particulière, histoire particulière, 
+                envie d'un nouveau départ avec le 
+                cheval), mais également aux personnes ayant 
+                rencontré des problématiques 
+                dans leur vie indépendamment des chevaux.
+            
+            </p>
+
+            <a href="./contact.html" class="orangeButton">
+                <p>Contact</p>
+            </a>
+            
+        
+        </div>
+
+
+
+        <img class="schoolJpg" src="./media/stables/services/AnnePic.jpg" alt="AnneJpg">
+
+
+            
+    
+    
+    </section>
+
+    <div class="mobileSection schoolMobile">
+                    <div class="expandButton">
+                <h2 class="buttonHeading">École d'Équitation</h2>
+                <h2 class="more">+</h2>
+                <h2 class="less">-</h2>
+            </div>
+    
+                <section id="school" class="personalDevelopment">
+            <div class="sectionParagraph">
+                <h2 data-aos="fade-right"><span style="text-transform: uppercase;">é</span>cole d'Équitation</h2>
+                <h1 data-aos="fade-left">« poney feel »</h1>
+
+
+                <p class="generalText" data-aos="fade-zoom-in" data-aos-dellay="300">
+                    <strong style="font-size: 1.2em">B</strong>ienvenue dans notre école d'équitation créée en 2012. 
+                    Atmosphère calme et détendue, ambiance chaleureuse et 
+                    familiale, c'est dans ce cadre agréable que nous proposons 
+                    un apprentissage progressif de l'équitation dans le respect 
+                    du rythme de chacun. Ici, la priorité est donnée à la 
+                    relation et à l'écoute. En puisant dans diverses disciplines 
+                    (éthologie, équitation centrée, yoga) nous recherchons 
+                    une meilleure conscience du corps, ainsi que la transmission 
+                    de valeurs telles que le respect, la bienveillance et 
+                    l'ouverture d'esprit (envers l'autre comme envers soi). 
+                    Nos démarches se font en cohérence avec notre engagement 
+                    écologique qui transparaît dans notre fonctionnement. 
+                    Dans la relation à la Nature, à l'Animal et à l'Autre, 
+                    l'équitation devient école du corps et de la vie.
+
+                    
+                </p>
+                <a href="./contact.html" class="orangeButton">
+                    <p>Contact</p>
+                </a>
+                    
+                    
+            </div>
+
+                    
+
+            <img src="./media/stables/services/EcolePic.jpg" alt="AnneJpg">
+
+            <img src="./media/stables/services/BlockWithArrow.png" alt="arrowPng" class="backgroundArrow">
+                    
+    
+    
+        </section>
+
+        <section class="technicalDetails">
+            <div class="listedDetails">
+                 <div class="serviceIcons">             <img src="./media/stables/services/school/CalendarIcon.png" alt="icons" class="icons">
+                        <img src="./media/stables/services/school/FamilyIcon.png" alt="icons" class="icons">
+                        <img src="./media/stables/services/school/AwardIcon.png" alt="icons" class="icons">
+                        <img src="./media/stables/services/school/ToyIcon.png" alt="icons" class="icons">
+             </div>  <div class="serviceDescription">             <p class="generalText">Cours hebdomadaires d'1h30</p>
+                        <p class="generalText">Ateliers en famille parents/enfants pendant les vacances scolaires</p>
+                        <p class="generalText">Cours assurés par Lucile Carré, titulaire d'un BPJEPS en Activités Équestres</p>
+                        <p class="generalText">Cours pour les tout petits à partir de 2 ans et demi</p>
+             </div>             </div>
+
+            <div class="sectionParagraph detailParagraph">
+                <p class="generalText">
+                    Les groupes sont constitués par âge et par niveau. 
+                    Ils exploreront <strong>une thématique par semaine</strong>, oscillant 
+                    entre jeux à poneys et ateliers techniques. 
+                    L'enfant y apprend à communiquer avec son poney à pied, 
+                    et se familiarise avec ses repères spatiaux corporels à 
+                    dos de poney. Des séances de reconnexion à la nature 
+                    en parcours variés leur permettront de partir à 
+                    l'extérieur dans une dynamique de groupe organisée 
+                    autour de petits jeux.
+                </p>
+                <p class="generalText">
+                    À l'occasion des vacances scolaires,  
+                    nous proposons des <strong>stages multi-activités</strong> à thèmes 
+                    Équestre (randonnée, trek, préparation des galops, soins) 
+                    et Nature (environnement, faune, flore, orientation).
+                </p>
+            </div>
+
+        </section>
+
+        <section class="pricing">
+            <img src="./media/stables/services/school/poneyGirl.png" alt="moneyGirlPgn">
+            <div class="sectionParagraph" data-aos="fade">
+                <h2>Tarifs</h2>
+                <div class="underline"></div>
+                <p class="generalText subscription">
+                    Abonnement annuel sur 34 semaines :   
+                </p>
+
+                <div class="agePrice">
+                    <p class="generalText">
+                        Pitchouns (3 à 5 ans) <strong>430€</strong>			 
+                    </p>
+                    <p class="generalText">
+                        6 à 8 ans <strong>480€</strong>			 
+                    </p>
+                    <p class="generalText">
+                        9 à 12 ans	<strong>560€</strong>		 
+                    </p>
+                    <p class="generalText">
+                        13 à 15 ans <strong>630€</strong>			 
+                    </p>
+                    <p class="generalText">
+                        16 ans et plus <strong>680€</strong> 			
+                    </p>
+                </div>
+                    
+                <p class="generalText sessionCardPrice">
+                    Cartes de 10 séances<br class="cardLineBreak"><span><strong>160€</strong> à <strong>230€</strong> selon la tranche d’âge.</span> 			
+                </p>
+
+                <p class="subtext">
+                    Inscriptions en septembre. 
+                    Possibilité d'arriver en cours 
+                    d'année en fonction des places.
+                </p>
+
+                <div class="lessonPrices">
+                    <p class="generalText">
+                        Cours d’essai
+                    </p>
+
+                    <p class="generalText">
+                        Cavalier de passage <span class="prices exeption"><span class="curly-brasses">}</span><strong>30€</strong> (- de 12 ans 25€ / Pitchouns <strong>20€</strong>)</span>			
+                    </p>
+                    <p class="generalText">
+                        Initiation       			
+                    </p>
+                    <p class="generalText">
+                        Cours particulier <span><strong>35€</strong> (- de 16 ans 30€)</span>			
+                    </p>
+                    <p class="generalText">
+                        Stages vacances <span class="prices exeption"><strong>30€</strong> la demi-journée <span>/</span> <strong>50€</strong> la journée</span> 			
+                    </p>
+
+                    <p class="subtext mobileText">la demi-journée <span class="prices">30€</span></p>
+                    <p class="subtext mobileText">la journée <span class="prices">50€</span></p>
+
+                    <p class="generalText lastPrice">
+                        Réduction familles <span class="prices exeption"><strong>-5%</strong> 2ème cavalier <span>/</span> <strong>-10%</strong> à partir du 3ème</span> 			
+                    </p>
+
+                    <p class="subtext mobileText">2ème cavalier <span class="prices">-5%</span></p>
+                    <p class="subtext mobileText">à partir du 3ème <span class="prices">-10%</span></p>
+
+                </div>
+                    
+            </div>
+    
+
+        </section>
+
+
+    </div>
+
+
+
+    <footer>
+    <img class="logo" src="./media/LogoIcon.png" alt="logoPng">
+
+    <div class="partenarLink">
+        <a href="./partenar.html" class="partenarLink">Partenaires</a>
+    </div>
+
+    <ul>
+        <li><a href="./index.html">Accueil</a></li>
+        <li><a href="./place.html"><span>é</span>co-Lieu</a></li>
+        <li><a href="./stables1.html"><span>é</span>curies</a></li>
+        <li><a href="./accommodation.html">Hébergements</a></li>
+        <li><a href="./gallery.html">Galerie</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+    </ul>
+
+    <a class="facebook2" href="https://www.facebook.com/etrierdescabanelles"><img src="./media/footer/FbIcon2.png" alt="facebookPng"></a>
+    <a class="instagram" href="https://www.instagram.com/etrierdescabanelles"><img src="./media/instagram.png" alt="instaPng"></a>
+
+    <div class="legal">
+        <div class="mobileDivider"></div>
+        <a href="./legal.html">Mentions légales</a>
+        <div class="footerDivider footerDivider1"></div>
+        <p class="etrie"><strong>L'<span>é</span>trier des Cabanelles</strong> © 2020</p>
+        <div class="footerDivider footerDivider2"></div>
+        <p class="starker">Designed by <strong>STARKER</strong><span>design</span></p>
+    </div>
+</footer>
+    <script src="./plugins/jquery.min.js"></script>
+    <script src="./plugins/aos-master/dist/aos.js"></script>
+    <script src="./plugins/jsScripts/navMenu.js"></script>
+    <script src="./plugins/jsScripts/serviceContentUnfolder.js"></script>
+    <script>
+        AOS.init({
+            startEvent: 'load',
+            duration: 1000,
+        });
+    </script>
+
+    <script>
+        const pageElements = getPageElements(6);
+        const sectionsHeights = [4800, 6000, 4050, 3150, 3500, 7800];
+
+        for(const i of [0, 1, 2, 3, 4, 5]){
+            expanAndFoldSection(pageElements[i], sectionsHeights[i]);
+            resizeSectionOnWindowResize(pageElements[i]);
+        }
+
+        giveColorToMenuElements(2);
+    </script>
+    
+   
+</body>
+</html>

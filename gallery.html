@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Souvenirs d'Instants">
+    <title>Galerie</title>
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/gallery.css">
+    <link rel="stylesheet" href="./src/plugins/Justified-Gallery-master/dist/css/justifiedGallery.css">
+    
+</head>
+    
+<body>
+
+    
+
+
+<img id="dropdownIcon" src="./templates/menuIcons/dropdown_icon.png" alt="dropdown" onclick="openMenu()">
+
+<div id="smallMenuId" class="navMenu smallDeviceMenu">
+    <img id="quitMenu" src="./templates/menuIcons/Cross.png" alt="quit" onclick="closeMenu()">
+    <ul class="smallDeviceMenuList">
+         
+            <li class="menuItems li0">
+               
+
+                <a class="page0" href="./index.html">
+                accueil</a>
+            </li>
+
+            <div class="menuDivider"></div>
+
+             
+            <li class="menuItems li1">
+               
+
+                <a class="page1" href="./place.html">
+                éco&#8209lieu</a>
+            </li>
+
+            <div class="menuDivider"></div>
+
+             
+                <li class="collapsable li2" >
+                    <a class="stableHover"
+
+                                                onclick="unfoldSubMenu()"
+                                                > 
+                    écuries
+                    
+
+                    </a>
+                    <p id="unfoldButton" class="icon unfold" onclick="unfoldSubMenu()">+</p>
+                    <p id="foldButton" class="icon fold" onclick="foldSubMenu()">-</p>
+                    
+                    <div id="stables" >
+                        <div class="menuDivider"></div>
+                        <ul>
+                                        <li>
+                <a class="subLink1" href="./stables1.html">
+                    Présentation                </a>
+            </li>
+                        <li>
+                <a class="subLink2" href="./stables2.html">
+                    Services                </a>
+            </li>
+                                    </ul>
+                    </div>
+
+                </li>
+
+                <div class="menuDivider"></div>
+                
+                 
+            <li class="menuItems li3">
+               
+
+                <a class="page3" href="./accommodation.html">
+                hébergement</a>
+            </li>
+
+            <div class="menuDivider"></div>
+
+             
+            <li class="menuItems li4">
+               
+
+                <a class="page4" href="./gallery.html">
+                galerie</a>
+            </li>
+
+            <div class="menuDivider"></div>
+
+             
+            <li class="menuItems li5">
+               
+
+                <a class="page5" href="./contact.html">
+                contact</a>
+            </li>
+
+            <div class="menuDivider"></div>
+
+                </ul>
+
+    <a class="facebookNav" href="#">
+        <img src="./media/footer/FbIcon2.png" alt="facebook">
+    </a>
+
+    <a href="#" class="instaNav">
+        <img src="./media/instagram.png" alt="instagram">
+    </a>
+
+
+
+</div>
+
+
+<div class="navMenu largeDeviceMenu">
+
+    <a class="logo" href="./index.html"><img src="./media/LogoIcon.png" alt="logoPng"></a> 
+    <ul class="menuList">
+         
+            <li class="menuItems li0">
+               
+
+                <a class="page0" href="./index.html">
+                accueil</a>
+            </li>
+
+            <div class="menuDivider"></div>
+
+             
+            <li class="menuItems li1">
+               
+
+                <a class="page1" href="./place.html">
+                éco&#8209lieu</a>
+            </li>
+
+            <div class="menuDivider"></div>
+
+             
+                <li class="collapsable li2"  
+                    id="unfoldable"
+                >
+                    <a class="stableHover"
+
+                                        > 
+                    écuries<span class="arrow">&#812</span>
+                    
+
+                    </a>
+                    <p id="unfoldButton" class="icon unfold" onclick="unfoldSubMenu()">+</p>
+                    <p id="foldButton" class="icon fold" onclick="foldSubMenu()">-</p>
+                    
+                    <div id="stables"  class="stablesBig" >
+                        <div class="menuDivider"></div>
+                        <ul>
+                                        <li>
+                <a class="subLink1" href="./stables1.html">
+                    Présentation                </a>
+            </li>
+                        <li>
+                <a class="subLink2" href="./stables2.html">
+                    Services                </a>
+            </li>
+                                    </ul>
+                    </div>
+
+                </li>
+
+                <div class="menuDivider"></div>
+                
+                 
+            <li class="menuItems li3">
+               
+
+                <a class="page3" href="./accommodation.html">
+                hébergement</a>
+            </li>
+
+            <div class="menuDivider"></div>
+
+             
+            <li class="menuItems li4">
+               
+
+                <a class="page4" href="./gallery.html">
+                galerie</a>
+            </li>
+
+            <div class="menuDivider"></div>
+
+             
+            <li class="menuItems li5">
+               
+
+                <a class="page5" href="./contact.html">
+                contact</a>
+            </li>
+
+            <div class="menuDivider"></div>
+
+                    
+    </ul>
+
+    
+
+</div>
+
+
+
+
+
+    
+
+
+
+    <div class="banner galleryBanner">
+        <div class="mainHeading" id="title">
+            <h1 class="mainTitle">Galerie</h1>
+            <p>Souvenirs d'Instants</p>
+        </div>
+
+    </div>
+
+
+
+
+
+    <div id="modal">
+        
+            <img class="left" src="./media/gallery/leftArrow.png" alt="arrow" onclick="prevSlide()">
+            <img class="right" src="./media/gallery/rightArrow.png" alt="arrow" onclick="nextSlide()">
+            <img src="./media/gallery/Cross.png" alt="cross" class="close" onclick="quitSlider()">
+
+
+                            <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/1.jpg" alt="galleryImg" id="img1">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/2.jpg" alt="galleryImg" id="img2">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/3.jpg" alt="galleryImg" id="img3">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/4.jpg" alt="galleryImg" id="img4">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/5.jpg" alt="galleryImg" id="img5">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/6.jpg" alt="galleryImg" id="img6">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/7.jpg" alt="galleryImg" id="img7">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/8.jpg" alt="galleryImg" id="img8">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/9.jpg" alt="galleryImg" id="img9">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/10.jpg" alt="galleryImg" id="img10">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/11.jpg" alt="galleryImg" id="img11">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/12.jpg" alt="galleryImg" id="img12">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/13.jpg" alt="galleryImg" id="img13">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/14.jpg" alt="galleryImg" id="img14">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/15.jpg" alt="galleryImg" id="img15">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/16.jpg" alt="galleryImg" id="img16">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/17.jpg" alt="galleryImg" id="img17">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/18.jpg" alt="galleryImg" id="img18">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/19.jpg" alt="galleryImg" id="img19">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/20.jpg" alt="galleryImg" id="img20">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/21.jpg" alt="galleryImg" id="img21">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/22.jpg" alt="galleryImg" id="img22">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/23.jpg" alt="galleryImg" id="img23">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/24.jpg" alt="galleryImg" id="img24">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/25.jpg" alt="galleryImg" id="img25">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/26.jpg" alt="galleryImg" id="img26">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/27.jpg" alt="galleryImg" id="img27">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/28.jpg" alt="galleryImg" id="img28">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/29.jpg" alt="galleryImg" id="img29">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/30.jpg" alt="galleryImg" id="img30">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/31.jpg" alt="galleryImg" id="img31">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/32.jpg" alt="galleryImg" id="img32">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/33.jpg" alt="galleryImg" id="img33">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/34.jpg" alt="galleryImg" id="img34">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/35.jpg" alt="galleryImg" id="img35">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/36.jpg" alt="galleryImg" id="img36">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/37.jpg" alt="galleryImg" id="img37">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/38.jpg" alt="galleryImg" id="img38">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/39.jpg" alt="galleryImg" id="img39">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/40.jpg" alt="galleryImg" id="img40">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/41.jpg" alt="galleryImg" id="img41">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/42.jpg" alt="galleryImg" id="img42">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/43.jpg" alt="galleryImg" id="img43">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/44.jpg" alt="galleryImg" id="img44">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/45.jpg" alt="galleryImg" id="img45">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/46.jpg" alt="galleryImg" id="img46">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/47.jpg" alt="galleryImg" id="img47">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/48.jpg" alt="galleryImg" id="img48">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/49.jpg" alt="galleryImg" id="img49">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/50.jpg" alt="galleryImg" id="img50">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/51.jpg" alt="galleryImg" id="img51">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/52.jpg" alt="galleryImg" id="img52">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/53.jpg" alt="galleryImg" id="img53">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/54.jpg" alt="galleryImg" id="img54">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/55.jpg" alt="galleryImg" id="img55">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/56.jpg" alt="galleryImg" id="img56">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/57.jpg" alt="galleryImg" id="img57">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/58.jpg" alt="galleryImg" id="img58">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/59.jpg" alt="galleryImg" id="img59">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/60.jpg" alt="galleryImg" id="img60">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/61.jpg" alt="galleryImg" id="img61">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/62.jpg" alt="galleryImg" id="img62">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/63.jpg" alt="galleryImg" id="img63">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/64.jpg" alt="galleryImg" id="img64">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/65.jpg" alt="galleryImg" id="img65">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/66.jpg" alt="galleryImg" id="img66">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/67.jpg" alt="galleryImg" id="img67">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/68.jpg" alt="galleryImg" id="img68">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/69.jpg" alt="galleryImg" id="img69">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/70.jpg" alt="galleryImg" id="img70">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/71.jpg" alt="galleryImg" id="img71">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/72.jpg" alt="galleryImg" id="img72">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/73.jpg" alt="galleryImg" id="img73">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/74.jpg" alt="galleryImg" id="img74">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/75.jpg" alt="galleryImg" id="img75">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/76.jpg" alt="galleryImg" id="img76">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/77.jpg" alt="galleryImg" id="img77">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/78.jpg" alt="galleryImg" id="img78">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/79.jpg" alt="galleryImg" id="img79">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/80.jpg" alt="galleryImg" id="img80">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/81.jpg" alt="galleryImg" id="img81">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/82.jpg" alt="galleryImg" id="img82">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/83.jpg" alt="galleryImg" id="img83">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/84.jpg" alt="galleryImg" id="img84">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/85.jpg" alt="galleryImg" id="img85">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/86.jpg" alt="galleryImg" id="img86">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/87.jpg" alt="galleryImg" id="img87">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/88.jpg" alt="galleryImg" id="img88">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/89.jpg" alt="galleryImg" id="img89">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/90.jpg" alt="galleryImg" id="img90">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/91.jpg" alt="galleryImg" id="img91">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/92.jpg" alt="galleryImg" id="img92">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/93.jpg" alt="galleryImg" id="img93">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/94.jpg" alt="galleryImg" id="img94">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/95.jpg" alt="galleryImg" id="img95">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/96.jpg" alt="galleryImg" id="img96">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/97.jpg" alt="galleryImg" id="img97">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/98.jpg" alt="galleryImg" id="img98">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/99.jpg" alt="galleryImg" id="img99">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/100.jpg" alt="galleryImg" id="img100">
+                    </a>
+                </div>
+
+                                <div class="imageContainer">
+                    <a><img class="lightBoxPicture" src="./media/gallery/pictures/101.jpg" alt="galleryImg" id="img101">
+                    </a>
+                </div>
+
+                
+        
+    </div>
+
+
+    <section class="galleryContainer" id="thumbnails">
+        <div id="gallery">
+
+            <a class="thumbNail" onclick="openModal(); showSlides(1)"><img id="1" src="./media/gallery/pictures/1.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(2)"><img id="2" src="./media/gallery/pictures/2.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(3)"><img id="3" src="./media/gallery/pictures/3.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(4)"><img id="4" src="./media/gallery/pictures/4.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(5)"><img id="5" src="./media/gallery/pictures/5.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(6)"><img id="6" src="./media/gallery/pictures/6.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(7)"><img id="7" src="./media/gallery/pictures/7.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(8)"><img id="8" src="./media/gallery/pictures/8.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(9)"><img id="9" src="./media/gallery/pictures/9.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(10)"><img id="10" src="./media/gallery/pictures/10.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(11)"><img id="11" src="./media/gallery/pictures/11.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(12)"><img id="12" src="./media/gallery/pictures/12.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(13)"><img id="13" src="./media/gallery/pictures/13.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(14)"><img id="14" src="./media/gallery/pictures/14.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(15)"><img id="15" src="./media/gallery/pictures/15.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(16)"><img id="16" src="./media/gallery/pictures/16.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(17)"><img id="17" src="./media/gallery/pictures/17.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(18)"><img id="18" src="./media/gallery/pictures/18.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(19)"><img id="19" src="./media/gallery/pictures/19.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(20)"><img id="20" src="./media/gallery/pictures/20.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(21)"><img id="21" src="./media/gallery/pictures/21.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(22)"><img id="22" src="./media/gallery/pictures/22.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(23)"><img id="23" src="./media/gallery/pictures/23.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(24)"><img id="24" src="./media/gallery/pictures/24.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(25)"><img id="25" src="./media/gallery/pictures/25.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(26)"><img id="26" src="./media/gallery/pictures/26.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(27)"><img id="27" src="./media/gallery/pictures/27.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(28)"><img id="28" src="./media/gallery/pictures/28.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(29)"><img id="29" src="./media/gallery/pictures/29.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(30)"><img id="30" src="./media/gallery/pictures/30.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(31)"><img id="31" src="./media/gallery/pictures/31.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(32)"><img id="32" src="./media/gallery/pictures/32.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(33)"><img id="33" src="./media/gallery/pictures/33.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(34)"><img id="34" src="./media/gallery/pictures/34.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(35)"><img id="35" src="./media/gallery/pictures/35.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(36)"><img id="36" src="./media/gallery/pictures/36.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(37)"><img id="37" src="./media/gallery/pictures/37.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(38)"><img id="38" src="./media/gallery/pictures/38.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(39)"><img id="39" src="./media/gallery/pictures/39.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(40)"><img id="40" src="./media/gallery/pictures/40.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(41)"><img id="41" src="./media/gallery/pictures/41.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(42)"><img id="42" src="./media/gallery/pictures/42.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(43)"><img id="43" src="./media/gallery/pictures/43.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(44)"><img id="44" src="./media/gallery/pictures/44.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(45)"><img id="45" src="./media/gallery/pictures/45.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(46)"><img id="46" src="./media/gallery/pictures/46.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(47)"><img id="47" src="./media/gallery/pictures/47.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(48)"><img id="48" src="./media/gallery/pictures/48.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(49)"><img id="49" src="./media/gallery/pictures/49.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(50)"><img id="50" src="./media/gallery/pictures/50.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(51)"><img id="51" src="./media/gallery/pictures/51.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(52)"><img id="52" src="./media/gallery/pictures/52.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(53)"><img id="53" src="./media/gallery/pictures/53.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(54)"><img id="54" src="./media/gallery/pictures/54.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(55)"><img id="55" src="./media/gallery/pictures/55.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(56)"><img id="56" src="./media/gallery/pictures/56.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(57)"><img id="57" src="./media/gallery/pictures/57.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(58)"><img id="58" src="./media/gallery/pictures/58.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(59)"><img id="59" src="./media/gallery/pictures/59.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(60)"><img id="60" src="./media/gallery/pictures/60.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(61)"><img id="61" src="./media/gallery/pictures/61.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(62)"><img id="62" src="./media/gallery/pictures/62.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(63)"><img id="63" src="./media/gallery/pictures/63.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(64)"><img id="64" src="./media/gallery/pictures/64.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(65)"><img id="65" src="./media/gallery/pictures/65.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(66)"><img id="66" src="./media/gallery/pictures/66.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(67)"><img id="67" src="./media/gallery/pictures/67.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(68)"><img id="68" src="./media/gallery/pictures/68.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(69)"><img id="69" src="./media/gallery/pictures/69.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(70)"><img id="70" src="./media/gallery/pictures/70.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(71)"><img id="71" src="./media/gallery/pictures/71.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(72)"><img id="72" src="./media/gallery/pictures/72.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(73)"><img id="73" src="./media/gallery/pictures/73.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(74)"><img id="74" src="./media/gallery/pictures/74.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(75)"><img id="75" src="./media/gallery/pictures/75.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(76)"><img id="76" src="./media/gallery/pictures/76.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(77)"><img id="77" src="./media/gallery/pictures/77.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(78)"><img id="78" src="./media/gallery/pictures/78.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(79)"><img id="79" src="./media/gallery/pictures/79.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(80)"><img id="80" src="./media/gallery/pictures/80.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(81)"><img id="81" src="./media/gallery/pictures/81.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(82)"><img id="82" src="./media/gallery/pictures/82.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(83)"><img id="83" src="./media/gallery/pictures/83.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(84)"><img id="84" src="./media/gallery/pictures/84.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(85)"><img id="85" src="./media/gallery/pictures/85.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(86)"><img id="86" src="./media/gallery/pictures/86.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(87)"><img id="87" src="./media/gallery/pictures/87.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(88)"><img id="88" src="./media/gallery/pictures/88.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(89)"><img id="89" src="./media/gallery/pictures/89.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(90)"><img id="90" src="./media/gallery/pictures/90.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(91)"><img id="91" src="./media/gallery/pictures/91.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(92)"><img id="92" src="./media/gallery/pictures/92.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(93)"><img id="93" src="./media/gallery/pictures/93.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(94)"><img id="94" src="./media/gallery/pictures/94.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(95)"><img id="95" src="./media/gallery/pictures/95.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(96)"><img id="96" src="./media/gallery/pictures/96.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(97)"><img id="97" src="./media/gallery/pictures/97.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(98)"><img id="98" src="./media/gallery/pictures/98.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(99)"><img id="99" src="./media/gallery/pictures/99.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(100)"><img id="100" src="./media/gallery/pictures/100.jpg" alt=""></a> <a class="thumbNail" onclick="openModal(); showSlides(101)"><img id="101" src="./media/gallery/pictures/101.jpg" alt=""></a>     
+    
+        </div>
+
+        <p class="creditPhoto subtext">
+            Crédit photo : Théo Tzélépoglou / Martine Bénezech.
+        </p>
+    </section>
+
+
+    
+
+    <footer>
+    <img class="logo" src="./media/LogoIcon.png" alt="logoPng">
+
+    <div class="partenarLink">
+        <a href="./partenar.html" class="partenarLink">Partenaires</a>
+    </div>
+
+    <ul>
+        <li><a href="./index.html">Accueil</a></li>
+        <li><a href="./place.html"><span>é</span>co-Lieu</a></li>
+        <li><a href="./stables1.html"><span>é</span>curies</a></li>
+        <li><a href="./accommodation.html">Hébergements</a></li>
+        <li><a href="./gallery.html">Galerie</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+    </ul>
+
+    <a class="facebook2" href="https://www.facebook.com/etrierdescabanelles"><img src="./media/footer/FbIcon2.png" alt="facebookPng"></a>
+    <a class="instagram" href="https://www.instagram.com/etrierdescabanelles"><img src="./media/instagram.png" alt="instaPng"></a>
+
+    <div class="legal">
+        <div class="mobileDivider"></div>
+        <a href="./legal.html">Mentions légales</a>
+        <div class="footerDivider footerDivider1"></div>
+        <p class="etrie"><strong>L'<span>é</span>trier des Cabanelles</strong> © 2020</p>
+        <div class="footerDivider footerDivider2"></div>
+        <p class="starker">Designed by <strong>STARKER</strong><span>design</span></p>
+    </div>
+</footer>    <script src="./plugins/jquery.min.js"></script>
+    <script src="./plugins/jsScripts/navMenu.js"></script>
+    <script src="./plugins/jsScripts/lightbox.js"></script>
+    
+    <script src="./plugins/Justified-Gallery-master/dist/js/jquery.justifiedGallery.min.js"></script>
+    <script>
+        $('#gallery').justifiedGallery({
+            rowHeight : 300, 
+            margins : 10,
+        });
+
+        giveColorToMenuElements(4);
+ 
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,865 @@
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Situé sur l'axe Montpellier-Quissac 
+        dans le département de l'Hérault, l'Etrier des Cabanelles est à 
+        la fois proche de la ville (30 minutes de Montpellier, 45 minutes de Nîmes), 
+        et suffisamment à l'écart pour vous offrir le dépaysement, le calme, les sons 
+        de la nature. Découvrez les hébergements construits sur notre site pour 
+        un séjour unique et ressourçant."
+    >
+    <link rel="stylesheet" href="./style/accommodation/accommodation.css">
+    <link rel="stylesheet" href="./style/accommodation/sections.css">
+    <link rel="stylesheet" href="./style/main.css">
+    <link rel="stylesheet" href="./style/carousel.css">
+    <link rel="stylesheet" href="./style/accommodation/activities.css">
+    <link rel="stylesheet" href="./src/plugins/aos-master/dist/aos.css">
+    <title>Hébergements</title>
+</head>
+<body>
+
+    
+
+
+<img id="dropdownIcon" src="./templates/menuIcons/dropdown_icon.png" alt="dropdown" onclick="openMenu()">
+
+<div id="smallMenuId" class="navMenu smallDeviceMenu">
+    <img id="quitMenu" src="./templates/menuIcons/Cross.png" alt="quit" onclick="closeMenu()">
+    <ul class="smallDeviceMenuList">
+         
+            <li class="menuItems li0">
+               
+
+                <a class="page0" href="./index.html">
+                accueil</a>
+            </li>
+
+            <div class="menuDivider"></div>
+
+             
+            <li class="menuItems li1">
+               
+
+                <a class="page1" href="./place.html">
+                éco&#8209lieu</a>
+            </li>
+
+            <div class="menuDivider"></div>
+
+             
+                <li class="collapsable li2" >
+                    <a class="stableHover"
+
+                                                onclick="unfoldSubMenu()"
+                                                > 
+                    écuries
+                    
+
+                    </a>
+                    <p id="unfoldButton" class="icon unfold" onclick="unfoldSubMenu()">+</p>
+                    <p id="foldButton" class="icon fold" onclick="foldSubMenu()">-</p>
+                    
+                    <div id="stables" >
+                        <div class="menuDivider"></div>
+                        <ul>
+                                        <li>
+                <a class="subLink1" href="./stables1.html">
+                    Présentation                </a>
+            </li>
+                        <li>
+                <a class="subLink2" href="./stables2.html">
+                    Services                </a>
+            </li>
+                                    </ul>
+                    </div>
+
+                </li>
+
+                <div class="menuDivider"></div>
+                
+                 
+            <li class="menuItems li3">
+               
+
+                <a class="page3" href="./accommodation.html">
+                hébergement</a>
+            </li>
+
+            <div class="menuDivider"></div>
+
+             
+            <li class="menuItems li4">
+               
+
+                <a class="page4" href="./gallery.html">
+                galerie</a>
+            </li>
+
+            <div class="menuDivider"></div>
+
+             
+            <li class="menuItems li5">
+               
+
+                <a class="page5" href="./contact.html">
+                contact</a>
+            </li>
+
+            <div class="menuDivider"></div>
+
+                </ul>
+
+    <a class="facebookNav" href="#">
+        <img src="./media/footer/FbIcon2.png" alt="facebook">
+    </a>
+
+    <a href="#" class="instaNav">
+        <img src="./media/instagram.png" alt="instagram">
+    </a>
+
+
+
+</div>
+
+
+<div class="navMenu largeDeviceMenu">
+
+    <a class="logo" href="./index.html"><img src="./media/LogoIcon.png" alt="logoPng"></a> 
+    <ul class="menuList">
+         
+            <li class="menuItems li0">
+               
+
+                <a class="page0" href="./index.html">
+                accueil</a>
+            </li>
+
+            <div class="menuDivider"></div>
+
+             
+            <li class="menuItems li1">
+               
+
+                <a class="page1" href="./place.html">
+                éco&#8209lieu</a>
+            </li>
+
+            <div class="menuDivider"></div>
+
+             
+                <li class="collapsable li2"  
+                    id="unfoldable"
+                >
+                    <a class="stableHover"
+
+                                        > 
+                    écuries<span class="arrow">&#812</span>
+                    
+
+                    </a>
+                    <p id="unfoldButton" class="icon unfold" onclick="unfoldSubMenu()">+</p>
+                    <p id="foldButton" class="icon fold" onclick="foldSubMenu()">-</p>
+                    
+                    <div id="stables"  class="stablesBig" >
+                        <div class="menuDivider"></div>
+                        <ul>
+                                        <li>
+                <a class="subLink1" href="./stables1.html">
+                    Présentation                </a>
+            </li>
+                        <li>
+                <a class="subLink2" href="./stables2.html">
+                    Services                </a>
+            </li>
+                                    </ul>
+                    </div>
+
+                </li>
+
+                <div class="menuDivider"></div>
+                
+                 
+            <li class="menuItems li3">
+               
+
+                <a class="page3" href="./accommodation.html">
+                hébergement</a>
+            </li>
+
+            <div class="menuDivider"></div>
+
+             
+            <li class="menuItems li4">
+               
+
+                <a class="page4" href="./gallery.html">
+                galerie</a>
+            </li>
+
+            <div class="menuDivider"></div>
+
+             
+            <li class="menuItems li5">
+               
+
+                <a class="page5" href="./contact.html">
+                contact</a>
+            </li>
+
+            <div class="menuDivider"></div>
+
+                    
+    </ul>
+
+    
+
+</div>
+
+
+
+
+
+    
+
+
+
+    <div class="banner accommodationBanner">
+
+        <div class="mainHeading">
+            <img src="./media/LogoIcon.png" alt="logo" class="logoIcon">
+            <h1 class="mainTitle">Hébergements</h1>
+            <p>Pour un séjour <span>Bien-être</span></p>
+            <div class="headingDivider headingDivider2"></div>
+        </div>
+    
+    
+    </div>
+
+    <div class="localization nonColapsableMobileSection">
+        <div class="text">
+                <img src="./media/accommodation/Pin+LeafIcon.png" alt="icon">
+                <h2 data-aos="fade-down">D'abord,<br class="mobileCariageReturn"> <span>où sommes-nous ?</span></h2>
+                <p class="generalText" data-aos="fade-zoom-in" data-aos-delay="300">Situé sur 
+                l'axe Montpellier-Quissac dans le département de l'Hérault, l'Etrier des 
+                Cabanelles est à la fois proche de la ville (30 minutes de Montpellier, 45 minutes 
+                de Nîmes), et suffisamment à l'écart pour vous offrir le dépaysement, le calme, 
+                les sons de la nature. Découvrez les hébergements construits sur notre site pour 
+                un séjour unique et ressourçant.
+                </p>
+        </div>
+        
+    </div>
+
+    <div class="pagePresentation">
+        <img class="leafShadow" src="./media/accommodation/LeafShadow.png" alt="leafShadow">
+        <div class="pageItems">
+             
+            <div class="item"  data-aos="fade-right" >
+                <a href="#nest">
+                    <p>Découvrir</p>
+                    <h1>le nid</h1>
+                    
+                </a>
+
+                <img src="./media/accommodation/leNid.jpg" alt="le nid Image">
+            </div>
+             
+            <div class="item"  data-aos="fade-down" >
+                <a href="#villa">
+                    <p>Découvrir</p>
+                    <h1>la villa</h1>
+                    
+                </a>
+
+                <img src="./media/accommodation/laVilla.jpg" alt="la villa Image">
+            </div>
+             
+            <div class="item"  data-aos="fade-left" >
+                <a href="#activities">
+                    <p>Découvrir</p>
+                    <h1>les activités</h1>
+                    
+                </a>
+
+                <img src="./media/accommodation/activites.jpg" alt="les activités Image">
+            </div>
+                        
+        </div>
+
+        
+    </div>
+
+    <div class="section mobileSection" id="nest">
+                    <div class="expandButton">
+                <h2 class="buttonHeading">Le Nid</h2>
+                <h2 class="more">+</h2>
+                <h2 class="less">-</h2>
+            </div>
+    
+                <div class="sectionBanner">
+            <div class="sectionHeading" id="nestTrigger">
+                <h1 data-aos="fade-down" data-aos-anchor="#nestTrigger" data-aos-anchor-position="bottom-bottom">le nid</h1>
+                <h2 data-aos="fade-right" data-aos-anchor="#nestTrigger" data-aos-anchor-position="bottom-bottom">Confort & nature</h2>
+                <hr data-aos="fade-up" data-aos-anchor="#nestTrigger" data-aos-anchor-position="bottom-bottom">
+            </div>
+            <p class="description generalText" data-aos="fade-zoom-in" data-aos-delay="300">
+                <strong style="font-size: 1.2em;">A</strong>u pied du Pic Saint Loup entre 
+                vignes et garrigues, vous vivrez une 
+                expérience 
+                inédite
+                 et privilégiée. Le Nid est un véritable 
+                cocon douillet
+                , 100% écologique, 
+                autonome et de 
+                grand confort.
+                Installé au calme, en retrait des écuries, il est accessible par un chemin à pied, à 
+                vélo ou en voiture. C'est une pièce ronde complètement ouverte se présentant 
+                comme une chambre avec une 
+                douche à l'italienne
+                . À l'extérieur, il comporte 
+                une grande terrasse donnant sur l'Hortus et le Pic Saint-Loup où un 
+                petit-
+                déjeuner maison BIO
+                 vous sera servi, et où vous pourrez aussi bien admirer le 
+                coucher de soleil que les étoiles à la tombée de la nuit. Des toilettes sèches à 
+                séparation sont situées juste derrière. 
+
+            </p>
+            <aside>
+                <!--<div class="blur"></div>-->
+            </aside>
+
+            <div class="comments">
+                <img src="./media/accommodation/LeNid/QuotationMarks.png" alt="" class="quotation">
+
+                <div class="slider">
+                                <div class="post">
+                <p class="comment">
+                    Un Cadre exceptionnel !!! Un très bon moment 
+             passé dans un lieu reposant et dépaysant. 
+             Un vrai moment de bonheur.<br>
+                    <span>Isabelle</span>
+                </p>
+            </div>
+                        <div class="post">
+                <p class="comment">
+                    Cet hébergement exceptionnel, au sein d'un paysage 
+            à couper le souffle, est d'autant plus valorisé par la 
+            gentillesse d'Anne et de Philippe.<br>
+                    <span>Sorribes</span>
+                </p>
+            </div>
+                        <div class="post">
+                <p class="comment">
+                    Cet endroit est juste exceptionnel ! Aux portes de Montpellier, 
+            un lieu sublime pour s'évader le temps d'une nuit.<br>
+                    <span>Marie</span>
+                </p>
+            </div>
+                        <div class="post">
+                <p class="comment">
+                    Expérience unique en son genre dans un cadre magnifique 
+            ! Je recommande fortement<br>
+                    <span>Nicolas</span>
+                </p>
+            </div>
+                        <div class="post">
+                <p class="comment">
+                    Petit nid douillet très agréable qui offre 
+            une magnifique vue dont on ne se lasse pas. 
+            Un moment magique !<br>
+                    <span>Elise</span>
+                </p>
+            </div>
+                                            
+                </div>
+
+            </div>
+
+            <div class="degraded"></div>
+                    
+        </div>
+
+        <div class="sectionDetails">
+            <h2 class="detailHeading">
+                <span>Un éco-gîte autonome</span> de grand confort et entièrement local.
+            </h2>
+
+            <div class="services nest-services">
+                 <div class="serviceIcons">             <img src="./media/accommodation/serviceIcons/BedIcon.png" alt="icons" class="icons">
+                        <img src="./media/accommodation/serviceIcons/BreakfastIcon.png" alt="icons" class="icons">
+                        <img src="./media/accommodation/serviceIcons/HeatIcon.png" alt="icons" class="icons">
+                        <img src="./media/accommodation/serviceIcons/ParkingIcon.png" alt="icons" class="icons">
+                        <img src="./media/accommodation/serviceIcons/WifiIcon.png" alt="icons" class="icons">
+                        <img src="./media/accommodation/serviceIcons/PanIcon.png" alt="icons" class="icons">
+                        <img src="./media/accommodation/serviceIcons/CleanIcon.png" alt="icons" class="icons">
+             </div>  <div class="serviceDescription">             <p class="generalText">1 couchage pour 2 adultes<br> + 1 couchage enfant<br> possible</p>
+                        <p class="generalText">Petit déjeuner maison BIO<br> inclus</p>
+                        <p class="generalText">Poêle</p>
+                        <p class="generalText">Parking gratuit</p>
+                        <p class="generalText">Wifi et prise électrique<br> dans la salle commune<br>(pas de prise au Nid)</p>
+                        <p class="generalText">Cuisine + bar réfrigéré<br> dans la salle commune</p>
+                        <p class="generalText">Ménage inclus</p>
+             </div>             </div>
+
+             
+
+    <div class="sliderWrapper">
+        <div class="imageSlider">
+
+    
+     
+        <div class="image">
+            <img src="./media/accommodation/LeNid/Nid1.jpg" alt="slideImage" class="sliderImage">
+        </div> 
+         
+        <div class="image">
+            <img src="./media/accommodation/LeNid/Nid2.jpg" alt="slideImage" class="sliderImage">
+        </div> 
+         
+        <div class="image">
+            <img src="./media/accommodation/LeNid/Nid3.jpg" alt="slideImage" class="sliderImage">
+        </div> 
+         
+        <div class="image">
+            <img src="./media/accommodation/LeNid/Nid4.jpg" alt="slideImage" class="sliderImage">
+        </div> 
+         
+        <div class="image">
+            <img src="./media/accommodation/LeNid/Nid5.jpg" alt="slideImage" class="sliderImage">
+        </div> 
+         
+
+        </div>
+    </div>
+     
+
+            <p class="sectionParagraph generalText">
+                <strong style="font-size: 1.2em;">C</strong>onstruit 
+                sur un site éco-responsable, le Nid et son mobilier sont entièrement 
+                constitués de matériaux naturels et locaux
+                ! Tout y est écologique et a été 
+                fabriqué dans le respect de l'environnement
+                : la charpente est en bois de Douglas
+                non-traité, l'isolation thermique est faite en laine de bois et en chanvre, et le lit, 
+                totalement rond et d'un diamètre de 2 mètres, est en bois de cade. Autonome 
+                grâce à ses panneaux photovoltaïques, le Nid dispose aussi d'un poêle pour se 
+                réchauffer l'hiver, d'eau chaude solaire ainsi que de ses toilettes sèches à 
+                séparation. En outre, il s'agit d'un éco-gîte de grand confort. Le matelas naturel à
+                mémoire de forme en fibres de bambou prendra soin de votre corps. Grâce à son 
+                isolation naturelle, le Nid vous protègera de la chaleur l'été et vous maintiendra 
+                au chaud l'hiver. Enfin, nous avons tenu à ce que le Nid soit de fabrication 100% 
+                locale. En option, vous pourrez aussi commander vos plats végétariens locaux 
+                préparés par 
+                <a href="https://www.facebook.com/Bocaux-des-Jardins-du-Pic-
+                157237508292812/">Sarah</a>
+                 des Bocaux des jardins du Pic et servis à la terrasse du Nid, 
+                ou encore profiter de nos ateliers avec chevaux et poneys. Tous ces éléments 
+                conjugués au cadre magique vous transporteront dans une atmosphère zen, en 
+                totale adéquation avec la Nature.
+            </p>
+
+
+            <div class="priceAndReservation">
+                <h2 class="normalPriceHeading">Tarifs & réservation</h2>
+                <h2 class="mobilePriceHeading">Tarifs</h2>
+                <hr>
+                <p class="prices">
+                    la nuitée pour 2 personnes <strong style="margin-left: 40px;">130€</strong><br>
+                    troisème couchage <strong style="margin-left: 100px;">+ 25 €</strong>
+                </p>
+
+                <p class="taxesInfo">
+                    Taxes de séjour incluses, petits déjeuners inclus <br>
+                    Règlements par espèces ou chèques /Acompte de 20% 
+                    pour la réservation.
+
+                </p>
+
+                <div class="communication">
+                     
+        <div class="telephone">
+            <img src="./media/accommodation/serviceIcons/PhoneIcon.png" alt="telIcon" class="telIcon">
+            <p class="phoneNumber">06 10 64 88 06<br>06 18 07 07 84</p>
+        </div>             <div class="onlineReservation">
+                <a href="https://www.airbnb.fr/rooms/19798152?source_impression_id=p3_1583837317_4sizJ8Di7hHziW4N" class="icons"><img src="./media/accommodation/serviceIcons/AirbnbIcon.png" alt=""></a>
+                <p class="onlineRes">Airbnb</p>
+            </div>
+                        <div class="onlineReservation">
+                <a href="https://www.abracadaroom.com/fr/reservation-letrier-des-cabanelles-nid-le-nid-de-letrier-des-cabanelles-2588/" class="icons"><img src="./media/accommodation/serviceIcons/AbracadaroomIcon.png" alt=""></a>
+                <p class="onlineRes">AbracadaRoom</p>
+            </div>
+                            </div>
+
+            </div>
+
+        </div>
+    </div>
+
+    <div class="section mobileSection" id="villa">
+                    <div class="expandButton">
+                <h2 class="buttonHeading">La Villa</h2>
+                <h2 class="more">+</h2>
+                <h2 class="less">-</h2>
+            </div>
+    
+                <div class="sectionBanner">
+            <div class="sectionHeading">
+                <h1 data-aos="fade-down" data-aos-anchor="#triggerVilla" data-aos-anchor-position="bottom-center">la villa<br> des hirondelles</h1>
+                <h2 data-aos="fade-right" data-aos-anchor="#triggerVilla" data-aos-anchor-position="bottom-center">Maison de charme</h2>
+                <hr data-aos="fade-up" data-aos-anchor="#triggerVilla" data-aos-anchor-position="bottom-center">
+            </div>
+            <p class="description generalText">
+                Villa au 
+                <strong>calme avec piscine</strong>
+                 et point de vue sur les montagnes emblématiques 
+                de l'Hérault
+                : Le Pic-Saint-Loup et l'Hortus. Un décor de rêve en parfaite harmonie
+                avec la nature, entre vignes et garrigue, le tout dans un 
+                confort optimal
+                .
+                
+            </p>
+            <aside id="triggerVilla">
+            </aside>
+
+            <div class="comments">
+                <img src="./media/accommodation/LeNid/QuotationMarks.png" alt="" class="quotation">
+
+                <div class="slider">
+                                <div class="post">
+                <p class="comment">
+                    J’ai passé un séjour vraiment 
+        hors du commun dans ce bel endroit. 
+        Anne et Phillipe sont très chaleureux 
+        et je n’ai manqué de rien !<br>
+                    <span>Manon</span>
+                </p>
+            </div>
+                        <div class="post">
+                <p class="comment">
+                    Super séjour, merci infiniment<br>
+                    <span>Florian</span>
+                </p>
+            </div>
+                        <div class="post">
+                <p class="comment">
+                    Tres agréable séjour, merci<br>
+                    <span>Joseph</span>
+                </p>
+            </div>
+                            </div>
+            </div>
+        </div>
+
+        <div class="sectionDetails">
+            <h2 class="detailHeading">
+                Espace et confort face au Pic-Saint-Loup.
+            </h2>
+
+            <div class="services villaServices">
+                 <div class="serviceIcons">             <img src="./media/accommodation/serviceIcons/BedIcon.png" alt="icons" class="icons">
+                        <img src="./media/accommodation/serviceIcons/HeatIcon.png" alt="icons" class="icons">
+                        <img src="./media/accommodation/serviceIcons/ParkingIcon.png" alt="icons" class="icons">
+                        <img src="./media/accommodation/serviceIcons/WifiIcon.png" alt="icons" class="icons">
+                        <img src="./media/accommodation/serviceIcons/PanIcon.png" alt="icons" class="icons">
+                        <img src="./media/accommodation/serviceIcons/CleanIcon.png" alt="icons" class="icons">
+                        <img src="./media/accommodation/serviceIcons/PoolIcon.png" alt="icons" class="icons">
+                        <img src="./media/accommodation/serviceIcons/TVIcon.png" alt="icons" class="icons">
+             </div>  <div class="serviceDescription">             <p class="generalText">6 couchages :<br> - 2 chambres avec 2 lits simples<br> - 1 canapé-lit 2 places</p>
+                        <p class="generalText">- Cheminée<br> - Climatisation</p>
+                        <p class="generalText">Parking gratuit</p>
+                        <p class="generalText">Wifi</p>
+                        <p class="generalText">Cuisine complète</p>
+                        <p class="generalText">Ménage inclus</p>
+                        <p class="generalText">Piscine</p>
+                        <p class="generalText">TV, câble et satellite</p>
+             </div>             </div>
+
+             
+
+    <div class="sliderWrapper">
+        <div class="imageSlider">
+
+    
+     
+        <div class="image">
+            <img src="./media/accommodation/LaVilla/Villa1.jpg" alt="slideImage" class="sliderImage">
+        </div> 
+         
+        <div class="image">
+            <img src="./media/accommodation/LaVilla/Villa2.jpg" alt="slideImage" class="sliderImage">
+        </div> 
+         
+        <div class="image">
+            <img src="./media/accommodation/LaVilla/Villa3.jpg" alt="slideImage" class="sliderImage">
+        </div> 
+         
+        <div class="image">
+            <img src="./media/accommodation/LaVilla/Villa4.jpg" alt="slideImage" class="sliderImage">
+        </div> 
+         
+        <div class="image">
+            <img src="./media/accommodation/LaVilla/Villa5.jpg" alt="slideImage" class="sliderImage">
+        </div> 
+         
+        <div class="image">
+            <img src="./media/accommodation/LaVilla/Villa6.jpg" alt="slideImage" class="sliderImage">
+        </div> 
+         
+
+        </div>
+    </div>
+    
+            <p class="sectionParagraph villaParagraph generalText">
+               <strong style="font-size: 1.2em;">L</strong>a villa dispose de 2 grandes chambres avec salle de bain privée, et de 2 toilettes
+                individuelles. Les matelas des chambres sont en fibre de bambou 
+                (hypoallergénique), mémoires de forme. Un confortable canapé-lit est également 
+                disponible dans la pièce commune. Le Pic Saint-Loup et l'Hortus peuvent 
+                s'observer depuis toutes les fenêtres de la maison
+                : une invitation à une vision 
+                plus large et lointaine. Enfin, la grande terrasse ensoleillée donnant sur la piscine 
+                privée vous offrira d’agréables moments de détente. Si vous le souhaitez, vous 
+                pourrez aussi commander à votre convenance les plats végétariens préparés par 
+                Sarah des Bocaux des jardins du Pic.
+            </p>
+
+            <div class="priceAndReservation villaPrice">
+                <h2 class="normalPriceHeading">Tarifs & réservation</h2>
+                <h2 class="mobilePriceHeading">Tarifs</h2>
+                <hr>
+                <p class="prices">
+                    la semaine <strong style="margin-left: 65px;">1000€ à 1400€</strong><span> en fonction des dates</span><br>
+                </p>
+
+                <p class="taxesInfo">
+                    Taxes de séjour incluses, petits déjeuners inclus <br>
+                    Durée minimum de séjour : 7 nuits.<br>
+                    Règlements par espèces ou virement /Acompte de 20% pour la réservation.
+
+
+                </p>
+
+                <div class="communication">
+                     
+        <div class="telephone">
+            <img src="./media/accommodation/serviceIcons/PhoneIcon.png" alt="telIcon" class="telIcon">
+            <p class="phoneNumber">06 10 64 88 06<br>06 18 07 07 84</p>
+        </div>             <div class="onlineReservation">
+                <a href="https://www.airbnb.fr/rooms/38371900?source_impression_id=p3_1583838774_cMnTC5VEfAo80xFy" class="icons"><img src="./media/accommodation/serviceIcons/AirbnbIcon.png" alt=""></a>
+                <p class="onlineRes">Airbnb</p>
+            </div>
+                        <div class="onlineReservation">
+                <a href="https://www.amivac.com/location-vacances/annonce-92336126" class="icons"><img src="./media/accommodation/serviceIcons/AmivacIcon.png" alt=""></a>
+                <p class="onlineRes">Amivac</p>
+            </div>
+                            </div>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+    <div class="section mobileSection" id="activities">
+                    <div class="expandButton">
+                <h2 class="buttonHeading">Les Activités</h2>
+                <h2 class="more">+</h2>
+                <h2 class="less">-</h2>
+            </div>
+    
+                <div class="sectionBanner">
+            <div class="sectionHeading" id="activitiesTrigger">
+                <h1 data-aos="fade-down" data-aos-anchor="#activitiesTrigger" data-aos-anchor-position="bottom-center">les activités</h1>
+                <h2 data-aos="fade-right" data-aos-anchor="#activitiesTrigger" data-aos-anchor-position="bottom-center">Sur place & alentours</h2>
+                <hr data-aos="fade-up" data-aos-anchor="#activitiesTrigger" data-aos-anchor-position="bottom-center">
+            </div>
+        </div>
+
+        <div class="activitiesDetails" id="actDetailTrigger">
+            <div class="localActivities" data-aos="fade-right" data-aos-anchor="#actDetailTrigger" data-aos-anchor-position="bottom-bottom">
+                <img src="./media/accommodation/ACTIVITES/Etrier.jpg" alt="image">
+                <div class="localInfo">
+                    <p class="miniTitle" style="font-size: 15pt;">Sur Place</p>
+                    <hr>
+                    <h2>Éco-lieu<br class="mobileCariageReturn"><span> autour du cheval</span></h2>
+                    <div class="smallDivider"></div>
+                    <h3>L’<span style="text-transform: uppercase;">é</span>trier des Cabanelles</h3>
+                    <hr style="position: relative; top: -20px;">
+                    <p class="description generalText">Au cœur de notre écurie 
+                        étho-écologique, vous pourrez rencontrer 
+                        nos chevaux et poneys soignés au naturel, 
+                        et découvrir nos installations construites 
+                        et entretenues avec amour. 
+                        Nous vous proposerons pour tous âges 
+                        des ateliers personnalisés autour 
+                        des chevaux et poneys, à pieds et/ou montés[...]</p>
+                    <a class="orangeButton" href="./place.html"><p>Découvrir</p></a>
+                </div>
+            </div>
+
+            <div class="neighborActivities" data-aos="fade-left" data-aos-anchor="#actDetailTrigger" data-aos-anchor-position="bottom-bottom">
+                <p class="miniTitle" style="font-size: 15pt;">Aux Alentours</p>
+
+                <div class="neighborItems">
+
+                                    <div class="item">
+                    <div class="itemPicture picture1">
+                        <a href="#"></a>
+                        
+                        <img src="./media/accommodation/ACTIVITES/Verrerie.jpg" alt="image">
+                    </div>
+
+                    <div class="itemText text1">
+                        <hr>
+                        <h2>Halle au verre</h2>
+                        <p>La verrerie de Claret</p>
+                        <hr style="position: relative; top: -20px;">
+                    </div>
+                </div>
+                                <div class="item">
+                    <div class="itemPicture picture2">
+                        <a href="#"></a>
+                        
+                        <img src="./media/accommodation/ACTIVITES/Vignoble.jpg" alt="image">
+                    </div>
+
+                    <div class="itemText text2">
+                        <hr>
+                        <h2>Oenologie</h2>
+                        <p>Les Vignobles du Pic</p>
+                        <hr style="position: relative; top: -20px;">
+                    </div>
+                </div>
+                                <div class="item">
+                    <div class="itemPicture picture3">
+                        <a href="#"></a>
+                        
+                        <img src="./media/accommodation/ACTIVITES/Chateau.jpg" alt="image">
+                    </div>
+
+                    <div class="itemText text3">
+                        <hr>
+                        <h2>Monument historique</h2>
+                        <p>Le Château d’Assas</p>
+                        <hr style="position: relative; top: -20px;">
+                    </div>
+                </div>
+                                
+                
+                </div>
+
+                
+
+            </div>
+        </div>
+
+        <div class="extras">
+            <p class="extraHeading">Mais aussi...</p>
+            <img src="./media/accommodation/ACTIVITES/LeafShadow2.png" alt="png">
+
+            <div class="list">
+                <div class="list1">
+                    <p>Les Gorges de l'Hérault</p>
+                    <p>Accro-branche</p>
+                    <p>Canoë-kayak</p>
+                    <p>VTT / Vélo / Randonnées</p>
+                    <p>Pêche</p>
+                </div>
+                <div class="list2">
+                    <p>Le Lac de Cécélès</p>
+                    <p>Chiens de traineau</p>
+                    <p>Tennis</p>
+                    <p>Escalade : via ferrata</p>
+                    <p>Piscine</p>
+                </div>
+            </div>
+
+
+
+        </div>
+
+
+
+        
+    
+    
+    
+    </div>
+
+
+    <footer>
+    <img class="logo" src="./media/LogoIcon.png" alt="logoPng">
+
+    <div class="partenarLink">
+        <a href="./partenar.html" class="partenarLink">Partenaires</a>
+    </div>
+
+    <ul>
+        <li><a href="./index.html">Accueil</a></li>
+        <li><a href="./place.html"><span>é</span>co-Lieu</a></li>
+        <li><a href="./stables1.html"><span>é</span>curies</a></li>
+        <li><a href="./accommodation.html">Hébergements</a></li>
+        <li><a href="./gallery.html">Galerie</a></li>
+        <li><a href="./contact.html">Contact</a></li>
+    </ul>
+
+    <a class="facebook2" href="https://www.facebook.com/etrierdescabanelles"><img src="./media/footer/FbIcon2.png" alt="facebookPng"></a>
+    <a class="instagram" href="https://www.instagram.com/etrierdescabanelles"><img src="./media/instagram.png" alt="instaPng"></a>
+
+    <div class="legal">
+        <div class="mobileDivider"></div>
+        <a href="./legal.html">Mentions légales</a>
+        <div class="footerDivider footerDivider1"></div>
+        <p class="etrie"><strong>L'<span>é</span>trier des Cabanelles</strong> © 2020</p>
+        <div class="footerDivider footerDivider2"></div>
+        <p class="starker">Designed by <strong>STARKER</strong><span>design</span></p>
+    </div>
+</footer>
+            
+
+    <script src="./plugins/jquery.min.js"></script>
+    <script src="./plugins/slick-1.8.1/slick/slick.min.js"></script>
+    <script src="./plugins/aos-master/dist/aos.js"></script>
+    <script src="./plugins/jsScripts/scripts.js"></script>
+    <script src="./plugins/jsScripts/navMenu.js"></script>
+    <script src="./plugins/jsScripts/serviceContentUnfolder.js"></script>
+    <script>
+        AOS.init({
+            duration: 1000
+        });
+    </script>
+
+
+    <script>
+        const pageElements = getPageElements(3);
+        const sectionsHeights = [6200 + 3300, 9650, 7200];
+
+
+        for(const i of [0, 1, 2]){
+            expanAndFoldSection(pageElements[i], sectionsHeights[i]);
+            resizeSectionOnWindowResize(pageElements[i]);
+        }
+
+
+        
+        giveColorToMenuElements(3);
+
+
+
+
+    </script>
+
+</body>
+</html>
+
+

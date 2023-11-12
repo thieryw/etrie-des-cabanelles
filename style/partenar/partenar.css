@@ -1,0 +1,72 @@
+body .partenarBanner {
+  background: url("../../media/partenar/banner.jpg") no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position-y: bottom;
+  height: 700px;
+}
+body .partenarBanner .mainHeading {
+  background: none;
+}
+body .partenarSection {
+  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 50px;
+  margin-bottom: 100px;
+}
+body .partenarSection img {
+  width: 200px;
+}
+body .partenarSection div {
+  text-align: center;
+}
+body .partenarSection div h2 {
+  font-family: "futuraStd", Arial, Helvetica, sans-serif;
+}
+body .partenarSection div p {
+  font-family: "freight", Arial, Helvetica, sans-serif;
+}
+@media (max-device-width: 500px) and (orientation: portrait) {
+  body .partenarSection {
+    grid-template-columns: 1fr;
+  }
+}
+/*@media screen and (max-width: 1100px){
+    body{
+        .partenarSection{
+            .partenarImages{
+                a:nth-child(1){
+                    img{
+                        margin-left: 100px;
+                    }
+                }
+
+                a:nth-child(3){
+                    img{
+
+                        margin-right: 100px;
+                    }
+                }
+            }
+        }
+    }
+}*/
+@media screen and (max-width: 1000px) and (min-height: 1100px) {
+  body .partenarBanner .mainHeading {
+    margin-top: -100px;
+  }
+  body .partenarBanner .mainHeading p,
+  body .partenarBanner .mainHeading h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+  }
+  body .partenarBanner .mainHeading p {
+    margin-left: -50px;
+    margin-top: -100px;
+  }
+  body .partenarBanner .mainHeading h1 {
+    margin-left: -538/2px;
+  }
+}

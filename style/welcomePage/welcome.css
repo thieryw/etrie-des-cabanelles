@@ -1,0 +1,778 @@
+body .capital {
+  text-transform: uppercase;
+}
+body .orangeButton {
+  position: absolute;
+  left: 50%;
+  margin-left: -85px;
+}
+body .orangeButton a {
+  color: white;
+  text-decoration: none;
+}
+body .parallax {
+  height: 600px;
+}
+body .parallaxPlace {
+  background: url("../../media/welcome/placePresentation/Parallax1.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+body .parallaxStables {
+  background: url("../../media/welcome/stablePresentation/Parallax2.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+body .parallaxAccommodation {
+  background: url("../../media/welcome/accommodationPresentation/Parallax3.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+}
+body section {
+  position: relative;
+}
+body section .sectionParagraph {
+  position: absolute;
+  text-align: center;
+  width: 560px;
+}
+body section .sectionParagraph .generalText,
+body section .sectionParagraph .subtext {
+  color: #666565;
+}
+body section .sectionParagraph h2 {
+  font-family: 'freight', Arial, Helvetica, sans-serif;
+  font-size: 37pt;
+}
+body section .sectionParagraph h3 {
+  font-family: 'freight', Arial, Helvetica, sans-serif;
+  font-weight: 100;
+  letter-spacing: 0.05em;
+  font-size: 27pt;
+  color: black;
+}
+body section .sectionParagraph .smallDivider {
+  position: absolute;
+  left: 50%;
+  margin-left: -20px;
+  margin-top: -10px;
+}
+body section .largeDivider {
+  position: absolute;
+  left: 50%;
+  top: 250/2px;
+  height: 450px;
+  width: 1px;
+  border-left: solid grey 1px;
+}
+body .facebookGallery {
+  height: 630px;
+  background: url("../../media/welcome/Background.jpg") no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+body .facebookGallery .sectionParagraph {
+  width: 380px;
+}
+body .facebookGallery .sectionParagraph h3 {
+  margin-bottom: -50px;
+}
+body .facebookGallery .sectionParagraph .generalText {
+  margin-top: 70px;
+}
+body .facebookGallery .facebookParagraph {
+  left: 50%;
+  margin-left: -560px;
+}
+body .facebookGallery .facebookParagraph .fb img,
+body .facebookGallery .facebookParagraph .insta img {
+  width: 50px;
+  margin: 10px;
+}
+body .facebookGallery .galleryParagraph {
+  left: 50%;
+  margin-left: 170px;
+}
+body .facebookGallery .galleryParagraph .theoSignature {
+  position: relative;
+  top: -20px;
+}
+body .facebookGallery .galleryParagraph .theoSignature img {
+  width: 200px;
+}
+body .facebookGallery .galleryParagraph .orangeButton {
+  margin-top: 25px;
+}
+body .accommodationPresentation {
+  height: 1500px;
+  overflow: hidden;
+}
+body .accommodationPresentation .accommodationImg {
+  position: absolute;
+  top: 170px;
+  width: 700px;
+  right: 10%;
+  box-shadow: 0px 0px 30px #797272;
+}
+body .accommodationPresentation .accommodationParagraph {
+  margin-left: 250px;
+}
+body .accommodationPresentation .accommodationParagraph h2 {
+  margin-bottom: -25px;
+  font-size: 45pt;
+}
+body .accommodationPresentation .accommodationParagraph h3 {
+  margin-left: 90px;
+  margin-bottom: 40px;
+}
+body .accommodationPresentation .accommodationParagraph h3 span {
+  color: #d18514;
+}
+body .accommodationPresentation .accommodationParagraph .generalText {
+  margin-top: 70px;
+}
+body .accommodationPresentation .accommodationParagraph2 {
+  bottom: 280px;
+  right: 200px;
+  z-index: 2;
+}
+body .accommodationPresentation .accommodationParagraph2 h3 {
+  margin-bottom: 40px;
+  margin-left: -30px;
+  width: 600px;
+}
+body .accommodationPresentation .accommodationParagraph2 > .flex-container .listElement {
+  max-width: 100%;
+  margin-bottom: -20px;
+  text-align: left;
+  margin-left: 100px;
+}
+body .accommodationPresentation .accommodationParagraph2 > .flex-container .listElement span {
+  position: relative;
+  top: -4px;
+  left: -10px;
+  font-size: 55pt;
+  color: #d18514;
+}
+body .accommodationPresentation .accommodationParagraph2 .subtext {
+  text-align: left;
+  letter-spacing: 0.11em;
+  font-size: 15pt;
+  margin-top: 70px;
+}
+body .accommodationPresentation .accommodationParagraph2 .text {
+  margin-top: 80px;
+  margin-bottom: 0;
+  text-align: left;
+}
+body .accommodationPresentation .accommodationParagraph2 .orangeButton {
+  margin-top: 100px;
+}
+body .accommodationPresentation .sliderWrapper {
+  margin-left: 150px;
+  margin-top: 850px;
+  width: 800px;
+  transform: scale(0.9);
+  z-index: 3;
+}
+body .accommodationPresentation .sliderWrapper .imageSlider .slick-dots {
+  margin-left: -95px;
+}
+body .accommodationPresentation .sliderWrapper .imageSlider .slick-slide.slick-current img {
+  box-shadow: 0px 0px 30px #797272;
+}
+body .stablePresentation {
+  height: 1400px;
+  overflow-x: hidden;
+}
+body .stablePresentation .backGround {
+  margin-top: 50px;
+  width: 75vw;
+  max-width: 1480px;
+}
+body .stablePresentation img {
+  position: absolute;
+}
+body .stablePresentation img:nth-child(2) {
+  top: 120px;
+  left: 250px;
+  box-shadow: 0px 0px 30px #797272;
+}
+body .stablePresentation img:nth-child(3) {
+  width: 600px;
+  bottom: 100px;
+  left: 1050px;
+  box-shadow: 0px 0px 30px #797272;
+}
+body .stablePresentation .sectionParagraph {
+  left: 1000px;
+}
+body .stablePresentation .sectionParagraph h3 {
+  margin-bottom: -50px;
+  margin-left: -80px;
+}
+body .stablePresentation .sectionParagraph h2 {
+  margin-left: 60px;
+  font-size: 45pt;
+  margin-top: 40px;
+}
+body .stablePresentation .sectionParagraph strong {
+  color: black;
+}
+body .stablePresentation .sectionParagraph .orangeButton {
+  position: absolute;
+}
+body .stablePresentation .sectionParagraph .generalText {
+  margin-top: 60px;
+}
+body .stablePresentation .serviceParagraph {
+  bottom: 200px;
+  left: 150px;
+}
+body .stablePresentation .serviceParagraph h3 {
+  margin-bottom: 40px;
+  margin-left: 20px;
+}
+body .stablePresentation .serviceParagraph .generalText {
+  margin-top: 85px;
+}
+body .stablePresentation .serviceParagraph .smallDivider {
+  margin-left: -15px;
+  margin-top: 5px;
+}
+body .stablePresentation .stableServiceParagraph h3 {
+  font-size: 30pt;
+}
+body .stablePresentation .stableServiceParagraph .smallDivider {
+  margin-top: -10px;
+}
+body .stablePresentation .stableServiceParagraph .generalText {
+  margin-top: 80px;
+}
+body .placePresentation {
+  background: url("../../media/welcome/placePresentation/Background.jpg") no-repeat;
+  background-size: cover;
+  height: 700px;
+}
+body .placePresentation .sectionParagraph {
+  left: 200px;
+}
+body .placePresentation .sectionParagraph h2:nth-child(1) {
+  margin-bottom: -50px;
+  margin-top: 0;
+}
+body .placePresentation .sectionParagraph h2:nth-child(2) {
+  margin-left: 100px;
+}
+body .placePresentation .sectionParagraph .generalText {
+  margin-top: 90px;
+}
+body .placePresentation .sectionParagraph .smallDivider {
+  margin-top: 5px;
+}
+body .placePresentation .sectionParagraph a {
+  color: #d38f12;
+}
+body .placePresentation iframe {
+  position: absolute;
+  left: 1000px;
+  top: 300/2px;
+  box-shadow: 0px 0px 30px #797272;
+}
+body .welcomeBanner .mainHeading {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 900px;
+  height: 220px;
+  margin-left: -450px;
+  background: url("../../media/LayerMultiply2.png") no-repeat;
+  background-size: cover;
+  border: solid #b3b3b3 1px;
+}
+body .welcomeBanner .mainHeading h1 {
+  font-family: 'rilistered', 'futuraStd', Arial, Helvetica, sans-serif !important;
+  font-size: 100pt;
+  letter-spacing: 0.05em;
+  margin-top: 10px;
+}
+body .welcomeBanner .mainHeading p {
+  margin-top: 0;
+}
+body .welcomeBanner .mainHeading p .brBanner {
+  display: none;
+}
+body .welcomeBanner .capital {
+  color: white !important;
+}
+@media screen and (max-width: 1860px) {
+  body .accommodationPresentation .accommodationParagraph {
+    margin-left: 150px;
+  }
+  body .accommodationPresentation .sliderWrapper {
+    margin-left: 100px;
+  }
+}
+@media screen and (max-width: 1750px) {
+  body .stablePresentation img:nth-child(2) {
+    left: 150px;
+  }
+  body .stablePresentation img:nth-child(3) {
+    left: 900px;
+  }
+  body .stablePresentation .sectionParagraph {
+    left: 850px;
+  }
+  body .stablePresentation .serviceParagraph {
+    left: 50px;
+  }
+  body .placePresentation .sectionParagraph {
+    left: 70px;
+  }
+  body .placePresentation iframe {
+    left: 870px;
+  }
+  body .accommodationPresentation .sliderWrapper {
+    margin-left: 20px;
+  }
+}
+@media screen and (max-width: 1620px) {
+  body .accommodationPresentation {
+    height: 1250px;
+  }
+  body .accommodationPresentation .sliderWrapper {
+    transform: scale(0.8);
+    margin-top: 670px;
+    margin-left: 50px !important;
+  }
+  body .accommodationPresentation .accommodationImg {
+    width: 550px;
+  }
+  body .accommodationPresentation .accommodationParagraph2 {
+    bottom: 230px;
+    right: 120px;
+  }
+  body .accommodationPresentation .accommodationParagraph2 .text {
+    width: 450px;
+    margin-left: 50px;
+  }
+  body .accommodationPresentation .accommodationParagraph2 .subtext {
+    margin-left: 50px;
+    font-size: 12pt;
+  }
+  body .accommodationPresentation .accommodationParagraph2 .orangeButton {
+    bottom: -100px;
+  }
+  body .stablePresentation {
+    height: 1250px;
+  }
+  body .stablePresentation .stableImage1 {
+    width: 450px;
+  }
+  body .stablePresentation .stableImage2 {
+    width: 500px !important;
+    margin-bottom: 50px;
+  }
+  body .stablePresentation .stableServiceParagraph {
+    left: 800px;
+  }
+  body .sectionParagraph h2 {
+    font-size: 30pt !important;
+  }
+  body .sectionParagraph h3 {
+    font-size: 22pt !important;
+  }
+  body .placePresentation {
+    height: 550px;
+  }
+  body .placePresentation iframe {
+    width: 500px;
+    height: 300px;
+    margin-left: 100px;
+    top: 120px;
+  }
+}
+@media screen and (max-width: 1540px) {
+  body .placePresentation .sectionParagraph {
+    left: 30px;
+  }
+  body .placePresentation iframe {
+    left: 750px;
+  }
+  body .accommodationPresentation .sliderWrapper {
+    margin-left: -50px;
+  }
+  body .accommodationPresentation .accommodationParagraph {
+    margin-left: 100px;
+  }
+}
+@media screen and (max-width: 1525px) {
+  body .stablePresentation img:nth-child(2) {
+    left: 50px;
+  }
+  body .stablePresentation img:nth-child(3) {
+    left: 800px;
+  }
+  body .stablePresentation .sectionParagraph {
+    left: 750px;
+  }
+  body .stablePresentation .serviceParagraph {
+    left: 0;
+  }
+  .accommodationPresentation .sliderWrapper {
+    left: -50px;
+  }
+}
+@media screen and (max-width: 1420px) {
+  body .placePresentation .sectionParagraph {
+    left: -30px !important;
+  }
+  body .placePresentation iframe {
+    left: 650px;
+  }
+  body .stablePresentation .sectionParagraph {
+    left: 650px;
+  }
+  body .stablePresentation .serviceParagraph {
+    left: 0;
+  }
+  body .stablePresentation img:nth-child(3) {
+    left: 700px;
+  }
+  body .accommodationPresentation .accommodationImg {
+    width: 500px;
+  }
+  body .accommodationPresentation .accommodationParagraph2 {
+    right: 50px;
+  }
+}
+@media screen and (max-width: 1340px) {
+  body .facebookGallery .facebookParagraph {
+    margin-left: -560px;
+  }
+  body .facebookGallery .galleryParagraph {
+    margin-left: 180px;
+  }
+  body .accommodationPresentation .sliderWrapper {
+    width: 600px;
+  }
+  body .accommodationPresentation .sliderWrapper .image img {
+    box-shadow: none  !important;
+  }
+  body .accommodationPresentation .accommodationParagraph2 {
+    left: 600px;
+  }
+}
+@media screen and (max-width: 1316px) {
+  body .placePresentation .sectionParagraph {
+    left: -50px !important;
+  }
+  body .placePresentation iframe {
+    left: 600px;
+  }
+  body .stablePresentation .sectionParagraph {
+    left: 580px;
+  }
+  body .stablePresentation .serviceParagraph {
+    left: -50px;
+  }
+  body .stablePresentation img:nth-child(3) {
+    left: 630px;
+  }
+  body .accommodationPresentation .accommodationImg {
+    right: 5%;
+  }
+}
+@media screen and (max-width: 1000px) and (min-height: 1100px) {
+  body .welcomeBanner {
+    height: 100vh;
+    animation: none;
+    background-image: url("../../media/welcome/mobile-banner.jpg");
+    background-size: cover;
+  }
+  body .welcomeBanner .mainHeading {
+    top: 90px !important;
+    background: none;
+  }
+  body .welcomeBanner .mainHeading h1 {
+    position: absolute;
+    width: 700px;
+    height: 400px;
+    left: 50%;
+    top: 50%;
+    margin-left: -300px;
+    margin-top: -200px;
+    text-align: right;
+    font-size: 150pt;
+    line-height: 1.1em;
+  }
+  body .welcomeBanner .mainHeading h1 .smallerText {
+    font-size: 120pt;
+  }
+  body .welcomeBanner .mainHeading h1 .adjustedWord {
+    margin-left: -40px;
+    font-size: 230pt;
+  }
+  body .welcomeBanner .mainHeading .headingDivider2 {
+    margin-left: 200px;
+  }
+  body .welcomeBanner .mainHeading p {
+    position: absolute;
+    text-align: right;
+    font-family: 'open-sans', Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 35pt !important;
+    letter-spacing: 0.1em;
+    width: 550px;
+    bottom: 200px;
+    margin-left: 50px;
+    right: 60px;
+    color: #fdd79e;
+  }
+  body .welcomeBanner .mainHeading p .capital {
+    color: #fdd79e !important;
+  }
+}
+@media screen and (max-width: 1260px) {
+  /* .generalText{
+        font-size: 13pt !important;
+    }
+    h2{
+        font-size: 30pt !important;
+    }*/
+  .placePresentation iframe {
+    left: unset !important;
+    right: 3%;
+    width: 500px !important;
+    height: 300px !important;
+  }
+  .placePresentation .sectionParagraph {
+    width: 430px;
+  }
+  .stablePresentation .sectionParagraph {
+    width: 400px;
+  }
+  .stablePresentation .stableServiceParagraph {
+    left: unset !important;
+    right: 5% !important;
+  }
+  .stablePresentation .stableImage1 {
+    width: 400px;
+  }
+  .stablePresentation .stableImage2 {
+    width: 500px;
+    left: unset !important;
+    right: 3% !important;
+  }
+  .accommodationPresentation .accommodationParagraph {
+    margin-left: -50px !important;
+  }
+  .accommodationPresentation .accommodationParagraph .generalText {
+    width: 400px;
+    margin-left: 80px;
+  }
+  .accommodationPresentation .accommodationParagraph .orangeButton {
+    bottom: -20px;
+  }
+  .accommodationPresentation .accommodationParagraph2 {
+    left: unset !important;
+    right: 4% !important;
+    width: 500px;
+  }
+  .accommodationPresentation .sliderWrapper {
+    position: relative;
+    left: -100px;
+    margin-left: 0 !important;
+  }
+  .facebookGallery .facebookParagraph {
+    margin-left: -480px !important;
+  }
+  .facebookGallery .galleryParagraph {
+    margin-left: 80px !important;
+  }
+}
+@media screen and (max-device-width: 500px) and (orientation: portrait) {
+  body .subtext {
+    font-size: 29pt !important;
+  }
+  body .sectionParagraph {
+    width: 800px !important;
+  }
+  body .sectionParagraph h3 {
+    font-size: 50pt !important;
+  }
+  body .sectionParagraph h2 {
+    font-size: 70pt !important;
+  }
+  body .sectionParagraph .generalText {
+    font-size: 33pt !important;
+  }
+  body .parallaxStables {
+    display: none;
+  }
+  body .orangeButton {
+    width: 300px;
+    height: 70px;
+    margin-left: -160px;
+  }
+  body .orangeButton a p {
+    font-size: 29pt !important;
+    margin-top: 20px !important;
+  }
+  body .facebookGallery {
+    height: 1900px;
+  }
+  body .facebookGallery .sectionParagraph {
+    left: 50%;
+    margin-left: -400px !important;
+  }
+  body .facebookGallery .sectionParagraph .fb img,
+  body .facebookGallery .sectionParagraph .insta img {
+    width: 150px;
+  }
+  body .facebookGallery .sectionParagraph .theoSignature img {
+    width: 300px;
+  }
+  body .facebookGallery .galleryParagraph {
+    bottom: 250px;
+  }
+  body .facebookGallery .largeDivider {
+    height: 1px;
+    width: 700px;
+    border-top: solid grey 1px;
+    left: 50%;
+    margin-left: -350px;
+    top: 1000px;
+  }
+  body .facebookGallery .smallDivider {
+    margin-top: -35px !important;
+  }
+  body .accommodationPresentation {
+    height: 4400px;
+  }
+  body .accommodationPresentation .accommodationImg {
+    left: 50% !important;
+    width: 600px;
+    margin-left: -300px;
+    top: 1750px;
+    transform: scale(1.3);
+  }
+  body .accommodationPresentation .accommodationParagraph {
+    left: 50% !important;
+    margin-left: -400px !important;
+  }
+  body .accommodationPresentation .accommodationParagraph .generalText {
+    width: 100% !important;
+    margin-left: 0;
+  }
+  body .accommodationPresentation .accommodationParagraph .orangeButton {
+    bottom: -70px;
+  }
+  body .accommodationPresentation .accommodationParagraph2 {
+    left: 50% !important;
+    margin-left: -400px !important;
+    bottom: 850px;
+  }
+  body .accommodationPresentation .accommodationParagraph2 p {
+    text-align: left;
+  }
+  body .accommodationPresentation .accommodationParagraph2 .text {
+    width: 100% !important;
+  }
+  body .accommodationPresentation .accommodationParagraph2 .text {
+    margin-left: 80px;
+  }
+  body .accommodationPresentation .accommodationParagraph2 h3 {
+    font-size: 42pt !important;
+    margin-left: 100px;
+  }
+  body .accommodationPresentation .accommodationParagraph2 .listElement span {
+    font-size: 100pt;
+    position: absolute;
+    margin-left: -50px;
+    margin-top: -30px;
+  }
+  body .accommodationPresentation .accommodationParagraph2 .subtext {
+    margin-left: 80px;
+  }
+  body .accommodationPresentation .accommodationParagraph2 .orangeButton a p {
+    text-align: center;
+  }
+  body .accommodationPresentation .sliderWrapper {
+    left: 50% !important;
+    margin-left: -400px !important;
+    top: 3100px !important;
+    transform: none;
+    width: 800px !important;
+  }
+  body .placePresentation {
+    height: 1500px;
+  }
+  body .placePresentation h2:nth-of-type(2) {
+    position: relative;
+    top: -30px;
+  }
+  body .placePresentation .smallDivider {
+    margin-top: -40px !important;
+  }
+  body .placePresentation iframe {
+    display: none;
+  }
+  body .placePresentation .sectionParagraph {
+    left: 50% !important;
+    margin-left: -400px;
+  }
+  body .stablePresentation {
+    height: 4100px;
+    overflow-x: unset;
+  }
+  body .stablePresentation img {
+    left: 50% !important;
+  }
+  body .stablePresentation .backGround {
+    width: 800px !important;
+    bottom: -300px;
+    left: 50% !important;
+    margin-left: -400px;
+  }
+  body .stablePresentation img:nth-child(2) {
+    width: 500px;
+    margin-left: -250px;
+  }
+  body .stablePresentation .stableImage1 {
+    transform: scale(1.3);
+    top: 140px !important;
+  }
+  body .stablePresentation .stableImage2 {
+    margin-bottom: 1350px;
+    margin-right: 215px;
+    transform: scale(1.5);
+  }
+  body .stablePresentation .sectionParagraph {
+    left: 50% !important;
+    margin-left: -400px;
+    margin-top: 700px;
+  }
+  body .stablePresentation .stableServiceParagraph .smallDivider {
+    margin-top: -35px !important;
+  }
+  body .stablePresentation .serviceParagraph {
+    bottom: 450px !important;
+  }
+}
+@media screen and (min-width: 2000px) {
+  body .placePresentation {
+    background: none;
+  }
+  body .placePresentation,
+  body .stablePresentation,
+  body .accommodationPresentation {
+    position: relative;
+    width: 1920px;
+    left: 50vw;
+    margin-left: -900px;
+  }
+}

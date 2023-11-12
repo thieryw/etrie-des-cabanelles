@@ -1,0 +1,31 @@
+body {
+  background-color: darkgrey;
+}
+body .smallDeviceMenu {
+  top: 0px;
+}
+body .largeDeviceMenu {
+  top: 0px;
+}
+body footer {
+  width: 100%;
+}
+body h1 {
+  text-align: center;
+  font-size: 3em;
+}
+body section {
+  font-family: "futuraStd", Arial, Helvetica, sans-serif;
+  margin-top: 200px;
+  text-align: left;
+  margin-bottom: 100px;
+}
+body section p,
+body section h2 {
+  padding-left: 50px;
+  padding-right: 50px;
+}
+body section ul {
+  padding-left: 100px;
+  padding-right: 100px;
+}
