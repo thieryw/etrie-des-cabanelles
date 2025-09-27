@@ -175,3 +175,35 @@
     pointer-events: none;
   }*/
 }
+.slide {
+  position: relative;
+  text-align: center;
+  display: flex;
+  background-color: #fafaf1;
+  top: 100px;
+  /*max-width: 360px;
+  min-width: 300px;*/
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 60px;
+  margin: 30px;
+  min-width: 360px;
+}
+.slide img {
+  max-width: 360px;
+}
+.slide iframe {
+  min-width: 360px;
+}
+.slide h2 {
+  font-family: 'freight', Arial, Helvetica, sans-serif;
+  color: #b96a02;
+  font-weight: 100;
+  font-size: 24pt;
+  letter-spacing: 0.05em;
+}
+.slide .generalText {
+  font-family: 'futuraStd', Arial, Helvetica, sans-serif;
+  width: 300px;
+  font-size: 13pt;
+}

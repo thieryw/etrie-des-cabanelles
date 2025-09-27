@@ -40,6 +40,12 @@ body #showLess,
 body #showMore {
   display: none;
 }
+body .cardWrapp {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
 body .staffPresentation {
   position: relative;
   background-color: white;
@@ -129,6 +135,13 @@ body .clapNature .sectionParagraph .generalText {
   width: 500px;
   margin-left: 135px;
 }
+body .cardSection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
 body .divider {
   position: absolute;
   width: 150px;
@@ -137,14 +150,22 @@ body .divider {
   left: 50%;
   margin-left: -75px;
 }
+body .sliderHeading {
+  font-family: 'freight', Arial, Helvetica, sans-serif;
+  letter-spacing: 0.05em;
+  font-size: 34pt;
+  font-weight: 100;
+  /*position: relative;
+                    top: 100px;*/
+}
 body .sectionWithSlider {
-  height: 1150px;
   margin-top: -50px;
   position: relative;
   text-align: center;
   background-color: #fafafa;
 }
 body .sectionWithSlider .slideWrapp {
+  border: solid red 2px;
   position: absolute;
   height: 800px;
   width: 1100px;
@@ -173,8 +194,8 @@ body .sectionWithSlider .sliderHeading {
   letter-spacing: 0.05em;
   font-size: 34pt;
   font-weight: 100;
-  position: relative;
-  top: 100px;
+  /*position: relative;
+                    top: 100px;*/
 }
 body .sectionWithSlider .sliderBackground {
   user-select: none;
@@ -354,7 +375,7 @@ body .infrastructure article .orangeButton p {
 @media screen and (max-width: 1520px) {
   body .infrastructure article {
     /*margin-left: 50px;
-                margin-top: -100px;*/
+                        margin-top: -100px;*/
   }
   body .infrastructure article ul {
     margin-top: 60px;
@@ -370,18 +391,18 @@ body .infrastructure article .orangeButton p {
   }
 }
 /*@media screen and (max-width: 1450px){
-    body{
-        .photovolta{
-            article{
-                .generalText{
-                    height: 195px;
-                    overflow: auto;
+            body{
+                .photovolta{
+                    article{
+                        .generalText{
+                            height: 195px;
+                            overflow: auto;
+                        }
+                    }
+        
                 }
             }
-
-        }
-    }
-}*/
+        }*/
 @media screen and (max-width: 1385px) {
   body .nature h2,
   body .ethics h2 {
@@ -456,18 +477,18 @@ body .infrastructure article .orangeButton p {
 @media screen and (max-width: 1217px) {
   body {
     /*.photovolta{
-            article{
-                margin-top: -100px;
-                .articleParagraph{
-                    margin-top: 15px;
-                    height: 200px;
-                }
-
-                .divider{
-                    margin-top: -20px;
-                }
-            }
-        }*/
+                    article{
+                        margin-top: -100px;
+                        .articleParagraph{
+                            margin-top: 15px;
+                            height: 200px;
+                        }
+        
+                        .divider{
+                            margin-top: -20px;
+                        }
+                    }
+                }*/
   }
   body .presentation .presentationContent {
     width: 980px;
