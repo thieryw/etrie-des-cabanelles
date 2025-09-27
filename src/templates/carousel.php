@@ -34,7 +34,7 @@ function createSlideWithImageOrVideo($isVideo, $mediaPath, $title, $paragraph, $
             <?php 
                 if($isVideo){
                     ?>
-                        <iframe style="margin-left: -2px;" width="367" height="225" 
+                        <iframe style="margin-left: -2px;" 
                         src="<?php echo $mediaPath; ?>" 
                         frameborder="0" 
                         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" 

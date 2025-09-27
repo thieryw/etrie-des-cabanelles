@@ -13,7 +13,7 @@ $presentationItems = [
 $presentationItems2 = [
     ['SANTÉ', 'Soins', './media/stables/services/presentation/MenuSoins.jpg', '#health'],
     ['DÉVELOPPEMENT<br> PERSONNEL', '"Être" avec les chevaux', './media/stables/services/presentation/MenuDeveloppementPerso.jpg', '#horseCompany'],
-    ['D\'ÉQUITATION', 'École', './media/stables/services/presentation/MenuEcole.jpg', '#school'],
+    //['D\'ÉQUITATION', 'École', './media/stables/services/presentation/MenuEcole.jpg', '#school'],
 ];
 
 $services = [
@@ -373,7 +373,7 @@ function createContactButton(){
     
     </section>
 
-    <div class="mobileSection schoolMobile">
+    <!--<div class="mobileSection schoolMobile">
         <?php createExpandButton("École d'Équitation") ?>
         <section id="school" class="personalDevelopment">
             <div class="sectionParagraph">
@@ -516,7 +516,7 @@ function createContactButton(){
         </section>
 
 
-    </div>
+    </div>-->
 
 
 

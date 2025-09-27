@@ -18,11 +18,6 @@ $sliderContent = [
     Proposé par Claire Secondy.", 
     "https://premayog.com/"],
 
-    ["./media/place/Caroussel5.jpg", 
-    "École d'équitation", 
-    "Au coeur d’une approche basée sur la relation enfant-poney.
-    Proposé par Lucile Carré.", 
-    "./stables2.html"],
 
     ["https://www.youtube-nocookie.com/embed/0bwlD32_3Mk", 
     "Les Bocaux du Pic", 
@@ -249,19 +244,17 @@ $staffArray = [
 
 
 
-    <section class="sectionWithSlider">
+    <section class="cardSection">
         <h2 class="sliderHeading normalTitle">Coopérer sur le même site :</h2>
         <h2 class="sliderHeading mobileTitle">Sur notre site</h2>
-        <div class="divider"></div>
-        <img class="sliderBackground" src="./media/place/PlantBackground.png" alt="plantBackground">
 
             <!--<div class="leftArrowContainer"></div>
             <div class="rightArrowContainer"></div>-->
-        <div class="slideWrapp">
-            <div class="variousContentSlider">
+        <div >
+            <div class="cardWrapp">
                 <?php 
                     for($i = 0; $i < sizeof($sliderContent); $i++){
-                        if($i == 3){
+                        if($i == 2){
                             createSlideWithImageOrVideo(true, $sliderContent[$i][0], $sliderContent[$i][1],
                                                         $sliderContent[$i][2], $sliderContent[$i][3]);
 
